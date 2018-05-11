@@ -660,7 +660,7 @@ section {
 }
 .service_type_text {
     font-family:Montserrat,sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size:14px;
     -ms-text-align-last: right;
     text-align: left;
@@ -936,12 +936,18 @@ section {
     margin-bottom: 50px;
 }
 #howWeWorkSection p {
-    font-family: Montserrat,sans-serif;
-    font-weight: 300;
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
     font-size: 14px;
+    /*color: #808285;*/
+    color: #58595B;
 }
 .howWeWork_more_info_head {
     color:#414042;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+
 }
 
 .noHome .head {

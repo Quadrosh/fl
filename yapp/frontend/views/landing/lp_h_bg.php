@@ -396,7 +396,7 @@ NavBar::end();
                     <div class="row">
                         <div class="col-xs-2 stepNumber text-right">2</div>
                         <div class="col-xs-10">
-                            <h4><?= $sections['howWeWork']['list_items'][4] ['head'] ?></h4>
+                            <h4 class="howWeWork_more_info_head"><?= $sections['howWeWork']['list_items'][4] ['head'] ?></h4>
                             <p><?= nl2br($sections['howWeWork']['list_items'][4] ['text']) ?></p>
                         </div>
                     </div>
@@ -408,7 +408,7 @@ NavBar::end();
                     <div class="row">
                         <div class="col-xs-2 stepNumber text-right">3</div>
                         <div class="col-xs-10">
-                            <h4><?= $sections['howWeWork']['list_items'][5] ['head'] ?></h4>
+                            <h4 class="howWeWork_more_info_head"><?= $sections['howWeWork']['list_items'][5] ['head'] ?></h4>
                             <p><?= nl2br($sections['howWeWork']['list_items'][5] ['text']) ?></p>
                         </div>
                     </div>

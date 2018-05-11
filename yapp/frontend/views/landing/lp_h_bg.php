@@ -475,11 +475,11 @@ NavBar::end();
                 <?= $form->field($preorder, 'utm_content')->hiddenInput(['value'=>$utm['content'], 'id' => 'mainOrderForm-utm_content'])->label(false) ?>
 
                 <?= $form->field($preorder, 'service_type')
-                    ->hiddenInput(['value'=>'tender_zaim','id' => 'quickorder_form_top-service_type'])->label(false) ?>
+                    ->hiddenInput(['value'=>'bank_garant','id' => 'quickorder_form_top-service_type'])->label(false) ?>
                 <?= $form->field($preorder, 'site')
                     ->hiddenInput(['value'=>'finlider.ru','id' => 'quickorder_form_top-site'])->label(false) ?>
                 <?= $form->field($preorder, 'from_page')
-                    ->hiddenInput(['value'=>'tender_zaim','id' => 'quickorder_form_top-from_page'])->label(false) ?>
+                    ->hiddenInput(['value'=>'bank_garant','id' => 'quickorder_form_top-from_page'])->label(false) ?>
 
                 <div class="row">
                     <div class="col-sm-6">

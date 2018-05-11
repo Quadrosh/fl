@@ -79,13 +79,13 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.07936508">
-              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4153439">
+              <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
               <folding>
-                <marker date="1526044372000" expanded="true" signature="755:3926" placeholder="..." />
-                <marker date="1526044372000" expanded="true" signature="961:996" placeholder="..." />
-                <marker date="1526044372000" expanded="true" signature="1051:1088" placeholder="..." />
-                <marker date="1526044372000" expanded="true" signature="1092:1505" placeholder="..." />
+                <marker date="1526044481000" expanded="true" signature="755:3926" placeholder="..." />
+                <marker date="1526044481000" expanded="true" signature="961:996" placeholder="..." />
+                <marker date="1526044481000" expanded="true" signature="1051:1088" placeholder="..." />
+                <marker date="1526044481000" expanded="true" signature="1092:1505" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -1067,13 +1067,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.07936508">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4153439">
+          <caret line="110" column="44" selection-start-line="110" selection-start-column="44" selection-end-line="110" selection-end-column="44" />
           <folding>
-            <marker date="1526044372000" expanded="true" signature="755:3926" placeholder="..." />
-            <marker date="1526044372000" expanded="true" signature="961:996" placeholder="..." />
-            <marker date="1526044372000" expanded="true" signature="1051:1088" placeholder="..." />
-            <marker date="1526044372000" expanded="true" signature="1092:1505" placeholder="..." />
+            <marker date="1526044481000" expanded="true" signature="755:3926" placeholder="..." />
+            <marker date="1526044481000" expanded="true" signature="961:996" placeholder="..." />
+            <marker date="1526044481000" expanded="true" signature="1051:1088" placeholder="..." />
+            <marker date="1526044481000" expanded="true" signature="1092:1505" placeholder="..." />
           </folding>
         </state>
       </provider>

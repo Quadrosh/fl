@@ -108,7 +108,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; Трансзаказ <?= date('Y') ?></p>
+        <p class="pull-left">&copy; Финлидер <?= date('Y') ?></p>
 
 <!--        <p class="pull-right">Глобал Логистик Групп</p>-->
     </div>

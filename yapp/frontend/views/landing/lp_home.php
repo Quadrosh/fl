@@ -144,7 +144,7 @@ NavBar::end();
                 <?php $form = ActiveForm::begin([
                     'id' => 'quicpkorder_form_top',
                     'method' => 'post',
-                    'action' => ['/landing/preorder'],
+                    'action' => ['/site/order'],
 
                 ]); $preorder = new \common\models\Preorders(); ?>
 

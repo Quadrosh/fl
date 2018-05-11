@@ -33,6 +33,8 @@ use yii\behaviors\TimestampBehavior;
  */
 class Preorders extends \yii\db\ActiveRecord
 {
+    public $emailForSend;
+
     /**
      * @inheritdoc
      */
@@ -134,5 +136,40 @@ class Preorders extends \yii\db\ActiveRecord
             'date' => 'Date',
             'done' => 'Done',
         ];
+    }
+
+    /**
+     * Sends an email to the specified email address using the information collected by this model.
+     * @param string $email the target email address
+     * @return bool whether the email was sent
+     */
+    public function sendEmail($subject)
+    {
+
+
+        if ( YII_DEBUG == true ) {
+            $this->emailForSend =  Yii::$app->params['devOrderEmail'];
+        } else {
+            $this->emailForSend =  Yii::$app->params['prodOrderEmail'];
+        }
+        return Yii::$app->mailer->compose()
+            ->setTo($this->emailForSend)
+            ->setFrom('sender@'.Yii::$app->params['site'])
+            ->setSubject($subject)
+            ->setHtmlBody(
+                "Данные запроса <br>".
+                " <br/> Со страницы: ".$this->from_page .
+                " <br/> Услуга: ".$this->service_type .
+                " <br/> Номер операции: ".$this->operation_id .
+                " <br/> Площадка: ".$this->platform .
+                " <br/> ИНН: ".$this->inn .
+                " <br/> ФИО: ".$this->name .
+                " <br/> Телефон: ".$this->phone .
+                " <br/> Email: ".$this->email .
+                " <br/> Коментарий: <br/>". nl2br($this->text)
+            )
+            ->send();
+
+
     }
 }

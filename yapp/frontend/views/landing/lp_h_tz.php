@@ -405,7 +405,7 @@ NavBar::end();
             <div class="col-md-8 col-md-offset-2">
 
                 <?php $form = ActiveForm::begin([
-                    'action' =>['site/order'],
+                    'action' =>['/site/order'],
                     'id' => 'mainOrderForm',
                     'method' => 'post',]); ?>
                 <?= $form->field($preorder, 'utm_source')->hiddenInput(['value'=>$utm['source'], 'id' => 'mainOrderForm-utm_source'])->label(false) ?>

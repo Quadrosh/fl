@@ -2,33 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_absolut.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_absolut.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_baikal_invest.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_baikal_invest.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_binbank.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_binbank.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_globeks.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_globeks.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_interprombank.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_interprombank.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_metallinvest.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_metallinvest.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_promsvyaz.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_promsvyaz.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_skib.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_skib.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_sovkombank.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_sovkombank.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/b_vneshfin.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/b_vneshfin.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/blago1.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/blago1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/city1.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/city1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/city3.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/city3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/cityM.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/cityM.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/mainCity.jpg" afterPath="$PROJECT_DIR$/yapp/common/img/mainCity.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/roseltorg.png" afterPath="$PROJECT_DIR$/yapp/common/img/roseltorg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/rts.png" afterPath="$PROJECT_DIR$/yapp/common/img/rts.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/sber.png" afterPath="$PROJECT_DIR$/yapp/common/img/sber.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/img/zakaz_rf.png" afterPath="$PROJECT_DIR$/yapp/common/img/zakaz_rf.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/.gitignore" afterPath="$PROJECT_DIR$/yapp/common/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/composer.json" afterPath="$PROJECT_DIR$/yapp/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/composer.lock" afterPath="$PROJECT_DIR$/yapp/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" afterPath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/layouts/login.php" afterPath="$PROJECT_DIR$/yapp/backend/views/layouts/login.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,12 +51,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/common/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.044973545">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="81" selection-end-column="7" />
+              <folding>
+                <marker date="1524650773000" expanded="true" signature="771:3942" placeholder="..." />
+                <marker date="1524650773000" expanded="true" signature="977:1012" placeholder="..." />
+                <marker date="1524650773000" expanded="true" signature="1067:1104" placeholder="..." />
+                <marker date="1524650773000" expanded="true" signature="1108:1521" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.07936508">
+              <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <folding>
+                <marker date="1526044372000" expanded="true" signature="755:3926" placeholder="..." />
+                <marker date="1526044372000" expanded="true" signature="961:996" placeholder="..." />
+                <marker date="1526044372000" expanded="true" signature="1051:1088" placeholder="..." />
+                <marker date="1526044372000" expanded="true" signature="1092:1505" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,7 +182,6 @@
         <option value="$PROJECT_DIR$/yapp/backend/controllers/BackController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/config/main.php" />
-        <option value="$PROJECT_DIR$/yapp/backend/views/layouts/login.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/site/index.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/PagesController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/LandinglistitemController.php" />
@@ -211,6 +215,7 @@
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
         <option value="$PROJECT_DIR$/yapp/common/.gitignore" />
+        <option value="$PROJECT_DIR$/yapp/backend/views/layouts/login.php" />
       </list>
     </option>
   </component>
@@ -468,7 +473,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -689,13 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05362776">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/backend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05362776">
@@ -805,13 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="58" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="71" selection-start-line="110" selection-start-column="71" selection-end-line="110" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -1007,9 +1046,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.044973545">
-          <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="81" selection-end-column="7" />
+          <folding>
+            <marker date="1524650773000" expanded="true" signature="771:3942" placeholder="..." />
+            <marker date="1524650773000" expanded="true" signature="977:1012" placeholder="..." />
+            <marker date="1524650773000" expanded="true" signature="1067:1104" placeholder="..." />
+            <marker date="1524650773000" expanded="true" signature="1108:1521" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/backend/views/layouts/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.07936508">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <marker date="1526044372000" expanded="true" signature="755:3926" placeholder="..." />
+            <marker date="1526044372000" expanded="true" signature="961:996" placeholder="..." />
+            <marker date="1526044372000" expanded="true" signature="1051:1088" placeholder="..." />
+            <marker date="1526044372000" expanded="true" signature="1092:1505" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

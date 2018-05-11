@@ -208,7 +208,7 @@ section {
     font-weight:300;
     font-size:11px;
 }
-.noHome .navbar-brand  span {
+.navbar-brand  span.onBright {
     margin-left: 5px;
     font-weight:400;
 }

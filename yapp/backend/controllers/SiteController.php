@@ -2,6 +2,7 @@
 namespace backend\controllers;
 
 use Yii;
+use yii\helpers\Url;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
@@ -34,7 +35,14 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = 'main';
+        Url::remember();
+        if (Yii::$app->user->can('adminPermission', [])) {
+            $this->layout = 'main';
+        }
+        elseif (Yii::$app->user->can('statPermission', [])) {
+            $this->layout = 'stat';
+        }
+
         return $this->render('index');
     }
 

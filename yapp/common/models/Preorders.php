@@ -152,10 +152,10 @@ class Preorders extends \yii\db\ActiveRecord
         } else {
             $this->emailForSend =  Yii::$app->params['prodOrderEmail'];
         }
-        if ($this->from_page == 'tender_zaim') {
+        if ($this->service_type == 'tender_zaim') {
             $this->emailForSend =  Yii::$app->params['tzOrderEmail'];
         }
-        if ($this->from_page == 'bank_garant') {
+        if ($this->service_type == 'bank_garant') {
             $this->emailForSend =  Yii::$app->params['bgOrderEmail'];
         }
         return Yii::$app->mailer->compose()

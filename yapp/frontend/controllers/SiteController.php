@@ -340,7 +340,7 @@ class SiteController extends Controller
             $preorder['site'] = Yii::$app->params['site'];
             $preorder['ip'] = Yii::$app->request->userIP;
             if ($preorder->save()) {
-                if ($preorder->sendEmail( Yii::$app->params['site'].': Заявка на грузоперевозку')) {
+                if ($preorder->sendEmail( Yii::$app->params['site'].': Заявка')) {
                     Yii::$app->session->setFlash('success', 'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
                     return $this->redirect(Url::previous());
                 } else {
@@ -353,7 +353,7 @@ class SiteController extends Controller
             }
         } else {
 
-            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на transzakaz@gmail.com или оформите заявку по телефону');
+            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@finlider.ru или оформите заявку по телефону');
             return $this->redirect(Url::previous());
         }
 

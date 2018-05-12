@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" afterPath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="335" column="64" selection-start-line="335" selection-start-column="64" selection-end-line="335" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.7053942">
+              <caret line="356" column="52" selection-start-line="356" selection-start-column="52" selection-end-line="356" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -124,10 +124,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71784234">
+            <state vertical-scroll-proportion="0.0">
               <caret line="1085" column="25" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="25" />
               <folding />
             </state>
@@ -138,7 +138,7 @@
         <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="157" column="31" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
+              <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -196,13 +196,13 @@
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_tz.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_bg.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" />
         <option value="$PROJECT_DIR$/yapp/common/config/main-local.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/config/params-local.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
+        <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
       </list>
     </option>
   </component>
@@ -339,6 +339,72 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mail" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,20 +548,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/ImagefilesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/common/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/console/controllers/RbacController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -805,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="335" column="64" selection-start-line="335" selection-start-column="64" selection-end-line="335" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4137291">
@@ -895,18 +939,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="157" column="31" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
+          <caret line="1085" column="25" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
+    <entry file="file://$PROJECT_DIR$/yapp/common/mail/layouts/html.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71784234">
-          <caret line="1085" column="25" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/common/mail/layouts/text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.14107884">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="35" selection-start-line="155" selection-start-column="35" selection-end-line="155" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7053942">
+          <caret line="356" column="52" selection-start-line="356" selection-start-column="52" selection-end-line="356" selection-end-column="52" />
           <folding />
         </state>
       </provider>

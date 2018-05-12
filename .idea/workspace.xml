@@ -127,8 +127,8 @@
       <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5643153">
-              <caret line="1085" column="26" selection-start-line="1085" selection-start-column="26" selection-end-line="1085" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.71784234">
+              <caret line="1085" column="25" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -905,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5643153">
-          <caret line="1085" column="26" selection-start-line="1085" selection-start-column="26" selection-end-line="1085" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.71784234">
+          <caret line="1085" column="25" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="25" />
           <folding />
         </state>
       </provider>

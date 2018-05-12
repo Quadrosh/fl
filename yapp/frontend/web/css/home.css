@@ -1064,13 +1064,24 @@ footer .right{
 }
 
 .alert {
+    z-index: 100;
     margin-top: 150px;
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+}
+@media only screen and (max-width : 410px) {
+    .alert {
+        position: fixed;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
 }
 
 .alert-success {
     color: #3c763d;
     background-color: #A7F8F5;
-    /*background-color: #405F5E;*/
     border-color: #74ABAA;
-    z-index: 100;
 }

@@ -1072,4 +1072,5 @@ footer .right{
     background-color: #A7F8F5;
     /*background-color: #405F5E;*/
     border-color: #74ABAA;
+    z-index: 100;
 }

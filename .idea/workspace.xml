@@ -128,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.83495146">
-              <caret line="1073" column="25" selection-start-line="1073" selection-start-column="25" selection-end-line="1073" selection-end-column="25" />
+              <caret line="1074" column="17" selection-start-line="1074" selection-start-column="17" selection-end-line="1074" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -906,7 +906,7 @@
     <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.83495146">
-          <caret line="1073" column="25" selection-start-line="1073" selection-start-column="25" selection-end-line="1073" selection-end-column="25" />
+          <caret line="1074" column="17" selection-start-line="1074" selection-start-column="17" selection-end-line="1074" selection-end-column="17" />
           <folding />
         </state>
       </provider>

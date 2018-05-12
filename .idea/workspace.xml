@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Preorders.php" afterPath="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" afterPath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -124,21 +124,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1065" column="8" selection-start-line="1065" selection-start-column="8" selection-end-line="1065" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.83495146">
+              <caret line="1073" column="25" selection-start-line="1073" selection-start-column="25" selection-end-line="1073" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Preorders.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Preorders.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5776699">
-              <caret line="157" column="48" selection-start-line="157" selection-start-column="48" selection-end-line="157" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="157" column="31" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -195,7 +195,6 @@
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_home.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_tz.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_bg.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" />
@@ -203,6 +202,7 @@
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/config/params-local.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
       </list>
     </option>
   </component>
@@ -415,7 +415,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="436" width="1421" height="440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
@@ -424,7 +424,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -788,14 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1065" column="8" selection-start-line="1065" selection-start-column="8" selection-end-line="1065" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -818,23 +810,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="335" column="64" selection-start-line="335" selection-start-column="64" selection-end-line="335" selection-end-column="64" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="178" column="10" selection-start-line="178" selection-start-column="10" selection-end-line="178" selection-end-column="10" />
-          <folding>
-            <marker date="1526056190000" expanded="true" signature="401:3572" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="607:642" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="697:734" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="738:1151" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="4318:5574" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="4661:4697" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="4800:4892" placeholder="..." />
-            <marker date="1526056190000" expanded="true" signature="4928:5543" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,10 +878,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="178" column="10" selection-start-line="178" selection-start-column="10" selection-end-line="178" selection-end-column="10" />
+          <folding>
+            <marker date="1526056190000" expanded="true" signature="401:3572" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="607:642" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="697:734" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="738:1151" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="4318:5574" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="4661:4697" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="4800:4892" placeholder="..." />
+            <marker date="1526056190000" expanded="true" signature="4928:5543" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5776699">
-          <caret line="157" column="48" selection-start-line="157" selection-start-column="48" selection-end-line="157" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="157" column="31" selection-start-line="157" selection-start-column="31" selection-end-line="157" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83495146">
+          <caret line="1073" column="25" selection-start-line="1073" selection-start-column="25" selection-end-line="1073" selection-end-column="25" />
           <folding />
         </state>
       </provider>

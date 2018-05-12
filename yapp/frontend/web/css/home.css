@@ -1066,3 +1066,10 @@ footer .right{
 .alert {
     margin-top: 150px;
 }
+
+.alert-success {
+    color: #3c763d;
+    background-color: #A7F8F5;
+    /*background-color: #405F5E;*/
+    border-color: #74ABAA;
+}

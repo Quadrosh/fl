@@ -1085,3 +1085,6 @@ footer .right{
     background-color: #A7F8F5;
     border-color: #74ABAA;
 }
+.navbar_motto {
+    white-space: nowrap;
+}

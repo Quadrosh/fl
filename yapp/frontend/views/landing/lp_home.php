@@ -348,68 +348,74 @@ NavBar::end();
     <section
         id="reviewsSection"
         class="<?= $sections['reviews']['stylekey'] ?> <?= $sections['reviews']['section_type'] ?>">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <h2 class="head"><?= $sections['reviews']['head'] ?></h2>
-            </div>
-        </div>
-
-        <div class="reviewsCarWrapper ">
-            <div class="reviewsCarousel text-center">
-                <?php foreach ($sections['reviews']['list_items'] as $review) : ?>
-                    <div class="review_item">
-
-                        <a class="caruMagLink" href="/img/<?= $review['image'] ?>"><img src="/img/th_<?= $review['image'] ?>" alt="<?= $review['image_alt'] ?>" /></a>
-
-                    </div>
-
-                <?php endforeach; ?>
-
-            </div>
-            <a class="carouselControl slickReviewsPrev"><svg version="1.1"
-                                                             xmlns="http://www.w3.org/2000/svg"
-                                                             xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                             x="0px" y="0px"
-                                                             viewBox="0 0 90 90"
-                                                             style="enable-background:new 0 0 90 90;"
-                                                             xml:space="preserve">
-<style type="text/css">
-    .control_circle_left_st0{fill:none;stroke-width:2;stroke-miterlimit:10;}
-    .control_circle_left_st1{fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-</style>
-                    <g >
-                        <circle  class="control_circle_left_st0" cx="45" cy="45" r="38.4"/>
-                        <g >
-                            <line  class="control_circle_left_st1" x1="47.1" y1="22.3" x2="36.5" y2="45"/>
-                            <line  class="control_circle_left_st1" x1="36.5" y1="45" x2="47.1" y2="67.7"/>
-                        </g>
-                    </g>
-</svg></a>
-
-            <a class="carouselControl slickReviewsNext" ><svg version="1.1"
-                                                              xmlns="http://www.w3.org/2000/svg"
-                                                              xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                              x="0px" y="0px"
-                                                              viewBox="0 0 90 90"
-                                                              style="enable-background:new 0 0 90 90;"
-                                                              xml:space="preserve">
-<style type="text/css">
-    .control_circle_right_st0{fill:none;stroke-width:2;stroke-miterlimit:10;}
-    .control_circle_right_st1{fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}
-</style>
-                    <g >
-                        <circle  class="control_circle_right_st0" cx="45" cy="45" r="38.4"/>
-                        <g >
-                            <line  class="control_circle_right_st1" x1="42.9" y1="22.3" x2="53.5" y2="45"/>
-                            <line  class="control_circle_right_st1" x1="53.5" y1="45" x2="42.9" y2="67.7"/>
-                        </g>
-                    </g>
-</svg></a></div>
 
 
 
 
-        <div class="row mt100">
+
+<!--        <div class="row">-->
+<!--            <div class="col-sm-12 text-center">-->
+<!--                <h2 class="head">--><?//= $sections['reviews']['head'] ?><!--</h2>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="reviewsCarWrapper ">-->
+<!--            <div class="reviewsCarousel text-center">-->
+<!--                --><?php //foreach ($sections['reviews']['list_items'] as $review) : ?>
+<!--                    <div class="review_item">-->
+<!---->
+<!--                        <a class="caruMagLink" href="/img/--><?//= $review['image'] ?><!--"><img src="/img/th_--><?//= $review['image'] ?><!--" alt="--><?//= $review['image_alt'] ?><!--" /></a>-->
+<!---->
+<!--                    </div>-->
+<!---->
+<!--                --><?php //endforeach; ?>
+<!---->
+<!--            </div>-->
+<!--            <a class="carouselControl slickReviewsPrev"><svg version="1.1"-->
+<!--                                                             xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                             xmlns:xlink="http://www.w3.org/1999/xlink"-->
+<!--                                                             x="0px" y="0px"-->
+<!--                                                             viewBox="0 0 90 90"-->
+<!--                                                             style="enable-background:new 0 0 90 90;"-->
+<!--                                                             xml:space="preserve">-->
+<!--<style type="text/css">-->
+<!--    .control_circle_left_st0{fill:none;stroke-width:2;stroke-miterlimit:10;}-->
+<!--    .control_circle_left_st1{fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}-->
+<!--</style>-->
+<!--                    <g >-->
+<!--                        <circle  class="control_circle_left_st0" cx="45" cy="45" r="38.4"/>-->
+<!--                        <g >-->
+<!--                            <line  class="control_circle_left_st1" x1="47.1" y1="22.3" x2="36.5" y2="45"/>-->
+<!--                            <line  class="control_circle_left_st1" x1="36.5" y1="45" x2="47.1" y2="67.7"/>-->
+<!--                        </g>-->
+<!--                    </g>-->
+<!--</svg></a>-->
+<!---->
+<!--            <a class="carouselControl slickReviewsNext" ><svg version="1.1"-->
+<!--                                                              xmlns="http://www.w3.org/2000/svg"-->
+<!--                                                              xmlns:xlink="http://www.w3.org/1999/xlink"-->
+<!--                                                              x="0px" y="0px"-->
+<!--                                                              viewBox="0 0 90 90"-->
+<!--                                                              style="enable-background:new 0 0 90 90;"-->
+<!--                                                              xml:space="preserve">-->
+<!--<style type="text/css">-->
+<!--    .control_circle_right_st0{fill:none;stroke-width:2;stroke-miterlimit:10;}-->
+<!--    .control_circle_right_st1{fill:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;}-->
+<!--</style>-->
+<!--                    <g >-->
+<!--                        <circle  class="control_circle_right_st0" cx="45" cy="45" r="38.4"/>-->
+<!--                        <g >-->
+<!--                            <line  class="control_circle_right_st1" x1="42.9" y1="22.3" x2="53.5" y2="45"/>-->
+<!--                            <line  class="control_circle_right_st1" x1="53.5" y1="45" x2="42.9" y2="67.7"/>-->
+<!--                        </g>-->
+<!--                    </g>-->
+<!--</svg></a></div>-->
+<!---->
+
+
+
+<!--        <div class="row mt100">-->
+        <div class="row ">
             <div class="col-sm-6 col-sm-offset-3">
                 <div class="col-xs-6 text-center">
                     <div class="col-sm-12">

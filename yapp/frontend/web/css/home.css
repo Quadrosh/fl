@@ -751,6 +751,7 @@ section {
 #reviewsSection{
     padding-top: 50px;
     padding-bottom: 50px;
+    min-height: 200px;
 }
 #reviewsSection .head{
     margin-bottom: 60px;;

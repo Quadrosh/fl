@@ -54,6 +54,25 @@ class PreordersController extends Controller
         ]);
     }
 
+    public function actionUtm()
+    {
+        Url::remember();
+        $dataProvider = new ActiveDataProvider([
+            'query' => Preorders::find(),
+            'pagination'=> [
+                'pageSize' => 100,
+            ],
+            'sort' =>[
+                'defaultOrder'=> [
+                    'id' => SORT_DESC
+                ]
+            ]
+        ]);
+
+        return $this->render('utm', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
     /**
      * Displays a single Preorders model.
      * @param integer $id

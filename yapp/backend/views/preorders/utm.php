@@ -6,7 +6,7 @@ use yii\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Заявки';
+$this->title = 'Заявки с UTM';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="preorders-index">
@@ -15,9 +15,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>Системное время <?= \Yii::$app->formatter->asDatetime(time(), 'HH:mm dd/MM/yy') ?></p>
 
 
-    <!--    <p>-->
-<!--        --><?//= Html::a('Create Preorders', ['create'], ['class' => 'btn btn-success']) ?>
-<!--    </p>-->
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
@@ -25,26 +22,26 @@ $this->params['breadcrumbs'][] = $this->title;
 //            ['class' => 'yii\grid\SerialColumn'],
 
             'id',
-//            'ip',
+            'ip',
 //            'site',
             'service_type',
-            'operation_id',
-            'platform',
-            'inn',
-            'name',
-            'phone',
-            'email:email',
+//            'operation_id',
+//            'platform',
+//            'inn',
+//            'name',
+//            'phone',
+//            'email:email',
             //'text:ntext',
-            //'from_page',
-            //'utm_source',
-            //'utm_medium',
-            //'utm_campaign',
-            //'utm_term',
-            //'utm_content',
+            'from_page',
+            'utm_source',
+            'utm_medium',
+            'utm_campaign',
+            'utm_term',
+            'utm_content',
             //'manager',
             //'quality',
             //'comment',
-            //'date',
+//            'date',
             [
                 'attribute'=>'date',
                 'value' => function($data)

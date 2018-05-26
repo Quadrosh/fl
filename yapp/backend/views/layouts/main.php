@@ -110,9 +110,8 @@ $this->title = 'Финлидер управление';
             [
                 'label' => 'Заявки',
                 'items' => [
-                    ['label' => 'Предзаказы', 'url' => ['/preorders']],
-//                    ['label' => 'Перезвони мне', 'url' => ['/feedback']],
-//                    ['label' => 'Все заявки с UTM', 'url' => ['/preorders/utm']],
+                    ['label' => 'Заявки', 'url' => ['/preorders']],
+                    ['label' => 'Заявки UTM', 'url' => ['/preorders/utm']],
 //                    ['label' => 'Заявки - качество', 'url' => ['/preorders/lead-quality']],
 //                    ['label' => 'Landing - Stat by day', 'url' => ['/landingpage/stat?days=7']],
 //                    ['label' => 'Landing - визиты', 'url' => ['/visit']],

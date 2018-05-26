@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Delete', ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => 'Точно удалить?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -48,7 +48,15 @@ $this->params['breadcrumbs'][] = $this->title;
             'manager',
             'quality',
             'comment',
-            'date',
+//            'date',
+            [
+                'attribute'=>'date',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['date'], 'HH:mm dd/MM/yy');
+                },
+                'format'=> 'html',
+            ],
             'done',
         ],
     ]) ?>

@@ -6,12 +6,13 @@ use yii\widgets\Pjax;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Visits';
+$this->title = 'Визиты ';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="visit-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
+    <p>Системное время <?= \Yii::$app->formatter->asDatetime(time(), 'HH:mm dd/MM/yy') ?></p>
     <?php Pjax::begin(); ?>
 
     <p>

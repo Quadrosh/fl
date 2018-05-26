@@ -103,6 +103,7 @@ $this->title = 'Финлидер управление';
                     ['label' => 'Pages', 'url' => ['/pages']],
                     ['label' => 'Images', 'url' => ['/imagefiles']],
                     ['label' => 'Sites', 'url' => ['/sites']],
+                    ['label' => 'Visits', 'url' => ['/visit']],
 
                 ],
             ],

@@ -142,7 +142,7 @@ NavBar::end();
             </div>
             <div id="divTopForm" class="col-sm-3 topForm text-center">
                 <?php $form = ActiveForm::begin([
-                    'id' => 'quicpkorder_form_top',
+                    'id' => 'quickorder_form_top',
                     'method' => 'post',
                     'action' => ['/site/order'],
 

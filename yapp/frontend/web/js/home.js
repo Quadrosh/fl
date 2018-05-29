@@ -1,4 +1,8 @@
 $(document).ready(function() {
+
+
+
+
     //var  topForm = $('#quickorder_form_top');
     var  topForm = $('#divTopForm');
     var topFormHighlighted = false;
@@ -113,5 +117,18 @@ $(document).ready(function() {
         overflowY:true,
     });
 
+
+    $("#quickorder_form_top").on("afterValidate", function () {
+        yaCounter49048793.reachGoal("home_top_quickorder");
+        //ga("send","event","feedback","call","call_me");
+    });
+    $("#tz_mainOrderForm").on("afterValidate", function () {
+        yaCounter49048793.reachGoal("tz_preorder");
+        //ga("send","event","feedback","call","call_me");
+    });
+    $("#bg_mainOrderForm").on("afterValidate", function () {
+        yaCounter49048793.reachGoal("bg_preorder");
+        //ga("send","event","feedback","call","call_me");
+    });
 
 });

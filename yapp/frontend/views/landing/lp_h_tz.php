@@ -406,7 +406,7 @@ NavBar::end();
 
                 <?php $form = ActiveForm::begin([
                     'action' =>['/site/order'],
-                    'id' => 'mainOrderForm',
+                    'id' => 'tz_mainOrderForm',
                     'method' => 'post',]); ?>
                 <?= $form->field($preorder, 'utm_source')->hiddenInput(['value'=>$utm['source'], 'id' => 'mainOrderForm-utm_source'])->label(false) ?>
                 <?= $form->field($preorder, 'utm_medium')->hiddenInput(['value'=>$utm['medium'], 'id' => 'mainOrderForm-utm_medium'])->label(false) ?>

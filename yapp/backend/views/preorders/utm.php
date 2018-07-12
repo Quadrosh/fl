@@ -19,9 +19,16 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
-//            ['class' => 'yii\grid\SerialColumn'],
-
             'id',
+            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'attribute'=>'date',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['date'], 'HH:mm dd/MM/yy');
+                },
+                'format'=> 'html',
+            ],
             'ip',
 //            'site',
             'service_type',
@@ -42,17 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'quality',
             //'comment',
 //            'date',
-            [
-                'attribute'=>'date',
-                'value' => function($data)
-                {
-                    return \Yii::$app->formatter->asDatetime($data['date'], 'HH:mm dd/MM/yy');
-                },
-                'format'=> 'html',
-            ],
-            //'done',
 
-            ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 </div>

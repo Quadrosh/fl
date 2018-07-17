@@ -163,7 +163,7 @@ NavBar::end();
                                     <circle class="tender_zaim_svg_sm_st0" cx="39" cy="15.2" r="3"/>
                                 </g>
                             </g>
-</svg></span><?= $sections['top']['head'] ?></h1>
+</svg></span><?= $sections['top']['head'] ?> <a href="#mainOrderSection" class="goOrderButton">Получить</a></h1>
             </div>
             <div class="col-sm-12 text-center">
                 <h2 class="lead c_def"><?= nl2br($sections['top']['lead']) ?></h2>
@@ -428,10 +428,6 @@ NavBar::end();
     <section id="mainOrderSection"
              class="<?= $sections['order']['stylekey'] ?> <?= $sections['order']['section_type'] ?>">
 
-        <div class="alert alert-info fade out" id="bsalert">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            <strong>Info!</strong> This alert box could indicate a neutral informative or action
-        </div>
 
 
         <div class="row">

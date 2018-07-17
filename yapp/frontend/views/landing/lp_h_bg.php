@@ -163,7 +163,7 @@ NavBar::end();
                                 <path class="bank_ganrantee_svg_sm_st0" d="M32.4,58.7V29.6H23v29.1H32.4z M24,30.6h7.4v27.1H24V30.6z"/>
                                 <path class="bank_ganrantee_svg_sm_st0" d="M49.5,58.7V29.6h-8.8v29.1H49.5z M41.8,30.6h6.8v27.1h-6.8V30.6z"/>
                             </g>
-</svg></span><?= $sections['top']['head'] ?></h1>
+</svg></span><?= $sections['top']['head'] ?> <a href="#mainOrderSection" class="goOrderButton">Получить</a></h1>
             </div>
             <div class="col-sm-12 text-center">
                 <h2 class="lead c_def"><?= nl2br($sections['top']['lead']) ?></h2>

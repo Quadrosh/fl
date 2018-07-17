@@ -174,6 +174,36 @@ NavBar::end();
 
 
         </div>
+
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-left alert_box">
+                <div class="col-xs-2">
+                    <svg version="1.1" id="attention_sign"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px"
+                         viewBox="0 0 30 90"
+                         style="enable-background:new 0 0 30 90;"
+                         xml:space="preserve">
+                            <style type="text/css">
+                                .attention_sign_st0{fill:#A7A9AC;}
+                            </style>
+                        <g >
+                            <path  class="attention_sign_st0" d="M9.7,83.9c-1.5-1.4-2.2-3.2-2.2-5.3s0.7-3.9,2.2-5.3c1.5-1.4,3.3-2.2,5.5-2.2
+        c2.2,0,4,0.7,5.3,2.2c1.4,1.4,2.1,3.2,2.1,5.3s-0.7,3.9-2.2,5.3C19,85.3,17.3,86,15.2,86C13,86,11.2,85.3,9.7,83.9z M8.6,4h13.1
+        l-2.2,55.7h-8.8L8.6,4z"/>
+                        </g>
+                        </svg>
+                </div>
+                <div class="col-xs-10">
+                    <p><?= nl2br($sections['top']['extra']) ?></p>
+                </div>
+
+            </div>
+        </div>
+
+
+
         <div class="row">
             <div class="col-sm-1">
             </div>
@@ -397,6 +427,13 @@ NavBar::end();
 
     <section id="mainOrderSection"
              class="<?= $sections['order']['stylekey'] ?> <?= $sections['order']['section_type'] ?>">
+
+        <div class="alert alert-info fade out" id="bsalert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <strong>Info!</strong> This alert box could indicate a neutral informative or action
+        </div>
+
+
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h2 class="head"><?= $sections['order']['head'] ?></h2>
@@ -415,11 +452,11 @@ NavBar::end();
                 <?= $form->field($preorder, 'utm_content')->hiddenInput(['value'=>$utm['content'], 'id' => 'mainOrderForm-utm_content'])->label(false) ?>
 
                 <?= $form->field($preorder, 'service_type')
-                    ->hiddenInput(['value'=>'tender_zaim','id' => 'quickorder_form_top-service_type'])->label(false) ?>
+                    ->hiddenInput(['value'=>'tender_zaim','id' => 'mainOrderForm-service_type'])->label(false) ?>
                 <?= $form->field($preorder, 'site')
-                    ->hiddenInput(['value'=>'finlider.ru','id' => 'quickorder_form_top-site'])->label(false) ?>
+                    ->hiddenInput(['value'=>'finlider.ru','id' => 'mainOrderForm-site'])->label(false) ?>
                 <?= $form->field($preorder, 'from_page')
-                    ->hiddenInput(['value'=>'tender_zaim','id' => 'quickorder_form_top-from_page'])->label(false) ?>
+                    ->hiddenInput(['value'=>'tender_zaim','id' => 'mainOrderForm-from_page'])->label(false) ?>
 
                 <div class="row">
                     <div class="col-sm-6">
@@ -435,22 +472,22 @@ NavBar::end();
                 <div class="row">
                     <div class="col-sm-6">
                         <?= $form->field($preorder, 'inn')
-                            ->textInput(['maxlength' => true, 'id' => 'quickorder_form_top-inn']) ?>
+                            ->textInput(['maxlength' => true, 'id' => 'tz_mainOrderForm-inn']) ?>
                     </div>
                     <div class="col-sm-6">
                         <?= $form->field($preorder, 'name')
-                            ->textInput(['maxlength' => true, 'id' => 'quickorder_form_top-name']) ?>
+                            ->textInput(['maxlength' => true, 'id' => 'mainOrderForm-name']) ?>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-sm-6">
                         <?= $form->field($preorder, 'phone')
-                            ->textInput(['maxlength' => true, 'id' => 'quickorder_form_top-phone']) ?>
+                            ->textInput(['maxlength' => true, 'id' => 'mainOrderForm-phone']) ?>
                     </div>
                     <div class="col-sm-6">
                         <?= $form->field($preorder, 'email')
-                            ->textInput(['maxlength' => true, 'id' => 'quickorder_form_top-email']) ?>
+                            ->textInput(['maxlength' => true, 'id' => 'mainOrderForm-email']) ?>
                     </div>
                 </div>
 

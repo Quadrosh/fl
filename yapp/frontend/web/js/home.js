@@ -131,4 +131,18 @@ $(document).ready(function() {
         //ga("send","event","feedback","call","call_me");
     });
 
+
+
+    $("#tz_mainOrderForm-inn").on('change.yii',function(){
+
+        if ($('#tz_mainOrderForm-inn').val().length > 10) {
+            alert( 'Прием заявок от индивидуальных предпринимателей временно приостановлен.' );
+
+        }
+
+    });
+
+
+
+
 });

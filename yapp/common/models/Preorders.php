@@ -107,6 +107,13 @@ class Preorders extends \yii\db\ActiveRecord
         ];
     }
 
+//    public function is8NumbersOnly($attribute)
+//    {
+//        if (!preg_match('/^[0-9]{8}$/', $this->$attribute)) {
+//            $this->addError($attribute, 'must contain exactly 8 digits.');
+//        }
+//    }
+
     /**
      * @inheritdoc
      */

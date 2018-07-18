@@ -18,12 +18,14 @@ $preorder = new common\models\Preorders();
 NavBar::begin([
     'brandLabel' => '<svg version="1.1"
             class="cpLogo"
+            aria-labelledby="svg_logo_title"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px"
 	        viewBox="0 0 1800 400"
 	        style="enable-background:new 0 0 1800 400;"
 	        xml:space="preserve">
+<title id="svg_logo_title">'.Yii::$app->view->params['meta']['seo_logo'].'</title>
 <style type="text/css">
 	.cpLogo_st0{fill:#58595B;}
 </style>

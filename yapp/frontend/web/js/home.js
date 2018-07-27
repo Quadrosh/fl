@@ -120,15 +120,15 @@ $(document).ready(function() {
 
     $("#quickorder_form_top").on("afterValidate", function () {
         yaCounter49048793.reachGoal("home_top_quickorder");
-        //ga("send","event","feedback","call","call_me");
+        ga("send","event","quickform","click","face_quickform");
     });
     $("#tz_mainOrderForm").on("afterValidate", function () {
         yaCounter49048793.reachGoal("tz_preorder");
-        //ga("send","event","feedback","call","call_me");
+        ga("send","event","preorder","click","tz");
     });
     $("#bg_mainOrderForm").on("afterValidate", function () {
         yaCounter49048793.reachGoal("bg_preorder");
-        //ga("send","event","feedback","call","call_me");
+        ga("send","event","preorder","click","bg");
     });
 
 

@@ -53,14 +53,14 @@ class RbacController extends Controller {
         $auth->add( $adminRule );
         $adminPermission = $auth->createPermission('adminPermission');
         $adminPermission->description = 'Доступ к админке';
-        $adminPermission->ruleName = $statRule->name;
+        $adminPermission->ruleName = $adminRule->name;
         $auth->add( $adminPermission );
 
         $creatorRule = new CreatorRule();
         $auth->add( $creatorRule );
         $creatorPermission = $auth->createPermission('creatorPermission');
         $creatorPermission->description = 'Доступ ко всему';
-        $creatorPermission->ruleName = $statRule->name;
+        $creatorPermission->ruleName = $creatorRule->name;
         $auth->add( $creatorPermission );
 
 

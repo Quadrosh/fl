@@ -5,11 +5,11 @@
 <div class="contact_page">
     <div class="row">
         <div class="col-sm-5 col-sm-offset-2 text-left">
-            <h4 class="head"><?= $page['pagehead'] ?></h4>
+            <h4 class="head">ЦЕНТРАЛЬНЫЙ ОФИС</h4>
             <p><?= nl2br($page['pagedescription'])  ?></p>
         </div>
         <div class="col-sm-5  text-left">
-            <h4 class="head"><?= $page['imagelink'] ?></h4>
+            <h4 class="head">СВЯЗАТЬСЯ С НАМИ</h4>
             <p><?= nl2br($page['text'])  ?></p>
         </div>
 

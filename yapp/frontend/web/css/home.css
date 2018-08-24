@@ -1128,3 +1128,8 @@ footer .right{
 .navbar_motto {
     white-space: nowrap;
 }
+
+.contacts-page h1{
+    /*text-transform: uppercase;*/
+    color: #B1B2B4;
+}

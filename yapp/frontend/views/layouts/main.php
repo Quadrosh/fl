@@ -32,7 +32,7 @@ AppAsset::register($this);
 
     <?php $this->head() ?>
 </head>
-<body>
+<body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
@@ -138,7 +138,10 @@ AppAsset::register($this);
     ?>
 
     <div class="container">
-        <div class="mt100">
+
+        <div class="row mt100 text-center">
+
+            <h1 class="head c_def"><?= Yii::$app->view->params['meta']['pagehead'] ?></h1>
             <?= Alert::widget() ?>
         </div>
 

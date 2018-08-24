@@ -5,7 +5,7 @@ use yii\widgets\DetailView;
 use \yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\LandingSection */
+/* @var $model common\models\LandingSection */
 
 $this->title = $model->id;
 $this->params['breadcrumbs'][] = ['label' => 'Landing Sections', 'url' => ['index']];

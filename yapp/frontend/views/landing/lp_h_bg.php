@@ -204,44 +204,19 @@ NavBar::end();
         <div class="row mt50 more480">
             <div class="col-sm-1">
             </div>
-<!--            --><?php //foreach ($sections['top']['list_items'] as $listItem ) : ?>
-<!--                <div class="col-sm-1">-->
-<!--                    --><?//= Html::img('img/'.$listItem['image'],['class'=>'bankLogo']) ?>
-<!--                </div>-->
-<!--            --><?php //endforeach; ?>
-
-            <div class="col-sm-1 col-xs-2">
-                <?= Html::img('img/'.$sections['top']['list_items'][0]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 col-xs-2">
-                <?= Html::img('img/'.$sections['top']['list_items'][1]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 col-xs-2">
-                <?= Html::img('img/'.$sections['top']['list_items'][2]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 col-xs-2">
-                <?= Html::img('img/'.$sections['top']['list_items'][3]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 col-xs-2">
-                <?= Html::img('img/'.$sections['top']['list_items'][4]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 col-xs-2">
-                <?= Html::img('img/'.$sections['top']['list_items'][5]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 more768">
-                <?= Html::img('img/'.$sections['top']['list_items'][6]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 more768">
-                <?= Html::img('img/'.$sections['top']['list_items'][7]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 more768">
-                <?= Html::img('img/'.$sections['top']['list_items'][8]['image'],['class'=>'bankLogo']) ?>
-            </div>
-            <div class="col-sm-1 more768">
-                <?= Html::img('img/'.$sections['top']['list_items'][9]['image'],['class'=>'bankLogo']) ?>
-            </div>
-
-
+            <?php $i=1; foreach ($sections['top']['list_items'] as $listItem ) : ?>
+                <div class="col-sm-1 <?php
+                    if ($i<7) {
+                        echo 'col-xs-2';
+                    } else {
+                        echo 'more768';
+                    }
+                ?>">
+                    <?= Html::img('img/'.$listItem['image'],[
+                        'class'=>'bankLogo',
+                        'alt'=>$listItem['image_alt']]) ?>
+                </div>
+            <?php $i++; endforeach; ?>
 
 
         </div>

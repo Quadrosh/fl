@@ -29,6 +29,14 @@ frontend\assets\AppAsset::register($this);
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ФинЛидер" />
+    <meta property="og:title" content="<?= Yii::$app->view->params['meta']['title'] ?>" />
+    <meta property="og:description" content="<?= Yii::$app->view->params['meta']['description'] ?>" />
+    <meta property="og:url" content="<?= \yii\helpers\Url::current(['lg'=>null], true) ?>" />
+    <meta property="og:image" content="<?= \yii\helpers\Url::base(true) ?>/img/logo.png" />
+
     <?php $this->head() ?>
     <?php include_once("stat_google.php") ?>
 </head>

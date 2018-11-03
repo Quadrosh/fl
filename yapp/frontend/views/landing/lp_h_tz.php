@@ -211,7 +211,10 @@ NavBar::end();
             </div>
             <?php foreach ($sections['top']['list_items'] as $listItem ) : ?>
                 <div class="col-sm-2">
-                    <?= Html::img('img/'.$listItem['image'],['class'=>'tenderPlatform']) ?>
+                    <?= Html::img('img/'.$listItem['image'],[
+                        'class'=>'tenderPlatform',
+                        'alt'=>$listItem['image_alt'],
+                    ]) ?>
                 </div>
             <?php endforeach; ?>
         </div>

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="lp_h_bg.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lp_h_bg.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6559486">
+            <state vertical-scroll-proportion="0.0">
               <caret line="178" column="44" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
               <folding>
                 <marker date="1541230425439" expanded="true" signature="401:3700" placeholder="..." />
@@ -124,6 +124,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="lp_h_tz.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54662377">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+              <folding>
+                <marker date="1541232713261" expanded="true" signature="401:3753" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="652:687" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="878:915" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="919:1332" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="4523:5779" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="4866:4902" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="5005:5097" placeholder="..." />
+                <marker date="1541232713261" expanded="true" signature="5133:5748" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="lp_h_bg.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_bg.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -188,7 +207,6 @@
         <option value="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/assets/AppAsset.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
         <option value="$PROJECT_DIR$/yapp/console/controllers/RbacController.php" />
         <option value="$PROJECT_DIR$/yapp/common/config/main-local.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/stat_google.php" />
@@ -200,6 +218,7 @@
         <option value="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
       </list>
     </option>
   </component>
@@ -491,7 +510,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="14" y="318" width="1421" height="564" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.225" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
@@ -500,7 +519,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28481013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28481013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -625,13 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -942,7 +954,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6559486">
+        <state vertical-scroll-proportion="0.0">
           <caret line="178" column="44" selection-start-line="178" selection-start-column="44" selection-end-line="178" selection-end-column="44" />
           <folding>
             <marker date="1541230425439" expanded="true" signature="401:3700" placeholder="..." />
@@ -1026,6 +1038,23 @@
             <marker date="1541230425439" expanded="true" signature="23402:23455" placeholder="..." />
             <marker date="1541230425439" expanded="true" signature="23636:23689" placeholder="..." />
             <marker date="1541230425439" expanded="true" signature="23908:23952" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54662377">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding>
+            <marker date="1541232713261" expanded="true" signature="401:3753" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="652:687" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="878:915" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="919:1332" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="4523:5779" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="4866:4902" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="5005:5097" placeholder="..." />
+            <marker date="1541232713261" expanded="true" signature="5133:5748" placeholder="..." />
           </folding>
         </state>
       </provider>

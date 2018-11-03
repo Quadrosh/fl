@@ -24,8 +24,9 @@ NavBar::begin([
             x="0px" y="0px"
 	        viewBox="0 0 1800 400"
 	        style="enable-background:new 0 0 1800 400;"
+	        role="img" aria-labelledby="svg_logo_title"
 	        xml:space="preserve">
-<title id="svg_logo_title">'.Yii::$app->view->params['meta']['seo_logo'].' </title>
+<title id="svg_logo_title">Тендерное финансирование от компании ФинЛидер </title>
 <style type="text/css">
 	.cpLogo_st0{fill:#ffffff;}
 </style>

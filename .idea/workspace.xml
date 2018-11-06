@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/landingpage/index.php" afterPath="$PROJECT_DIR$/yapp/backend/views/landingpage/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/landingpage/view.php" afterPath="$PROJECT_DIR$/yapp/backend/views/landingpage/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/landingsection/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/landingsection/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/LandingPage.php" afterPath="$PROJECT_DIR$/yapp/common/models/LandingPage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/LandingController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/LandingController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" afterPath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,16 +37,55 @@
         <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="357" column="14" selection-start-line="357" selection-start-column="14" selection-end-line="357" selection-end-column="14" />
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="22" />
               <folding>
-                <marker date="1541509609666" expanded="true" signature="401:3754" placeholder="..." />
-                <marker date="1541509609666" expanded="false" signature="652:687" placeholder="..." />
-                <marker date="1541509609666" expanded="true" signature="879:916" placeholder="..." />
-                <marker date="1541509609666" expanded="true" signature="920:1333" placeholder="..." />
-                <marker date="1541509609666" expanded="true" signature="4523:5779" placeholder="..." />
-                <marker date="1541509609666" expanded="false" signature="4866:4902" placeholder="..." />
-                <marker date="1541509609666" expanded="true" signature="5005:5097" placeholder="..." />
-                <marker date="1541509609666" expanded="true" signature="5133:5748" placeholder="..." />
+                <marker date="1541513102718" expanded="true" signature="401:3709" placeholder="..." />
+                <marker date="1541513102718" expanded="false" signature="607:642" placeholder="..." />
+                <marker date="1541513102718" expanded="true" signature="834:871" placeholder="..." />
+                <marker date="1541513102718" expanded="true" signature="875:1288" placeholder="..." />
+                <marker date="1541513102718" expanded="true" signature="4478:5734" placeholder="..." />
+                <marker date="1541513102718" expanded="false" signature="4821:4857" placeholder="..." />
+                <marker date="1541513102718" expanded="true" signature="4960:5052" placeholder="..." />
+                <marker date="1541513102718" expanded="true" signature="5088:5703" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lp_h_bg.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <marker date="1541513183337" expanded="true" signature="401:3708" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="607:642" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="833:870" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="874:1287" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="4478:5734" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="4821:4857" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="4960:5052" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="5088:5703" placeholder="..." />
+                <marker date="1541513183337" expanded="true" signature="11394:11428" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lp_h_tz.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.08947369">
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding>
+                <marker date="1541513183330" expanded="true" signature="401:3708" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="607:642" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="833:870" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="874:1287" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="4478:5734" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="4821:4857" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="4960:5052" placeholder="..." />
+                <marker date="1541513183330" expanded="true" signature="5088:5703" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -62,16 +96,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="m181106_133614_add_created_at_column_to_landing_page_table.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/console/migrations/m181106_133614_add_created_at_column_to_landing_page_table.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="53" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -137,10 +161,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/backend/views/landingpage/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5578947">
+            <state vertical-scroll-proportion="0.0">
               <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
               <folding />
             </state>
@@ -209,8 +233,6 @@
         <option value="$PROJECT_DIR$/yapp/backend/views/pages/view.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/landingsection/view.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/site/contacts.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_home.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_bg.php" />
@@ -218,11 +240,13 @@
         <option value="$PROJECT_DIR$/yapp/backend/views/landingsection/_form.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/controllers/LandingController.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
-        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" />
         <option value="$PROJECT_DIR$/yapp/console/migrations/m181106_133614_add_created_at_column_to_landing_page_table.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/LandingPage.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/landingpage/view.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/landingpage/index.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
       </list>
     </option>
   </component>
@@ -457,46 +481,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -987,23 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-          <folding>
-            <marker date="1541233332858" expanded="true" signature="401:3753" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="652:687" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="878:915" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="919:1332" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="4523:5779" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="4866:4902" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="5005:5097" placeholder="..." />
-            <marker date="1541233332858" expanded="true" signature="5133:5748" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_tz.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1016,24 +983,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="37" column="91" selection-start-line="37" selection-start-column="91" selection-end-line="37" selection-end-column="91" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08994709">
-          <caret line="28" column="74" selection-start-line="28" selection-start-column="74" selection-end-line="28" selection-end-column="74" />
-          <folding>
-            <marker date="1541233332854" expanded="true" signature="401:3753" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="652:687" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="878:915" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="919:1332" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="4523:5779" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="4866:4902" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="5005:5097" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="5133:5748" placeholder="..." />
-            <marker date="1541233332854" expanded="true" signature="11439:11473" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1078,47 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/lp_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="39" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="357" column="14" selection-start-line="357" selection-start-column="14" selection-end-line="357" selection-end-column="14" />
-          <folding>
-            <marker date="1541509609666" expanded="true" signature="401:3754" placeholder="..." />
-            <marker date="1541509609666" expanded="false" signature="652:687" placeholder="..." />
-            <marker date="1541509609666" expanded="true" signature="879:916" placeholder="..." />
-            <marker date="1541509609666" expanded="true" signature="920:1333" placeholder="..." />
-            <marker date="1541509609666" expanded="true" signature="4523:5779" placeholder="..." />
-            <marker date="1541509609666" expanded="false" signature="4866:4902" placeholder="..." />
-            <marker date="1541509609666" expanded="true" signature="5005:5097" placeholder="..." />
-            <marker date="1541509609666" expanded="true" signature="5133:5748" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/console/migrations/m130524_201442_init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/console/migrations/m181106_133614_add_created_at_column_to_landing_page_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/models/LandingPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1145,9 +1053,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/backend/views/landingpage/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5578947">
+        <state vertical-scroll-proportion="0.0">
           <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/console/migrations/m181106_133614_add_created_at_column_to_landing_page_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08947369">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/console/migrations/m130524_201442_init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/lp_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="39" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <marker date="1541513102718" expanded="true" signature="401:3709" placeholder="..." />
+            <marker date="1541513102718" expanded="false" signature="607:642" placeholder="..." />
+            <marker date="1541513102718" expanded="true" signature="834:871" placeholder="..." />
+            <marker date="1541513102718" expanded="true" signature="875:1288" placeholder="..." />
+            <marker date="1541513102718" expanded="true" signature="4478:5734" placeholder="..." />
+            <marker date="1541513102718" expanded="false" signature="4821:4857" placeholder="..." />
+            <marker date="1541513102718" expanded="true" signature="4960:5052" placeholder="..." />
+            <marker date="1541513102718" expanded="true" signature="5088:5703" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <marker date="1541513183337" expanded="true" signature="401:3708" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="607:642" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="833:870" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="874:1287" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="4478:5734" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="4821:4857" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="4960:5052" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="5088:5703" placeholder="..." />
+            <marker date="1541513183337" expanded="true" signature="11394:11428" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08947369">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <marker date="1541513183330" expanded="true" signature="401:3708" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="607:642" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="833:870" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="874:1287" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="4478:5734" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="4821:4857" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="4960:5052" placeholder="..." />
+            <marker date="1541513183330" expanded="true" signature="5088:5703" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

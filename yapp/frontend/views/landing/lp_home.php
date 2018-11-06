@@ -18,7 +18,6 @@ $preorder = new common\models\Preorders();
 NavBar::begin([
     'brandLabel' => '<svg version="1.1"
             class="cpLogo"
-            aria-labelledby="svg_logo_title"
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px"

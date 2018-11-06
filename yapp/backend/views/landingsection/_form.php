@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\LandingSection */
+/* @var $model common\models\LandingSection */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -46,7 +46,7 @@ use yii\widgets\ActiveForm;
         <div class="col-sm-6">
             <?= $form->field($model, 'section_type')->dropDownList([
                 'top' => 'top',
-                'garage' => 'garage',
+                'undertop' => 'undertop',
                 'action_permanent'=>'action_permanent ("Extra" дней до конца)',
                 'services'=>'services',
                 'why_we'=>'why_we',

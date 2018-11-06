@@ -145,7 +145,7 @@ section {
 }
 
 section {
-    min-height: 600px;
+    min-height: 150px;
     overflow: hidden;
 }
 .container > .navbar-header,

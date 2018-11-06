@@ -17,6 +17,8 @@ use Yii;
  * @property string $view
  * @property string $layout
  * @property string $color
+ * @property integer $created_at
+ * @property integer $updated_at
  */
 class LandingPage extends \yii\db\ActiveRecord
 {
@@ -28,6 +30,14 @@ class LandingPage extends \yii\db\ActiveRecord
         return 'landing_page';
     }
 
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => \yii\behaviors\TimestampBehavior::class,
+            ],
+        ];
+    }
     /**
      * @inheritdoc
      */
@@ -37,6 +47,7 @@ class LandingPage extends \yii\db\ActiveRecord
             [['hrurl'],'unique'],
             [['name', 'hrurl', 'seo_logo', 'title', 'description', 'keywords'], 'required'],
             [['seo_logo', 'description', 'keywords'], 'string'],
+            [['created_at', 'updated_at', ], 'integer'],
             [['site','name', 'hrurl', 'title', 'view', 'layout', 'color'], 'string', 'max' => 255],
         ];
     }

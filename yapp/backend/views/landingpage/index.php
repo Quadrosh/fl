@@ -67,6 +67,22 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 ]
             ],
+            [
+                'attribute'=>'created_at',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['created_at'], 'dd/MM/yy HH:mm');
+                },
+                'format'=> 'html',
+            ],
+            [
+                'attribute'=>'updated_at',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['updated_at'], 'dd/MM/yy HH:mm');
+                },
+                'format'=> 'html',
+            ],
         ],
     ]); ?>
     <?php Pjax::end(); ?>

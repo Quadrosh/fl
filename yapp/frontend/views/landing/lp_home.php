@@ -137,10 +137,10 @@ NavBar::end();
         <div class="row">
             <div class="col-sm-9  text-center">
                 <div class="col-sm-12">
-                    <h1 class="head c_def"><?= $sections['top']['head'] ?></h1>
+                    <p class="head c_def"><?= $sections['top']['head'] ?></p>
                 </div>
                 <div class="col-sm-12">
-                    <h2 class="lead c_def"><?= nl2br($sections['top']['lead']) ?></h2>
+                    <p class="lead c_def"><?= nl2br($sections['top']['lead']) ?></p>
                 </div>
             </div>
             <div id="divTopForm" class="col-sm-3 topForm text-center">
@@ -202,6 +202,18 @@ NavBar::end();
 
     </section>
 
+<!--    1 undertop -->
+    <section id="servicesSection"
+             class="<?= $sections['undertop']['stylekey'] ?> <?= $sections['undertop']['section_type'] ?>">
+        <div class="row">
+            <div class="col-sm-12  text-center">
+                <h1 class="head"><?= $sections['undertop']['head'] ?></h1>
+            </div>
+            <div class="col-sm-8 col-sm-offset-2 text-left">
+                <p class="head"><?= nl2br($sections['undertop']['text']) ?></p>
+            </div>
+        </div>
+    </section>
 
 
     <!--Услуги-->
@@ -345,7 +357,15 @@ NavBar::end();
         </div>
     </section>
 
-
+    <!--    call2action -->
+    <section id="call2actionSection"
+             class="<?= $sections['call2action']['stylekey'] ?> <?= $sections['call2action']['section_type'] ?>">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-left">
+                <p class="head"><?= nl2br($sections['call2action']['text']) ?></p>
+            </div>
+        </div>
+    </section>
     <!--    Reviews   -->
 
     <section

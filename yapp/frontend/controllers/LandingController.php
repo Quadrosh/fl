@@ -178,6 +178,9 @@ class LandingController extends Controller
             if ($allSection['section_type']=='top') {
                 $sections['top'] = $allSection;
             }
+            elseif ($allSection['section_type']=='undertop'){
+                $sections['undertop'] = $allSection;
+            }
             elseif ($allSection['section_type']=='garage'){
                 $sections['garage'] = $allSection;
             }

@@ -1,0 +1,289 @@
+html,
+body {
+    height: 100%;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mt25{
+    margin-top: 25px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.mt80{
+    margin-top: 80px;
+}
+.mt100{
+    margin-top: 100px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+@media only screen and (max-width : 767px) {
+    .mbxs50 {
+        margin-bottom: 50px;
+    }
+}
+.w100{
+    max-width: 100%;
+}
+
+.w50perSm{
+    width:50%;
+}
+@media only screen and (max-width : 767px) {
+    .w50perSm {
+        width:100%;
+    }
+}
+.w50per{
+    width:50%;
+}
+.w30per{
+    width:30%;
+}
+.w30perCenter{
+    width:30%;
+    display: block;
+    position: relative;
+    margin-left:35%;
+    margin-bottom: 5px;
+}
+.w20per{
+    width:20%;
+}
+.w10per{
+    width:10%;
+}
+
+.article_front_1 h1{
+    font-size: 42px;
+    color: #5f6973;
+}
+.article_front_1 h3{
+    font-size: 18px;
+}
+.text-center {
+    text-align: center;
+    display: block;
+}
+
+
+/* projects */
+.carouselControl {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+
+}
+.carouselWrapper {
+    position: relative;
+}
+.asb-slick_banner_1 .carouselControl {
+    top:148px;
+    margin-top: -40px;
+}
+@media only screen and (max-width : 991px) {
+    .asb-slick_banner_1 .carouselControl {
+        top:118px;
+    }
+}
+
+.carouselControl svg{
+    width: 80px;
+    height: 80px;
+}
+.slickPrev,
+.asb-slick_banner_1_slickPrev{
+    left:10px;
+}
+.slickNext,
+.asb-slick_banner_1_slickNext{
+    right:10px;
+}
+
+.bright .carouselControl svg{
+    /*stroke:#0F63A4;*/
+    /*stroke:#30353b;*/
+    /*stroke: #ffffff;*/
+    fill: #ffffff;
+}
+.bright .carouselControl svg:hover{
+    /*stroke:#838e9a;*/
+    fill:#838e9a;
+}
+
+.dark .carouselControl svg {
+    /*stroke:#fff;*/
+    stroke:#838e9a;
+}
+.dark .carouselControl svg:hover {
+    /*stroke:#838e9a;*/
+    stroke:#fff;
+}
+.carousel_item .abtn{
+    position: absolute;
+    left:30px;
+    top:100px;
+    z-index:1000;
+}
+.carousel_item .rbtn{
+    position: relative;
+    left: -20vw;
+    top: -100px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 50px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+}
+.slick-dots li  {
+
+    display: inline-block;
+    margin: 5px;
+
+}
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 1px solid white;
+    outline: none;
+    background: transparent;
+    border-radius: 50px;
+}
+/*.slick-dots li button:hover {*/
+    /*border: 1px solid #838e9a;*/
+/*}*/
+
+.slick-dots li.slick-active button {
+    opacity: .75;
+    background: white;
+    color: black;
+}
+.blue_circle {
+    background-color: #0090d7;
+    /*background: url(/img/b-header__background.png) 0 0 repeat-x scroll;*/
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50px;
+    width:auto;
+    font-size: 26px;
+    line-height: 1.1;
+}
+.text_blue_center {
+    color: #0090d7;
+    text-align: center;
+}
+.text_small{
+    font-size:0.75em;
+}
+@media only screen and (max-width : 767px) {
+    .text_small {
+        font-size:1em;
+    }
+}
+
+
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 17px;
+}
+h6 {
+    font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6 {
+    color: #5f6973;
+}
+.asb-header_on_img .header {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 5px;
+
+}
+.asb-header_on_img .image_box {
+
+}
+@media only screen and (max-width : 767px) {
+    .asb-header_on_img .image_box {
+        width: 300px;
+        position: relative;
+        left: 50%;
+        margin-left: -150px;
+    }
+}
+
+.grey {
+    background-color: #f5f5f5;
+    color: #333;
+}
+.box {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.float-right{
+    float:right;
+    margin-left: 10px;
+}
+.float-left{
+    float:left;
+    margin-right: 10px;
+}
+
+section::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+    max-width: 100%;
+}
+.article_view  {
+    font-size: 13px;
+    /*color:#5f6973;*/
+    color:#444;
+}
+.price-calculator .box {
+    /*background-color: #ececec;*/
+    background-color: #f5f5f5;
+    border: 1px #ececec solid;
+}
+.asbi-v_svg_head_text .svg svg {
+    width: 80px;
+    height: 80px;
+}

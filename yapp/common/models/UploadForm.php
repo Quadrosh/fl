@@ -15,13 +15,16 @@ class UploadForm  extends Model
      * @var UploadedFile
      */
     public $imageFile;
+    public $jsonFile;
     public $toModelId;
     public $toModelProperty;
 
     public function rules()
     {
         return [
-            [['imageFile'], 'file', 'skipOnEmpty' => false, 'extensions' => 'png, jpg, svg'],
+            [['imageFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'png, jpg, svg'],
+            [['jsonFile'], 'file', 'skipOnEmpty' => true, 'extensions' => 'json'],
+
         ];
     }
 

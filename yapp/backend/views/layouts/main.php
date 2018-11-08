@@ -100,10 +100,22 @@ $this->title = 'Финлидер управление';
             [
                 'label' => 'lib',
                 'items' => [
-                    ['label' => 'Pages', 'url' => ['/pages']],
+//                    ['label' => 'Pages', 'url' => ['/pages']],
                     ['label' => 'Images', 'url' => ['/imagefiles']],
                     ['label' => 'Sites', 'url' => ['/sites']],
                     ['label' => 'Visits', 'url' => ['/visit']],
+                    ['label' => 'Article Section', 'url' => ['/article-section']],
+                    ['label' => 'Article Section Block', 'url' => ['/article-section-block']],
+                    ['label' => 'Article Section Block Item', 'url' => ['/article-section-block-item']],
+
+                ],
+            ],
+            [
+                'label' => 'контент',
+                'items' => [
+                    ['label' => 'Article', 'url' => ['/article']],
+                    ['label' => 'Pages', 'url' => ['/pages']],
+                    ['label' => 'Menu Nested Sets', 'url' => ['/menu']],
 
                 ],
             ],

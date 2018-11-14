@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/models/CalculatorForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_phone-form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-10_icons_in_footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-full_width.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_icon_in_head.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/widgets/MainBgCalculatorWidget.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/widgets/views/main-bg-calculator.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/console/migrations/m180928_160444_add_timecode_column_to_pages_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/frontend/assets/ArticleAsset.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/frontend/views/layouts/article.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/frontend/views/layouts/article_no_footer.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-price_calculator.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-calculator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/finlider.iml" afterPath="$PROJECT_DIR$/.idea/finlider.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/assets/AppAsset.php" afterPath="$PROJECT_DIR$/yapp/backend/assets/AppAsset.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/config/main.php" afterPath="$PROJECT_DIR$/yapp/backend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/yapp/backend/controllers/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/controllers/ArticleSectionBlockController.php" afterPath="$PROJECT_DIR$/yapp/backend/controllers/ArticleSectionBlockController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/controllers/PagesController.php" afterPath="$PROJECT_DIR$/yapp/backend/controllers/PagesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article-section-block/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article-section-block/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article-section/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article-section/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article/view.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/yapp/backend/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/menu/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/menu/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/pages/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/pages/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/pages/index.php" afterPath="$PROJECT_DIR$/yapp/backend/views/pages/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/pages/view.php" afterPath="$PROJECT_DIR$/yapp/backend/views/pages/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/web/css/site.css" afterPath="$PROJECT_DIR$/yapp/backend/web/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/css/article.css" afterPath="$PROJECT_DIR$/yapp/common/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/js/article.js" afterPath="$PROJECT_DIR$/yapp/common/js/article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlock.php" afterPath="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlock.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Imagefiles.php" afterPath="$PROJECT_DIR$/yapp/common/models/Imagefiles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Pages.php" afterPath="$PROJECT_DIR$/yapp/common/models/Pages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Preorders.php" afterPath="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/UploadForm.php" afterPath="$PROJECT_DIR$/yapp/common/models/UploadForm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_preorder_form.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_preorder_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_2.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_3.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_4.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-v_svg_head_text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-v_svg_head_text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-head-descr-blocks-text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-head-descr-blocks-text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_float_in_text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_float_in_text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/config/main.php" afterPath="$PROJECT_DIR$/yapp/frontend/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_bg.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/landing/lp_h_tz.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" afterPath="$PROJECT_DIR$/yapp/frontend/web/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/web/css/site.css" afterPath="$PROJECT_DIR$/yapp/frontend/web/css/site.css" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -190,11 +139,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.31793478">
+            <state vertical-scroll-proportion="0.0">
               <caret line="203" column="18" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="params-local.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/backend/config/params-local.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bank.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yapp/common/models/Bank.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5645757">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -429,6 +398,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -452,6 +461,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -530,16 +561,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="19" y="412" width="1421" height="488" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942857" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942857" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24725275" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24494949" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -664,20 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.039534885">
           <caret line="31" column="17" selection-start-line="28" selection-start-column="46" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/common/models/Bank.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.039534885">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/backend/config/params-local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1036,8 +1053,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31793478">
+        <state vertical-scroll-proportion="0.0">
           <caret line="203" column="18" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/backend/config/params-local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/common/models/Bank.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5645757">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
           <folding />
         </state>
       </provider>

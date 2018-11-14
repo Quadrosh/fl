@@ -3,7 +3,7 @@
 namespace backend\controllers;
 
 use Yii;
-use common\models\bank;
+use common\models\Bank;
 use yii\data\ActiveDataProvider;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -38,7 +38,7 @@ class BankController extends BackController
     {
         Url::remember();
         $dataProvider = new ActiveDataProvider([
-            'query' => bank::find(),
+            'query' => Bank::find(),
         ]);
 
         return $this->render('index', [
@@ -67,7 +67,7 @@ class BankController extends BackController
      */
     public function actionCreate()
     {
-        $model = new bank();
+        $model = new Bank();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(Url::previous());
@@ -121,7 +121,7 @@ class BankController extends BackController
      */
     protected function findModel($id)
     {
-        if (($model = bank::findOne($id)) !== null) {
+        if (($model = Bank::findOne($id)) !== null) {
             return $model;
         }
 

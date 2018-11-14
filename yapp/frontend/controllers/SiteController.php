@@ -313,42 +313,42 @@ class SiteController extends Controller
 
     }
 
+//  // OLD  ORDER
 
-
-    public function actionOrder()
-    {
-        $preorder = new Preorders();
-        if ($preorder->load(Yii::$app->request->post())) {
-            $spamOrders = Preorders::find()
-                ->where(['ip'=>Yii::$app->request->userIP])
-                ->andWhere(['>','date',time()-86400])
-                ->all();
-
-            if ( count($spamOrders)  > 5) {
-                Yii::$app->session->setFlash('error', 'Вы достигли лимита отправляемых заявок. <br> Свяжитесь с нами по телефону');
-                return $this->redirect(Url::previous());
-            }
-            $preorder['site'] = Yii::$app->params['site'];
-            $preorder['ip'] = Yii::$app->request->userIP;
-            if ($preorder->save()) {
-                if ($preorder->sendEmail( Yii::$app->params['site'].': Заявка')) {
-                    Yii::$app->session->setFlash('success', 'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
-                    return $this->redirect(Url::previous());
-                } else {
-                    Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз.');
-                    return $this->redirect(Url::previous());
-                }
-            } else {
-                Yii::$app->session->setFlash('error', 'Ошибка сохранения заявки. Оформите заявку по телефону.');
-                return $this->redirect(Url::previous());
-            }
-        } else {
-
-            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@finlider.ru или оформите заявку по телефону');
-            return $this->redirect(Url::previous());
-        }
-
-    }
+//    public function actionOrder()
+//    {
+//        $preorder = new Preorders();
+//        if ($preorder->load(Yii::$app->request->post())) {
+//            $spamOrders = Preorders::find()
+//                ->where(['ip'=>Yii::$app->request->userIP])
+//                ->andWhere(['>','date',time()-86400])
+//                ->all();
+//
+//            if ( count($spamOrders)  > 5) {
+//                Yii::$app->session->setFlash('error', 'Вы достигли лимита отправляемых заявок. <br> Свяжитесь с нами по телефону');
+//                return $this->redirect(Url::previous());
+//            }
+//            $preorder['site'] = Yii::$app->params['site'];
+//            $preorder['ip'] = Yii::$app->request->userIP;
+//            if ($preorder->save()) {
+//                if ($preorder->sendEmail( Yii::$app->params['site'].': Заявка')) {
+//                    Yii::$app->session->setFlash('success', 'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
+//                    return $this->redirect(Url::previous());
+//                } else {
+//                    Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз.');
+//                    return $this->redirect(Url::previous());
+//                }
+//            } else {
+//                Yii::$app->session->setFlash('error', 'Ошибка сохранения заявки. Оформите заявку по телефону.');
+//                return $this->redirect(Url::previous());
+//            }
+//        } else {
+//
+//            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@finlider.ru или оформите заявку по телефону');
+//            return $this->redirect(Url::previous());
+//        }
+//
+//    }
 
     public function getUtm()
     {
@@ -403,5 +403,13 @@ class SiteController extends Controller
 
         return $utm;
 
+    }
+    public function actionOrder()
+    {
+        if (Preorders::placeOrder(Yii::$app->request->post(),Yii::$app->request->userIP)) {
+            return $this->redirect(Url::previous());
+        } else {
+            return $this->redirect(Url::previous());
+        }
     }
 }

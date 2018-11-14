@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="74" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
+            <state vertical-scroll-proportion="-4.9557195">
+              <caret line="327" column="120" selection-start-line="327" selection-start-column="120" selection-end-line="327" selection-end-column="120" />
               <folding />
             </state>
           </provider>
@@ -123,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -159,11 +161,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bank.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bank.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/common/models/Bank.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5645757">
+            <state vertical-scroll-proportion="0.0">
               <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BankController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/BankController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -262,7 +274,6 @@
         <option value="$PROJECT_DIR$/yapp/backend/views/bank/_form.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/bank/view.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/calc-factor/view.php" />
-        <option value="$PROJECT_DIR$/yapp/backend/controllers/BankController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/CalcController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/CalcFactorController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/calc/index.php" />
@@ -289,8 +300,6 @@
         <option value="$PROJECT_DIR$/yapp/backend/views/article-section-block/_form.php" />
         <option value="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-10_icons_in_footer.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/config/main.php" />
-        <option value="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/assets/ArticleAsset.php" />
         <option value="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_icon_in_head.php" />
         <option value="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_float_in_text.php" />
@@ -308,6 +317,9 @@
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/article_no_footer.php" />
         <option value="$PROJECT_DIR$/yapp/common/css/article.css" />
         <option value="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" />
+        <option value="$PROJECT_DIR$/yapp/backend/controllers/BankController.php" />
+        <option value="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
       </list>
     </option>
   </component>
@@ -482,7 +494,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -633,20 +671,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yapp/backend/views/bank/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05059524">
-          <caret line="48" column="93" selection-start-line="48" selection-start-column="89" selection-end-line="48" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/backend/views/calc-factor/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05059524">
-          <caret line="50" column="93" selection-start-line="50" selection-start-column="93" selection-end-line="50" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/backend/views/landingsection/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05059524">
@@ -826,14 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="74" selection-start-line="102" selection-start-column="74" selection-end-line="102" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/assets/ArticleAsset.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -982,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/widgets/views/main-bg-calculator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1067,10 +1075,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/BackController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/models/Bank.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5645757">
+        <state vertical-scroll-proportion="0.0">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/BankController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.9557195">
+          <caret line="327" column="120" selection-start-line="327" selection-start-column="120" selection-end-line="327" selection-end-column="120" />
           <folding />
         </state>
       </provider>

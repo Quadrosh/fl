@@ -14,6 +14,9 @@ use \yii\widgets\ActiveForm;
 
 $breadcrumbs = new \common\models\Breadcrumbs();
 $this->params['breadcrumbs'] = $breadcrumbs->construct($model->cat_ids);
+
+
+
 ?>
 
 <div class="article_view">

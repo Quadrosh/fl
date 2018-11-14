@@ -36,22 +36,22 @@ $preorder = new \common\models\Preorders();
             'id' => 'quickorder-form-section'.$section->id.'-name'])->label(false) ?>
 
     <?= $form->field($preorder, 'name',['template' => '{input}', 'options' => ['tag' => false]])
-        ->hiddenInput(['value'=>'Noname from short form',
+        ->hiddenInput(['value'=>'-',
             'id' => 'quickorder-form-section'.$section->id.'-name'])->label(false) ?>
     <?= $form->field($preorder, 'utm_source',['template' => '{input}', 'options' => ['tag' => false]])
-        ->hiddenInput(['value'=>isset($utm['source'])?$utm['source']:null,
+        ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_source'),
             'id' => 'quickorder-form-section'.$section->id.'-utm_sourse'])->label(false) ?>
     <?= $form->field($preorder, 'utm_medium',['template'=>'{input}','options'=>['tag'=>false]])
-        ->hiddenInput(['value'=>isset($utm['medium'])?$utm['medium']:null,
+        ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_medium'),
             'id' => 'quickorder-form-section'.$section->id.'-utm_medium'])->label(false) ?>
     <?= $form->field($preorder, 'utm_campaign',['template'=>'{input}','options'=>['tag'=>false]])
-        ->hiddenInput(['value'=>isset($utm['campaign'])?$utm['campaign']:null,
+        ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_campaign'),
             'id' => 'quickorder-form-section'.$section->id.'-utm_campaign'])->label(false) ?>
     <?= $form->field($preorder, 'utm_term',['template' => '{input}', 'options' => ['tag' => false]])
-        ->hiddenInput(['value'=>isset($utm['term'])?$utm['term']:null,
+        ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_term'),
             'id' => 'quickorder-form-section'.$section->id.'-utm_term'])->label(false) ?>
     <?= $form->field($preorder, 'utm_content',['template' => '{input}', 'options' => ['tag' => false]])
-        ->hiddenInput(['value'=>isset($utm['content'])?$utm['content']:null,
+        ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_content'),
             'id' => 'quickorder-form-section'.$section->id.'-utm_content'])->label(false) ?>
 
     <?= $form->field($preorder, 'from_page',['template' => '{input}', 'options' => ['tag' => false]])

@@ -75,4 +75,44 @@ class Visit extends \yii\db\ActiveRecord
             'created_at' => 'Created At',
         ];
     }
+
+
+    public static function getUtm($key)
+    {
+        if (Yii::$app->request->get($key)) {
+            return Yii::$app->request->get($key);
+        } else {
+            if (isset(Yii::$app->session[$key])) {
+                return Yii::$app->session[$key];
+            } else {
+                return null;
+            }
+        }
+    }
+
+    public static function setUtmVisit()
+    {
+        $keys = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'];
+        $visit = new self;
+        foreach ($keys as $key) {
+            if ( Yii::$app->request->get($key)) {
+                $value = Yii::$app->request->get($key);
+                Yii::$app->session[$key] = $value;
+                $visit[$key]=$value;
+            }
+        }
+
+        if (!isset(Yii::$app->session['visited'])) {
+            $visit['ip'] = Yii::$app->request->userIP;
+            $visit['site'] = Yii::$app->params['site'];
+            $visit['lp_hrurl'] = '';
+            $visit['url'] = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+            $visit['qnt']=1;
+            $visit->save();
+            Yii::$app->session['visited'] = true;
+        }
+
+    }
+
+
 }

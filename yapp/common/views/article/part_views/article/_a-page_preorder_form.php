@@ -149,15 +149,15 @@ $preorder = new \common\models\Preorders();
                 'method' => 'post',]); ?>
 
             <?= $form->field($preorder, 'utm_source')->hiddenInput([
-                'value'=>isset($utm['source'])?$utm['source']:null, 'id' => 'mainOrderForm-utm_source'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_source'), 'id' => 'mainOrderForm-utm_source'])->label(false) ?>
             <?= $form->field($preorder, 'utm_medium')->hiddenInput([
-                'value'=>isset($utm['medium'])?$utm['medium']:null, 'id' => 'mainOrderForm-utm_medium'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_medium'), 'id' => 'mainOrderForm-utm_medium'])->label(false) ?>
             <?= $form->field($preorder, 'utm_campaign')->hiddenInput([
-                'value'=>isset($utm['campaign'])?$utm['campaign']:null, 'id' => 'mainOrderForm-utm_campaign'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_campaign'), 'id' => 'mainOrderForm-utm_campaign'])->label(false) ?>
             <?= $form->field($preorder, 'utm_term')->hiddenInput([
-                'value'=>isset($utm['term'])?$utm['term']:null, 'id' => 'mainOrderForm-utm_term'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_term'), 'id' => 'mainOrderForm-utm_term'])->label(false) ?>
             <?= $form->field($preorder, 'utm_content')->hiddenInput([
-                'value'=>isset($utm['content'])?$utm['content']:null, 'id' => 'mainOrderForm-utm_content'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_content'), 'id' => 'mainOrderForm-utm_content'])->label(false) ?>
 
             <?= $form->field($preorder, 'service_type')
                 ->hiddenInput(['value'=>\common\models\Preorders::SERVICE_TYPE_BG,'id' => 'quickorder_form_top-service_type'])->label(false) ?>

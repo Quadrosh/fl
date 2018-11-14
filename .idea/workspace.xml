@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Preorders.php" afterPath="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Visit.php" afterPath="$PROJECT_DIR$/yapp/common/models/Visit.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_preorder_form.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_preorder_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_phone-form.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_phone-form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" afterPath="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/article/article_view.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/article/article_view.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,149 +37,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.9557195">
-              <caret line="327" column="120" selection-start-line="327" selection-start-column="120" selection-end-line="327" selection-end-column="120" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/article.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="163" column="43" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
-              <folding>
-                <marker date="1542210190849" expanded="true" signature="1799:5103" placeholder="..." />
-                <marker date="1542210190849" expanded="false" signature="2050:2085" placeholder="..." />
-                <marker date="1542210190849" expanded="true" signature="2228:2265" placeholder="..." />
-                <marker date="1542210190849" expanded="true" signature="2269:2682" placeholder="..." />
-                <marker date="1542210190849" expanded="true" signature="6031:7287" placeholder="..." />
-                <marker date="1542210190849" expanded="false" signature="6374:6410" placeholder="..." />
-                <marker date="1542210190849" expanded="true" signature="6513:6605" placeholder="..." />
-                <marker date="1542210190849" expanded="true" signature="6641:7256" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_as-full_width.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-full_width.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/main.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="170" column="22" selection-start-line="170" selection-start-column="22" selection-end-line="170" selection-end-column="22" />
-              <folding>
-                <marker date="1542210076746" expanded="true" signature="1853:5152" placeholder="..." />
-                <marker date="1542210076746" expanded="false" signature="2104:2139" placeholder="..." />
-                <marker date="1542210076746" expanded="true" signature="2277:2314" placeholder="..." />
-                <marker date="1542210076746" expanded="true" signature="2318:2731" placeholder="..." />
-                <marker date="1542210076746" expanded="true" signature="6080:7336" placeholder="..." />
-                <marker date="1542210076746" expanded="false" signature="6423:6459" placeholder="..." />
-                <marker date="1542210076746" expanded="true" signature="6562:6654" placeholder="..." />
-                <marker date="1542210076746" expanded="true" signature="6690:7305" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lp_h_bg.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/lp_h_bg.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/ArticleController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="225" column="4" selection-start-line="225" selection-start-column="4" selection-end-line="230" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleAsset.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/assets/ArticleAsset.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/SiteController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="89" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main-bg-calculator.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/common/widgets/views/main-bg-calculator.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="203" column="18" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.276808">
+              <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="params-local.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/backend/config/params-local.php">
+      <file leaf-file-name="_a-page_preorder_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/part_views/article/_a-page_preorder_form.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="43" />
+              <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bank.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/common/models/Bank.php">
+      <file leaf-file-name="_phone-form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/part_views/article/_phone-form.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+              <caret line="41" column="74" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BankController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/backend/controllers/BankController.php">
+      <file leaf-file-name="Preorders.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+              <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article_view.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/article_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.5925927">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Visit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/common/models/Visit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -201,54 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/backend/views/article-section/_form.php">
+      <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="47" selection-start-line="137" selection-start-column="47" selection-end-line="137" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/backend/views/article/_form.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="126" column="41" selection-start-line="126" selection-start-column="41" selection-end-line="126" selection-end-column="41" />
-              <folding>
-                <marker date="1542213212713" expanded="true" signature="1446:1484" placeholder="..." />
-                <marker date="1542213212713" expanded="true" signature="1580:1618" placeholder="..." />
-                <marker date="1542213212713" expanded="true" signature="1710:1735" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="article_no_footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/article_no_footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding>
-                <marker date="1542213999026" expanded="true" signature="1799:5103" placeholder="..." />
-                <marker date="1542213999026" expanded="false" signature="2050:2085" placeholder="..." />
-                <marker date="1542213999026" expanded="true" signature="2228:2265" placeholder="..." />
-                <marker date="1542213999026" expanded="true" signature="2269:2682" placeholder="..." />
-                <marker date="1542213999026" expanded="true" signature="6031:7287" placeholder="..." />
-                <marker date="1542213999026" expanded="false" signature="6374:6410" placeholder="..." />
-                <marker date="1542213999026" expanded="true" signature="6513:6605" placeholder="..." />
-                <marker date="1542213999026" expanded="true" signature="6641:7256" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/frontend/web/css/site.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="123" column="1" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+              <caret line="390" column="8" selection-start-line="390" selection-start-column="8" selection-end-line="401" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -269,10 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/yapp/console/migrations/m181112_170740_create_bank_table.php" />
-        <option value="$PROJECT_DIR$/yapp/common/models/Bank.php" />
-        <option value="$PROJECT_DIR$/yapp/backend/views/bank/_form.php" />
-        <option value="$PROJECT_DIR$/yapp/backend/views/bank/view.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/calc-factor/view.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/CalcController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/CalcFactorController.php" />
@@ -288,7 +157,6 @@
         <option value="$PROJECT_DIR$/yapp/common/js/article.js" />
         <option value="$PROJECT_DIR$/yapp/common/models/Calc.php" />
         <option value="$PROJECT_DIR$/yapp/backend/config/params-local.php" />
-        <option value="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
         <option value="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_phone-form.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/UploadForm.php" />
         <option value="$PROJECT_DIR$/yapp/backend/web/css/site.css" />
@@ -316,10 +184,15 @@
         <option value="$PROJECT_DIR$/yapp/backend/views/article/_form.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/article_no_footer.php" />
         <option value="$PROJECT_DIR$/yapp/common/css/article.css" />
-        <option value="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/BankController.php" />
         <option value="$PROJECT_DIR$/yapp/backend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/yapp/common/models/Preorders.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/article/part_views/article/_phone-form.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/article/article_view.php" />
+        <option value="$PROJECT_DIR$/yapp/common/models/Visit.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/article/part_views/article/_a-page_preorder_form.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php" />
       </list>
     </option>
   </component>
@@ -334,9 +207,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="19" />
-    <option name="y" value="412" />
+    <option name="y" value="282" />
     <option name="width" value="1421" />
-    <option name="height" value="488" />
+    <option name="height" value="618" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -393,6 +266,136 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="part_views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="part_views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="article" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -598,17 +601,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="412" width="1421" height="488" extended-state="0" />
-    <editor active="false" />
+    <frame x="19" y="282" width="1421" height="618" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2942857" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22285715" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.24945612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24494949" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18441065" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -662,7 +665,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/yapp/backend/views/article/part_views/article/_a-page_preorder_form.php</url>
-          <line>52</line>
+          <line>47</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -671,28 +674,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yapp/backend/views/landingsection/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05059524">
-          <caret line="15" column="222" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="222" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/common/models/Calc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31627908">
-          <caret line="24" column="20" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/common/js/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4348837">
-          <caret line="54" column="28" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/widgets/MainBgCalculatorWidget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5139535">
@@ -773,14 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33188722">
           <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036876354">
-          <caret line="167" column="60" selection-start-line="167" selection-start-column="60" selection-end-line="167" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -924,14 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/article_view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.61513156">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -962,23 +927,6 @@
         <state vertical-scroll-proportion="1.1743422">
           <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="43" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
-          <folding>
-            <marker date="1542210190849" expanded="true" signature="1799:5103" placeholder="..." />
-            <marker date="1542210190849" expanded="false" signature="2050:2085" placeholder="..." />
-            <marker date="1542210190849" expanded="true" signature="2228:2265" placeholder="..." />
-            <marker date="1542210190849" expanded="true" signature="2269:2682" placeholder="..." />
-            <marker date="1542210190849" expanded="true" signature="6031:7287" placeholder="..." />
-            <marker date="1542210190849" expanded="false" signature="6374:6410" placeholder="..." />
-            <marker date="1542210190849" expanded="true" signature="6513:6605" placeholder="..." />
-            <marker date="1542210190849" expanded="true" signature="6641:7256" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,14 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="203" column="18" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/backend/config/params-local.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1107,10 +1047,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/article.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="163" column="43" selection-start-line="163" selection-start-column="43" selection-end-line="163" selection-end-column="43" />
+          <folding>
+            <marker date="1542210190849" expanded="true" signature="1799:5103" placeholder="..." />
+            <marker date="1542210190849" expanded="false" signature="2050:2085" placeholder="..." />
+            <marker date="1542210190849" expanded="true" signature="2228:2265" placeholder="..." />
+            <marker date="1542210190849" expanded="true" signature="2269:2682" placeholder="..." />
+            <marker date="1542210190849" expanded="true" signature="6031:7287" placeholder="..." />
+            <marker date="1542210190849" expanded="false" signature="6374:6410" placeholder="..." />
+            <marker date="1542210190849" expanded="true" signature="6513:6605" placeholder="..." />
+            <marker date="1542210190849" expanded="true" signature="6641:7256" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/article_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.5925927">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.9557195">
-          <caret line="327" column="120" selection-start-line="327" selection-start-column="120" selection-end-line="327" selection-end-column="120" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="390" column="8" selection-start-line="390" selection-start-column="8" selection-end-line="401" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/common/models/Visit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/common/models/Preorders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/part_views/article/_phone-form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="74" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/article/part_views/article/_a-page_preorder_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="160" column="0" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/controllers/ArticleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.276808">
+          <caret line="102" column="23" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
           <folding />
         </state>
       </provider>

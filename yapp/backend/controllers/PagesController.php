@@ -55,8 +55,11 @@ class PagesController extends BackController
     {
         $model = new Pages();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->load(Yii::$app->request->post())) {
+            $model->cat_ids = json_encode($model->categories);
+            if ($model->save()) {
+                return $this->redirect(Url::previous());
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -73,14 +76,19 @@ class PagesController extends BackController
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model->categories = json_decode($model->cat_ids);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(Url::previous());
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+
+        if ($model->load(Yii::$app->request->post()) ) {
+            $model->cat_ids = json_encode($model->categories);
+            if ($model->save()) {
+                return $this->redirect(Url::previous());
+            }
         }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
 
     /**

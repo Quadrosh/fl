@@ -27,8 +27,58 @@ $this->params['breadcrumbs'][] = $this->title;
             'hrurl',
             'title',
             'description:ntext',
-            'keywords:ntext',
-            'pagehead',
+
+            [
+                'attribute'=>'cat_ids',
+                'value' => function($model)
+                {
+                    $rawIds = $model['cat_ids'];
+                    $out='';
+                    $ids = json_decode($rawIds);
+                    $i=0;
+                    if ($ids) {
+                        foreach ($ids as $id) {
+                            $cat=\common\models\Menu::find()->where(['id'=>$id])->one();
+                            if (isset($cat)) {
+                                if ( $cat->tree==0) {
+                                    $cat->tree=1;
+                                }
+                                $menu=\common\models\Menu::find()->where(['id'=>$cat->tree])->one();
+                                $out .=$menu->name.'->'.$cat->name;
+                                if (count($ids)-1>$i) {
+                                    $out .=', ';
+                                }
+                                $i++;
+                            }
+
+                        }
+
+                    }
+                    return $out;
+
+                },
+                'format'=> 'html',
+                'label'=> 'Категории в каталоге',
+            ],
+            'status',
+            [
+                'attribute'=>'created_at',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['created_at'], 'dd/MM/yy HH:mm');
+                },
+                'format'=> 'html',
+            ],
+            [
+                'attribute'=>'updated_at',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['updated_at'], 'dd/MM/yy HH:mm');
+                },
+                'format'=> 'html',
+            ],
+//            'keywords:ntext',
+//            'pagehead',
             // 'pagedescription:ntext',
             // 'text:ntext',
             // 'imagelink',

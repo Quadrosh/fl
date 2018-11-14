@@ -58,11 +58,13 @@ $trees = \common\models\Menu::find()
                 ->label('Родитель') ?>
         </div>
         <div class="col-sm-4">
-            <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'name')->textInput(['maxlength' => true,
+                'value'=>Yii::$app->request->get('name')]) ?>
 
         </div>
         <div class="col-sm-8">
-            <?= $form->field($model, 'url')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'url')->textInput(['maxlength' => true,
+                'value'=>Yii::$app->request->get('url')]) ?>
 
         </div>
         <div class="col-sm-12">

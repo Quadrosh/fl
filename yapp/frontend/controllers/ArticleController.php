@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use common\models\Article;
 
+use common\models\Calc;
 use common\models\LandingListitem;
 use common\models\LandingPage;
 use common\models\LandingSection;
@@ -122,6 +123,7 @@ class ArticleController extends Controller
         $this->view->params['meta']=$this->article;
         $this->view->params['currentItem']=14;
 
+
         return $this->render('article_view',[
             'article' => $this->article,
             'model' => $this->article,
@@ -194,14 +196,15 @@ class ArticleController extends Controller
     }
 
 
+
+
     public function actionCalculator()
     {
-        if (Yii::$app->request->isPost) {
-
-//            $request = Yii::$app->request->post('PriceCalculator');
-//            return PriceCalculator::calculate($request['from_city_id'],$request['to_city_id'],$request['truck_id'],$request['shipment_type']);
-        }
+        $params = Yii::$app->request->post('CalculatorForm');
+        $calc=Calc::find()->where(['id'=>$params['calcId']])->one();
+        return $calc->calculate($params);
     }
+
 
 
 }

@@ -9,18 +9,21 @@ use yii\helpers\Html;
 /* @var $item common\models\ArticleSectionBlockItem */
 
 $structure = $model->structure;
-$toCityName = '';
-$fromCityName = '';
+$bank = '';
+$calc_code = '';
 if ($structure) {
     foreach (explode('&', $structure) as $chunk) {
         $param = explode("=", $chunk);
-        if ($param[0]=='to') {
-            $toCityName=$param[1];
+        if ($param[0]=='bank') {
+            $bank=$param[1];
         }
-        if ($param[0]=='from') {
-            $fromCityName=$param[1];
+        if ($param[0]=='calc_code') {
+            $calc_code=$param[1];
         }
     }
+}
+if (!$calc_code) {
+  $calc_code = 'main_bg';
 }
 
 
@@ -28,7 +31,7 @@ if ($structure) {
 <div class="asb-price-calculator">
 
     <?php if ($model->header) : ?>
-        <h4 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h4>
+        <h3 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h3>
     <?php endif; ?>
 
     <?php if ($model->description) : ?>
@@ -36,9 +39,9 @@ if ($structure) {
     <?php endif; ?>
 
 
-    <?= \common\widgets\PriceCalculatorWidget::widget([
-        'toCityName' => $toCityName,
-        'fromCityName' => $fromCityName,
+    <?= \common\widgets\MainBgCalculatorWidget::widget([
+        'bank' => $bank,
+        'calc_code' => $calc_code,
     ]) ?>
 
 
@@ -56,7 +59,7 @@ if ($structure) {
 
                     <?php if (!$item->view) : ?>
                         <?php if ($item->header) : ?>
-                            <h6 <?= $item->header_class?'class="'.$item->header_class.'"':null ?>><?= $item->header ?></h6>
+                            <h4 <?= $item->header_class?'class="'.$item->header_class.'"':null ?>><?= $item->header ?></h4>
                         <?php endif; ?>
                         <?php if ($item->description) : ?>
                             <p <?= $item->description_class?'class="'.$item->description_class.'"':null ?>><?= $item->description ?></p>

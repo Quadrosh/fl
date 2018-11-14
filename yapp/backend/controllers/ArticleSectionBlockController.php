@@ -158,4 +158,13 @@ class ArticleSectionBlockController extends Controller
         $this->findModel($id)->deleteImage($propertyName);
         return $this->redirect(Url::previous());
     }
+
+    public function actionRawTextToItems($id,$mode = 1)
+    {
+        $block = ArticleSectionBlock::find()->where(['id'=>$id])->one();
+
+        if ($block->rawTextToItems($mode)) {
+            return $this->redirect(Url::previous());
+        }
+    }
 }

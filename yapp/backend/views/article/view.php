@@ -33,10 +33,18 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a('Export', ['/article/export', 'id' => $model->id], [
             'class' => 'btn btn-success',
             'data' => [
-                'confirm' => 'Are you sure you want to export this item?',
+                'confirm' => 'Точно уже экспортировать статью?',
                 'method' => 'post',
             ],
         ]) ?>
+    </p>
+    <p>
+        <?= Html::a('Создать категорию', ['/menu/create',
+            'url'=>$model->hrurl,
+            'name'=>$model->list_name], ['class' => 'btn btn-success btn-xs']) ?>
+        <?= Html::a('Создать страницу', ['/pages/create',
+            'hrurl'=>$model->hrurl,
+            'status'=>'article'], ['class' => 'btn btn-success btn-xs']) ?>
     </p>
 
     <?= DetailView::widget([
@@ -320,7 +328,25 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?= $block->header?'<li> Header - '.$block->header.'</li>':'' ?>
                             <?= $block->header_class?'<li> Header - '.$block->header_class.'</li>':'' ?>
                             <?= $block->description?'<li> Description - '.$block->description.'</li>':'' ?>
-                            <?= $block->raw_text?'<li> Raw Text - '.\common\models\Article::excerpt($block->raw_text,100).'</li>':'' ?>
+                            <?= $block->raw_text?'<li> Raw Text '.
+                                Html::a( '<span class="glyphicon glyphicon-fullscreen"></span>',
+                                    '/article-section-block/raw-text-to-items?id='.$block->id,
+                                    [
+                                        'title' => Yii::t('yii', 'raw text to items (each line to item)'),
+                                        'data-confirm' =>'Точно конвертировать текст в items?',
+                                        'data-method'=>'post'
+                                    ]).' '.
+                                Html::a( '<span class="glyphicon glyphicon-th-list"></span>',
+                                    ['/article-section-block/raw-text-to-items',
+                                        'id'=>$block->id,
+                                        'mode'=>2,
+                                    ],
+                                    [
+                                        'title' => Yii::t('yii', 'raw text to items mode 2 (1-st line - head, next lines - text, delimeter - empty string)'),
+                                        'data-confirm' =>'Точно конвертировать текст в items режим 2? (1 строка заголовок, 1 строка тело, разделитель пустая строка.) ?',
+                                        'data-method'=>'post'
+                                    ]).
+                                ' - '.\common\models\Article::excerpt($block->raw_text,100).'</li>':'' ?>
                             <?php
                             $blockImageLi='';
                             if ($block->image) {

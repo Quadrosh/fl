@@ -49,7 +49,7 @@ return [
             'rules' => [
                 '' => 'landing/page',
                 'tender_zaim' => 'landing/page',
-                'bank_garant' => 'landing/page',
+//                'bank_garant' => 'landing/page',
 //                'contacts' => 'site/contacts',
                 'lp/<landingpage:[0-9a-z\-\_]+>' => 'landing/page',
                 '<pagename:[0-9a-z\-\_]+>' => 'site/page',

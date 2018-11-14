@@ -17,7 +17,7 @@ use yii\helpers\Html;
         </div>
     <?php endif; ?>
     <?php if ($model->header) : ?>
-        <p <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></p>
+        <h5 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h5>
     <?php endif; ?>
     <?php if ($model->description) : ?>
         <p <?= $model->description_class?'class="'.$model->description_class.'"':null ?>><?= $model->description ?></p>

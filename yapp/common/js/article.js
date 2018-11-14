@@ -34,11 +34,9 @@ $(document).ready(function() {
         //appendArrows:'.popularItems',
     });
 
-
-
 });
 
-$(document).on("beforeSubmit", "#priceCalculator", function () {
+$(document).on("beforeSubmit", "#mainBgCalculator", function () {
     var form = $(this);
     if (form.find('.has-error').length) {
         return false;
@@ -49,19 +47,15 @@ $(document).on("beforeSubmit", "#priceCalculator", function () {
         data   : form.serialize(),
         success: function (response)
         {
-            //alert(response);
-            //var getupdatedata = $(response).find('#filter_id_test');
-            // $.pjax.reload('#note_update_id'); for pjax update
-            $('#calculatorResult').html(response);
-            console.log(response);
+            var calcResult = $('#calculatorResult');
+            calcResult.addClass('response');
+            calcResult.html(response);
+            //console.log(response);
         },
-
         error  : function ()
         {
             console.log('internal server error');
         }
         });
-
-
     return false; // Cancel form submitting.
 });

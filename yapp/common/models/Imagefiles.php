@@ -42,8 +42,15 @@ class Imagefiles extends \yii\db\ActiveRecord
             'name' => 'Name',
         ];
     }
-    public function addNew($name)
+
+
+    public function addNew($name,$replace=null)
     {
+        if ($replace) {
+            if (Imagefiles::find()->where(['name'=>$name])->one()) {
+                return true;
+            }
+        }
         $this->name = $name;
         if ($this->validate()) {
             if ($this->save()) {
@@ -56,5 +63,17 @@ class Imagefiles extends \yii\db\ActiveRecord
             Yii::$app->session->setFlash('error', 'Ошибка валидации - '.$this->errors['name'][0]);
             return false;
         }
+    }
+    public function deleteWithFile()
+    {
+        $fullPath = Yii::$app->basePath.'/web/img/'.$this->name;
+        if (file_exists($fullPath)) {
+            if(!unlink($fullPath)) {
+                Yii::$app->session->setFlash('error', 'неполучается удалить файл');
+            }
+        } else {
+            Yii::$app->session->setFlash('error', 'файл не найден');
+        }
+        $this->delete();
     }
 }

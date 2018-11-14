@@ -28,16 +28,31 @@ class UploadForm  extends Model
         ];
     }
 
-    public function upload()
+    public function upload($fileName=null, $replace=null)
     {
         $imageListItem = new Imagefiles();
-        $fileName = $this->imageFile->baseName .'.' . $this->imageFile->extension;
-        if ($this->validate() && $imageListItem->addNew($fileName)) {
+        if ($fileName) {
+            $fileName = $fileName .'.' . $this->imageFile->extension;
+        } else {
+            $fileName = $this->imageFile->baseName .'.' . $this->imageFile->extension;
+        }
+
+        if ($this->validate() && $imageListItem->addNew($fileName,$replace)) {
             if ($this->imageFile->saveAs('img/' . $fileName)) {
                 return true;
             } else {
+                Yii::error([
+                    'action'=> 'uploadForm  $this->imageFile->saveAs',
+                    '$this->errors'=>$this->errors,
+                ]);
                 return false;
             }
+        } else {
+            Yii::error([
+                'action'=> 'uploadForm  $this->validate() && $imageListItem->addNew',
+                '$this->errors'=>$this->errors,
+            ]);
+            return false;
         }
     }
 

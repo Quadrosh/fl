@@ -2,8 +2,9 @@
 
 namespace backend\controllers;
 
-use common\models\Price;
-use common\models\PriceCalculator;
+
+use common\models\Calc;
+use common\models\CalculatorForm;
 use common\models\UploadForm;
 use Yii;
 use common\models\Article;
@@ -17,7 +18,7 @@ use yii\web\UploadedFile;
 /**
  * ArticleController implements the CRUD actions for Article model.
  */
-class ArticleController extends Controller
+class ArticleController extends BackController
 {
     /**
      * @inheritdoc
@@ -26,7 +27,7 @@ class ArticleController extends Controller
     {
         return [
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'delete' => ['POST'],
                 ],
@@ -195,14 +196,7 @@ class ArticleController extends Controller
     }
 
 
-    public function actionCalculator()
-    {
-        if (Yii::$app->request->isPost) {
 
-            $request = Yii::$app->request->post('PriceCalculator');
-            return PriceCalculator::calculate($request['from_city_id'],$request['to_city_id'],$request['truck_id'],$request['shipment_type']);
-        }
-    }
 
     public function actionExport($id)
     {
@@ -229,6 +223,12 @@ class ArticleController extends Controller
     }
 
 
+    public function actionCalculator()
+    {
+        $params = Yii::$app->request->post('CalculatorForm');
+        $calc=Calc::find()->where(['id'=>$params['calcId']])->one();
+        return $calc->calculate($params);
+    }
 
 }
 

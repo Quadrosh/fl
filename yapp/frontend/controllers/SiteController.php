@@ -3,6 +3,7 @@ namespace frontend\controllers;
 
 use common\models\Pages;
 use common\models\Preorders;
+use common\models\Visit;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\helpers\Url;
@@ -86,41 +87,34 @@ class SiteController extends Controller
     public function actionPage()
     {
         Url::remember();
-        $pageName = Yii::$app->request->get('pagename');
         $preorderForm = new Preorders();
 
+        $hrurl = Yii::$app->request->get('pagename');
 
-        //UTM
-//        $session = Yii::$app->session;
-//        if (Yii::$app->request->get('utm_source')!= null) {
-//            $session['utmSource'] = Yii::$app->request->get('utm_source');
-//            $session['utmMedium'] = Yii::$app->request->get('utm_medium');
-//            $session['utmCampaign'] = Yii::$app->request->get('utm_campaign');
-//            $session['utmTerm'] = Yii::$app->request->get('utm_term');
-//            $session['utmContent'] = Yii::$app->request->get('utm_content');
-//        }
-
-//        Yii::$app->session->setFlash('success', "Your message to display");
 
         $page = Pages::find()->where([
             'site'=>Yii::$app->params['site'],
-            'hrurl'=>$pageName
+            'hrurl'=>$hrurl
         ])->one();
         if ($page == false) {
             throw new \yii\web\NotFoundHttpException('Страница не существует');
         };
+        if ($page->status == 'article') {
+            return Yii::$app->runAction('article/page', ['hrurl' => $hrurl]);
+        }
 
+        $utm = $this->getUtm();
         if (!empty($page->layout)) {
             $this->layout = $page->layout;
         }
 
 
-        $this->view->params['pageName']=$pageName;
+        $this->view->params['pageName']=$hrurl;
         if (trim(strtolower($page->seo_logo)) =='title') {
             $page->seo_logo = $page->title;
         }
         $this->view->params['meta']=$page;
-        if ($pageName == 'sitemap') {
+        if ($hrurl == 'sitemap') {
             return $this->render('sitemap',[
                 'page' => $page,
                 'preorderForm' => $preorderForm,
@@ -329,11 +323,8 @@ class SiteController extends Controller
                 ->where(['ip'=>Yii::$app->request->userIP])
                 ->andWhere(['>','date',time()-86400])
                 ->all();
-            $spamFeedbacks = Preorders::find()   // feedbacks
-                ->where(['ip'=>Yii::$app->request->userIP])
-                ->andWhere(['>','date',time()-86400])
-                ->all();
-            if ( count($spamOrders) + count($spamFeedbacks) > 10) {
+
+            if ( count($spamOrders)  > 5) {
                 Yii::$app->session->setFlash('error', 'Вы достигли лимита отправляемых заявок. <br> Свяжитесь с нами по телефону');
                 return $this->redirect(Url::previous());
             }
@@ -356,6 +347,61 @@ class SiteController extends Controller
             Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@finlider.ru или оформите заявку по телефону');
             return $this->redirect(Url::previous());
         }
+
+    }
+
+    public function getUtm()
+    {
+        $utm = [];
+        $session = Yii::$app->session;
+
+        if (Yii::$app->request->get('utm_source')) {
+            // UTM из GET
+            $utm['source'] = Yii::$app->request->get('utm_source');
+            $utm['medium'] = Yii::$app->request->get('utm_medium');
+            $utm['campaign'] = Yii::$app->request->get('utm_campaign');
+            $utm['term'] = Yii::$app->request->get('utm_term');
+            $utm['content'] = Yii::$app->request->get('utm_content');
+
+            // сохранение в сессию
+            if (Yii::$app->request->get('utm_source')!= null) {
+                $session['utm_source'] = $utm['source'];
+                $session['utm_medium'] = $utm['medium'];
+                $session['utm_campaign'] = $utm['campaign'];
+                $session['utm_term'] = $utm['term'];
+                $session['utm_content'] = $utm['content'];
+            }
+        } else {
+            if ($session['utm_source']) {
+                $utm['source'] = $session['utm_source'];
+                $utm['medium'] = $session['utm_medium'];
+                $utm['campaign'] = $session['utm_campaign'];
+                $utm['term'] = $session['utm_term'];
+                $utm['content'] = $session['utm_content'];
+            } else { // если там что то есть
+                $utm['source'] = Yii::$app->request->get('utm_source');
+                $utm['medium'] = Yii::$app->request->get('utm_medium');
+                $utm['campaign'] = Yii::$app->request->get('utm_campaign');
+                $utm['term'] = Yii::$app->request->get('utm_term');
+                $utm['content'] = Yii::$app->request->get('utm_content');
+            }
+        }
+
+        //сохр визита в статистику
+        $visit = new Visit();
+        $visit['ip'] = Yii::$app->request->userIP;
+        $visit['site'] = Yii::$app->params['site'];
+        $visit['lp_hrurl'] = '';
+        $visit['url'] = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+        $visit['utm_source']=$utm['source'];
+        $visit['utm_medium']=$utm['medium'];
+        $visit['utm_campaign']=$utm['campaign'];
+        $visit['utm_term']=$utm['term'];
+        $visit['utm_content']=$utm['content'];
+        $visit['qnt']=1;
+        $visit->save();
+
+        return $utm;
 
     }
 }

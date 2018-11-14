@@ -143,4 +143,74 @@ class ArticleSectionBlock extends \yii\db\ActiveRecord
         $this->$propertyName = null;
         $this->save();
     }
+
+    public function rawTextToItems( $mode = 1)
+    {
+        $text = $this->raw_text;
+//        $arr = explode('<br />' , nl2br(trim($text)) );
+        $arr = preg_split('/\r\n|\r|\n/',trim($text));
+
+
+
+        if ($mode == 1) {
+            $i=0;
+            foreach ($arr as $string) {
+                $blockItem = new ArticleSectionBlockItem();
+                $blockItem->article_section_block_id = $this->id;
+
+                    $blockItem->text = $string;
+
+                $blockItem->save();
+                $i++;
+            }
+            $this->raw_text = null;
+            $this->save();
+            Yii::$app->session->setFlash('success', 'raw_text конвертирован в '.$i.' пунктов.');
+            return true;
+        }
+        elseif ($mode == 2){
+            $res=[];
+            $tmp = [];
+            $i=0;
+            $iter=0;
+
+            foreach ($arr as $string) {
+                $i++;
+                if (trim($string) == '') {
+                    $i=0;
+                    $iter ++;
+                    $res[]=$tmp;
+                    $tmp = [];
+                } else {
+                    if ($i == 1) {
+                        $tmp['head'] = $string;
+                        $tmp['text'] = '';
+                    } else {
+                        if ($i > 2) {
+                            $tmp['text'] .= PHP_EOL;
+                        }
+                        $tmp['text'] .= $string;
+                    }
+                }
+            }
+            $res[]=$tmp;
+            foreach ($res as $item) {
+                $blockItem = new ArticleSectionBlockItem();
+                $blockItem->article_section_block_id = $this->id;
+                $blockItem->header = $item['head'];
+                $blockItem->text = $item['text'];
+                $blockItem->save();
+            }
+            $this->raw_text = null;
+            $this->save();
+            Yii::$app->session->setFlash('success', 'raw_text конвертирован в '.count($res).' пунктов.');
+            return true;
+        }
+
+        else {
+
+            return false;
+        }
+
+    }
 }

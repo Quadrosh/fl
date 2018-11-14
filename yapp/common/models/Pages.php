@@ -19,9 +19,15 @@ use Yii;
  * @property string $sendtopage
  * @property string $promolink
  * @property string $promoname
+ * @property string $cat_ids
+ * @property string $status
+ * @property string $created_at
+ * @property string $updated_at
  */
 class Pages extends \yii\db\ActiveRecord
 {
+    public $categories;
+
     /**
      * @inheritdoc
      */
@@ -30,6 +36,14 @@ class Pages extends \yii\db\ActiveRecord
         return 'pages';
     }
 
+    public function behaviors()
+    {
+        return [
+            [
+                'class' => \yii\behaviors\TimestampBehavior::class,
+            ],
+        ];
+    }
     /**
      * @inheritdoc
      */
@@ -38,7 +52,7 @@ class Pages extends \yii\db\ActiveRecord
         return [
             [['title', 'description','hrurl' ], 'required'],
             [['hrurl'],'unique'],
-            [['description', 'seo_logo','keywords', 'pagedescription', 'text'], 'string'],
+            [['cat_ids','description', 'seo_logo','keywords', 'pagedescription', 'text'], 'string'],
             [[
                 'site',
                 'title',
@@ -50,8 +64,11 @@ class Pages extends \yii\db\ActiveRecord
                 'promolink',
                 'promoname',
                 'layout',
-                'view'
+                'view',
+                'status'
             ], 'string', 'max' => 255],
+            [['created_at', 'updated_at'], 'integer'],
+            [['categories'], 'safe'],
         ];
     }
 

@@ -127,7 +127,8 @@ use yii\widgets\ActiveForm;
                 '_asb-slick_banner_1' => 'slick_banner_1',
                 '_asb-ul-li' => 'ul-li',
                 '_asb-ol-li' => 'ol-li',
-                '_asb-price_calculator' => 'price_calculator',
+                '_asb-calculator' => 'calculator',
+                '_asb-10_icons_in_footer' => '10_icons_in_footer',
             ],['prompt' => 'Выбери']) ?>
         </div>
         <div class="col-sm-3">

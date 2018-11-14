@@ -23,7 +23,7 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <?= $form->field($model, 'site')->dropDownList(Yii::$app->params['siteList'],['prompt'=>'Выберите сайт'])?>
+            <?= $form->field($model, 'site')->dropDownList(Yii::$app->params['siteList'])?>
         </div>
         <div class="col-sm-6">
             <?= $form->field($model, 'categories')
@@ -33,7 +33,9 @@ use yii\widgets\ActiveForm;
                 ),['prompt'=>'Выберите категорию','multiple' => true])
                 ->label('Категория в каталоге') ?>
             <p>
-                <?= Html::a('Создать категорию', ['/menu/create'], ['class' => 'btn btn-success btn-xs']) ?>
+                <?= Html::a('Создать категорию', ['/menu/create',
+                    'url'=>$model->hrurl,
+                    'name'=>$model->list_name], ['class' => 'btn btn-success btn-xs']) ?>
             </p>
         </div>
         <div class="col-sm-12">
@@ -119,7 +121,10 @@ use yii\widgets\ActiveForm;
             ],['prompt' => 'Выбери вьюху']) ?>
         </div>
         <div class="col-sm-6">
-            <?= $form->field($model, 'layout')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'layout')->dropDownList([
+                'article' => 'article',
+                'article_no_footer' => 'article_no_footer',
+            ],['prompt' => 'Выбери layout']) ?>
         </div>
 
     </div>

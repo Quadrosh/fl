@@ -39,6 +39,7 @@ AppAsset::register($this);
     <meta property="og:image" content="<?= \yii\helpers\Url::base(true) ?>/img/logo.png" />
 
     <?php $this->head() ?>
+    <?php include_once("stat_google.php") ?>
 </head>
 <body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page">
 <?php $this->beginBody() ?>
@@ -159,18 +160,18 @@ AppAsset::register($this);
 
     </div>
 
-    <footer >
+    <footer class="mt50">
         <div class="container footer">
             <div class="row">
                 <div class="col-sm-4 left">
                     <div class="footer_info">
-                        <h4 class="head">Связаться с нами</h4>
+                        <p class="head">Связаться с нами</p>
                         <p>Тел. <?= Yii::$app->params['mainPhone'] ?><br>Email info@finlider.ru</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">
                     <div class="footer_info">
-                        <h4 class="head">Центральный офис</h4>
+                        <p class="head">Центральный офис</p>
                         <p>г. Москва ул. Бойцовая д.27. оф. 213</p>
                     </div>
                 </div>
@@ -240,6 +241,7 @@ AppAsset::register($this);
 </div>
 
 <?php $this->endBody() ?>
+<?php include_once("stat_yandex.php") ?>
 </body>
 </html>
 <?php $this->endPage() ?>

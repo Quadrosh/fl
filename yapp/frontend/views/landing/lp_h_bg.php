@@ -212,7 +212,7 @@ NavBar::end();
                         echo 'more768';
                     }
                 ?>">
-                    <?= Html::img('img/'.$listItem['image'],[
+                    <?= Html::img('/img/'.$listItem['image'],[
                         'class'=>'bankLogo',
                         'alt'=>$listItem['image_alt']]) ?>
                 </div>

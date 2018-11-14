@@ -34,6 +34,9 @@ use yii\behaviors\TimestampBehavior;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
+    const SPAM_COUNT = 5;
+    const SERVICE_TYPE_BG = 'bank_garant';
+    const SERVICE_TYPE_TZ = 'tender_zaim';
 
     /**
      * @inheritdoc
@@ -158,13 +161,15 @@ class Preorders extends \yii\db\ActiveRecord
             $this->emailForSend =  Yii::$app->params['devOrderEmail'];
         } else {
             $this->emailForSend =  Yii::$app->params['prodOrderEmail'];
+
+            if ($this->service_type == self::SERVICE_TYPE_TZ) {
+                $this->emailForSend =  Yii::$app->params['tzOrderEmail'];
+            }
+            if ($this->service_type == self::SERVICE_TYPE_BG) {
+                $this->emailForSend =  Yii::$app->params['bgOrderEmail'];
+            }
         }
-        if ($this->service_type == 'tender_zaim') {
-            $this->emailForSend =  Yii::$app->params['tzOrderEmail'];
-        }
-        if ($this->service_type == 'bank_garant') {
-            $this->emailForSend =  Yii::$app->params['bgOrderEmail'];
-        }
+
         return Yii::$app->mailer->compose()
             ->setTo($this->emailForSend)
             ->setFrom('sender@'.Yii::$app->params['site'])
@@ -182,7 +187,41 @@ class Preorders extends \yii\db\ActiveRecord
                 " <br/> Коментарий: <br/>". nl2br($this->text)
             )
             ->send();
+    }
 
+
+    public static function placeOrder($post,$userIp = null)
+    {
+        $preorder = new self;
+        if ($preorder->load($post)) {
+            $spamOrders = self::find()
+                ->where(['ip'=>$userIp])
+                ->andWhere(['>','date',time()-86400])
+                ->all();
+
+            if ( count($spamOrders)  > self::SPAM_COUNT) {
+                Yii::$app->session->setFlash('error', 'Вы достигли лимита отправляемых заявок. <br> Свяжитесь с нами по телефону');
+                return false;
+            }
+            $preorder['site'] = Yii::$app->params['site'];
+            $preorder['ip'] = Yii::$app->request->userIP;
+            if ($preorder->save()) {
+                if ($preorder->sendEmail( Yii::$app->params['site'].': Заявка')) {
+                    Yii::$app->session->setFlash('success', 'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
+                    return true;
+                } else {
+                    Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз.');
+                    return false;
+                }
+            } else {
+                Yii::$app->session->setFlash('error', 'Ошибка сохранения заявки. Оформите заявку по телефону.');
+                return false;
+            }
+        } else {
+
+            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@finlider.ru или оформите заявку по телефону');
+            return false;
+        }
 
     }
 }

@@ -14,7 +14,7 @@ use yii\helpers\Html;
 <div class="asb-bs_horiz_2">
 
     <?php if ($model->header) : ?>
-        <h4 class="<?= $model->header_class ?>"><?= $model->header ?></h4>
+        <h3 class="<?= $model->header_class ?>"><?= $model->header ?></h3>
     <?php endif; ?>
 
     <?php if ($model->description) : ?>
@@ -34,7 +34,7 @@ use yii\helpers\Html;
 
                     <?php if (!$item->view) : ?>
                         <?php if ($item->header) : ?>
-                            <h6 class="<?= $item->header_class ?>"><?= $item->header ?></h6>
+                            <h4 class="<?= $item->header_class ?>"><?= $item->header ?></h4>
                         <?php endif; ?>
                         <?php if ($item->description) : ?>
                             <p class="text-center"><?= $item->description ?></p>

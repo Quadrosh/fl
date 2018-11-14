@@ -107,6 +107,9 @@ $this->title = 'Финлидер управление';
                     ['label' => 'Article Section', 'url' => ['/article-section']],
                     ['label' => 'Article Section Block', 'url' => ['/article-section-block']],
                     ['label' => 'Article Section Block Item', 'url' => ['/article-section-block-item']],
+                    ['label' => 'Calc', 'url' => ['/calc']],
+                    ['label' => 'Calc Factor', 'url' => ['/calc-factor']],
+                    ['label' => 'Bank', 'url' => ['/bank']],
 
                 ],
             ],

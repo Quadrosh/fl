@@ -34,7 +34,7 @@ use yii\behaviors\TimestampBehavior;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
-    const SPAM_COUNT = 10;
+    const SPAM_COUNT = 20;
     const SERVICE_TYPE_BG = 'bank_garant';
     const SERVICE_TYPE_TZ = 'tender_zaim';
 

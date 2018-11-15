@@ -42,7 +42,6 @@ use yii\helpers\Html;
                             <?= $this->render('/article/part_views/block/'.$block->view, [
                                 'model' => $block,
                                 'article' => $article,
-                                'utm' => isset($utm)?$utm:null,
                             ]) ?>
                         <?php endif; ?>
                         <?php if (!$block->view) : ?>
@@ -84,10 +83,9 @@ use yii\helpers\Html;
             <?php if ($model->call2action_name) : ?>
                 <?php if ($model->call2action_link == 'callMe' || $model->call2action_link == 'call_me') : ?>
                     <div class="col-sm-12 ">
-                        <?= $this->render('/article/part_views/article/_phone-form', [
+                        <?= $this->render('/article/part_views/article/_phone-form_wide', [
                             'section' => $model,
                             'article' => $article,
-                            'utm' => isset($utm)?$utm:null,
                         ]) ?>
 
                     </div>

@@ -15,8 +15,8 @@ $preorder = new \common\models\Preorders();
         'fieldConfig' => [
             'template' => "{beginWrapper}\n{input}\n{error}\n{endWrapper}",
             'horizontalCssClasses' => [
-                'offset' => 'col-sm-offset-3 col-lg-offset-3',
-                'wrapper' => 'col-sm-6 col-lg-6 xsQuickForm',
+                'offset' => 'col-sm-offset-3 col-lg-offset-4',
+                'wrapper' => 'col-sm-6 col-lg-4 xsQuickForm',
             ],
         ],
     ]); ?>

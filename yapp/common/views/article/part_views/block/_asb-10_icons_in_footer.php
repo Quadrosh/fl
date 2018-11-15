@@ -34,11 +34,10 @@ use yii\helpers\Html;
     <?php if ($model->call2action_name) : ?>
         <?php if ($model->call2action_link == 'callMe' || $model->call2action_link == 'call_me') : ?>
             <div class="col-sm-12 ">
-                <?= $this->render('/article/part_views/article/_phone-form', [
+                <?= $this->render('/article/part_views/article/_phone-form_wide', [
                     'section' => $model,
                     'article' => $article,
-//                    'article' => isset($article)?$article:null,
-                    'utm' => isset($utm)?$utm:null,
+
                 ]) ?>
 
             </div>

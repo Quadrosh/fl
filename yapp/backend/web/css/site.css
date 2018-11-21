@@ -153,3 +153,11 @@ a.desc:after {
 .article-view .gridThumb {
     max-width:50px;
 }
+.fileField {
+    color:gainsboro;
+}
+.has-success .fileField {
+    color:red;
+    /*border:1px red solid;*/
+    background-color: lightyellow;
+}

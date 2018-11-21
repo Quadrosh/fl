@@ -40,7 +40,7 @@ frontend\assets\ArticleAsset::register($this);
     <?php $this->head() ?>
     <?php include_once("stat_google.php") ?>
 </head>
-<body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page">
+<body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page article_no_footer">
 <?php $this->beginBody() ?>
 
 <div class="wrap">
@@ -92,7 +92,7 @@ frontend\assets\ArticleAsset::register($this);
 </svg><span class="navbar_motto onBright">Тендерное финансирование</span>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-fixed-top',
+            'class' => 'navbar navbar-fixed-top relative',
         ],
     ]);
     echo Nav::widget([
@@ -105,15 +105,17 @@ frontend\assets\ArticleAsset::register($this);
             ],
             [
                 'label' => 'Тендерный займ',
-                'url' => ['/tender_zaim'],
+                'url' => Yii::$app->request->url == '/tender_zaim'?false:['/tender_zaim'],
+                'active' => Yii::$app->request->url == '/tender_zaim'?true:false,
             ],
             [
                 'label' => 'Банковская гарантия',
-                'url' => ['/bank_garant'],
+                'url' => Yii::$app->request->url == '/bank_garant'?false:['/bank_garant'],
+                'active' => Yii::$app->request->url == '/bank_garant'?true:false,
             ],
             [
                 'label' => 'Контакты',
-                'url' => ['/contacts'],
+                'url' => Yii::$app->request->url == '/contacts'?false:['/contacts'],
                 'active' => Yii::$app->request->url == '/contacts'?true:false,
             ],
             [
@@ -147,7 +149,7 @@ frontend\assets\ArticleAsset::register($this);
 
     <div class="container">
 
-        <div class="row mt100 text-center">
+        <div class="row  text-center">
 
             <?= \common\widgets\Alert::widget() ?>
         </div>

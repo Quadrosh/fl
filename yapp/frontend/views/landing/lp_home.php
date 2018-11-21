@@ -60,7 +60,7 @@ NavBar::begin([
 <path  class="cpLogo_st0" d="M999,132.9c19.9,54.6,39.7,109.1,59.6,163.7h26.5l-74.8-195.5h-22.6l-74.7,195.5h26.6
 	C959.5,242,979.2,187.5,999,132.9z"/>
 </svg><span class="navbar_motto">Тендерное финансирование</span>',
-    'brandUrl' => Yii::$app->homeUrl,
+    'brandUrl' => Yii::$app->request->url == '/'?'/contacts':Yii::$app->homeUrl,
     'options' => [
         'class' => 'navbar-inverse navbar-fixed-top',
     ],
@@ -71,20 +71,23 @@ echo Nav::widget([
     'items' => [
         [
             'label' => 'Главная',
-            'url' => ['/'],
-            'active' => true
+            'url' => Yii::$app->request->url == '/'?false:['/tender_zaim'],
+            'active' => Yii::$app->request->url == '/'?true:false,
         ],
         [
             'label' => 'Тендерный займ',
-            'url' => ['/tender_zaim'],
+            'url' => Yii::$app->request->url == '/tender_zaim'?false:['/tender_zaim'],
+            'active' => Yii::$app->request->url == '/tender_zaim'?true:false,
         ],
         [
             'label' => 'Банковская гарантия',
-            'url' => ['/bank_garant'],
+            'url' => Yii::$app->request->url == '/bank_garant'?false:['/bank_garant'],
+            'active' => Yii::$app->request->url == '/bank_garant'?true:false,
         ],
         [
             'label' => 'Контакты',
-            'url' => ['/contacts'],
+            'url' => Yii::$app->request->url == '/contacts'?false:['/contacts'],
+            'active' => Yii::$app->request->url == '/contacts'?true:false,
         ],
         [
             'label' => '<svg version="1.1"

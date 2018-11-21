@@ -6,7 +6,7 @@ $preorder = new \common\models\Preorders();
 
 
 ?>
-<div class="phone-form">
+<div class="phone-form ">
     <?php $form = yii\bootstrap\ActiveForm::begin([
         'id' => 'quickorder-form-section'.$section->id,
         'method' => 'post',
@@ -28,7 +28,7 @@ $preorder = new \common\models\Preorders();
             'placeholder' => 'ТЕЛЕФОН'
         ],
         'inputTemplate' => '<div class="input-group">{input}<span class="input-group-btn">'.
-            '<button type="submit" class="btn btn-danger">Получить консультацию</button></span></div>',
+            '<button type="submit" class="btn btn-danger">'.$section->call2action_name.'</button></span></div>',
     ])->textInput(['maxlength' => true, 'id' => 'quickorder-form-section'.$section->id.'-phone'])->label(false) ?>
 
     <?= $form->field($preorder, 'service_type',['template' => '{input}', 'options' => ['tag' => false]])

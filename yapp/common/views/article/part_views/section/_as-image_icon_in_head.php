@@ -12,7 +12,7 @@ use yii\helpers\Html;
 
             <div class="table">
                 <?php if ($model->section_image) : ?>
-                    <div class="table-cell <?= $model->image_class ?>">
+                    <div class="table-cell <?= $model->image_class ?> ">
                         <?php if ($model->section_image) {
                             echo Html::img('/img/'.$model->section_image,[ 'alt'=>$model->section_image_alt]);
                         } ?>
@@ -20,7 +20,7 @@ use yii\helpers\Html;
                 <?php endif; ?>
 
                 <?php if ($model->header) : ?>
-                    <div class="table-cell">
+                    <div class="table-cell pl10">
                         <h2 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h2>
                     </div>
                 <?php endif; ?>
@@ -57,15 +57,23 @@ use yii\helpers\Html;
                             <?php endif; ?>
                             <?php if ($block->items) : ?>
                                 <?php foreach ($block->items as $item) : ?>
-                                    <?php if ($item->header) : ?>
-                                        <h4 <?= $item->header_class?'class="'.$item->header_class.'"':null ?>><?= $item->header ?></h4>
+                                    <?php if ($item->view) : ?>
+                                        <?= $this->render('/article/part_views/block_item/'.$item->view, [
+                                            'model' => $item,
+                                        ]) ?>
                                     <?php endif; ?>
-                                    <?php if ($item->description) : ?>
-                                        <p <?= $item->description_class?'class="'.$item->description_class.'"':null ?>><?= $item->description ?></p>
+                                    <?php if (!$item->view) : ?>
+                                        <?php if ($item->header) : ?>
+                                            <h4 <?= $item->header_class?'class="'.$item->header_class.'"':null ?>><?= $item->header ?></h4>
+                                        <?php endif; ?>
+                                        <?php if ($item->description) : ?>
+                                            <p <?= $item->description_class?'class="'.$item->description_class.'"':null ?>><?= $item->description ?></p>
+                                        <?php endif; ?>
+                                        <?php if ($item->text) : ?>
+                                            <p <?= $item->text_class?'class="'.$item->text_class.'"':null ?>><?= $item->text ?></p>
+                                        <?php endif; ?>
                                     <?php endif; ?>
-                                    <?php if ($item->text) : ?>
-                                        <p <?= $item->text_class?'class="'.$item->text_class.'"':null ?>><?= $item->text ?></p>
-                                    <?php endif; ?>
+
                                 <?php endforeach; ?>
                             <?php endif; ?>
                         <?php endif; ?>

@@ -33,10 +33,11 @@ use yii\widgets\ActiveForm;
         <div class="col-sm-4">
             <?= $form->field($model, 'header_class')
                 ->dropDownList([
-                'text-center' => 'text-center',
-                'text-left' => 'text-left',
-                'text-right' => 'text-right',
-            ],['prompt' => 'Выбери']) ?>
+                    'text-center' => 'text-center',
+                    'text-left' => 'text-left',
+                    'text-right' => 'text-right',
+                    'lead' => 'lead',
+                ],['prompt' => 'Выбери']) ?>
         </div>
         <div class="col-sm-8">
             <?= $form->field($model, 'description')->textarea(['rows' => 1]) ?>
@@ -47,6 +48,7 @@ use yii\widgets\ActiveForm;
                     'text-center' => 'text-center',
                     'text-left' => 'text-left',
                     'text-right' => 'text-right',
+                    'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
 
@@ -65,6 +67,7 @@ use yii\widgets\ActiveForm;
                     'text-center' => 'text-center',
                     'text-left' => 'text-left',
                     'text-right' => 'text-right',
+                    'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
 
@@ -77,6 +80,7 @@ use yii\widgets\ActiveForm;
                     'text-center' => 'text-center',
                     'text-left' => 'text-left',
                     'text-right' => 'text-right',
+                    'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
 
@@ -136,6 +140,7 @@ use yii\widgets\ActiveForm;
                 '_as-image_float_in_text' => 'image_float_in_text',
                 '_as-image_icon_in_head' => 'image_icon_in_head',
                 '_as-full_width' => 'full_width',
+                '_as-img_back' => 'as-img_back',
             ],['prompt' => 'Выбери вьюху']) ?>
         </div>
         <div class="col-sm-3">

@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use \common\models\Article;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Article */
@@ -15,9 +16,9 @@ use yii\widgets\ActiveForm;
     <div class="row">
         <div class="col-sm-4">
             <?= $form->field($model, 'status')->dropDownList([
-                'published' => 'published',
-                'draft' => 'draft',
-                'page' => 'page',
+                'published' => Article::STATUS_PUBLISHED,
+                'draft' => Article::STATUS_DRAFT,
+                'page' => Article::STATUS_PAGE,
             ],['prompt' => 'Выбери статус']) ?>
         </div>
     </div>
@@ -115,9 +116,8 @@ use yii\widgets\ActiveForm;
 
         <div class="col-sm-6">
             <?= $form->field($model, 'view')->dropDownList([
-                '_a-default' => 'default',
                 '_a-page_preorder_form' => 'page_preorder_form',
-                '_a-1' => '1',
+                '_a-page-topline_futorder' => 'page-topline_futorder',
             ],['prompt' => 'Выбери вьюху']) ?>
         </div>
         <div class="col-sm-6">

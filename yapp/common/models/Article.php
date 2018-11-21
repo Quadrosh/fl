@@ -44,6 +44,9 @@ class Article extends \yii\db\ActiveRecord
 {
     public $categories;
 
+    const STATUS_PAGE = 'page';
+    const STATUS_PUBLISHED = 'published';
+    const STATUS_DRAFT = 'draft';
     /**
      * @inheritdoc
      */

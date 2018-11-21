@@ -159,7 +159,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'thumbnail_image'=>'Thumbnail Image',
                         'imagelink'=>'Imagelink',
                     ])->label(false) ?>
-                    <?= $form->field($uploadmodel, 'imageFile')->fileInput()->label(false) ?>
+                    <?= $form->field($uploadmodel, 'imageFile')->fileInput(['class'=>'fileField'])->label(false) ?>
                     <?= $form->field($uploadmodel, 'toModelId')->hiddenInput(['value'=>$model->id])->label(false) ?>
                     <?= Html::submitButton('Upload', ['class' => 'btn btn-success']) ?>
                     <?php ActiveForm::end() ?>
@@ -214,7 +214,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                     <div class="col-sm-4">
                         <?= $form->field($uploadmodel, 'imageFile')
-                            ->fileInput(['style'=>'color:gainsboro;'])->label(false) ?>
+                            ->fileInput(['class'=>'fileField'])->label(false) ?>
                         <?= $form->field($uploadmodel, 'toModelId')->hiddenInput(['value'=>$section->id])->label(false) ?>
                     </div>
                     <div class="col-sm-4">
@@ -313,7 +313,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         </div>
                                         <div class="col-sm-4">
                                             <?= $form->field($uploadmodel, 'imageFile')
-                                                ->fileInput(['style'=>'color:gainsboro;'])->label(false) ?>
+                                                ->fileInput(['class'=>'fileField'])->label(false) ?>
                                             <?= $form->field($uploadmodel, 'toModelId')->hiddenInput(['value'=>$block->id])->label(false) ?>
                                         </div>
                                         <div class="col-sm-4">
@@ -431,7 +431,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                                         ])->label(false) ?>
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <?= $form->field($uploadmodel, 'imageFile')->fileInput(['style'=>'color:gainsboro;'])->label(false) ?>
+                                                        <?= $form->field($uploadmodel, 'imageFile')->fileInput(['class'=>'fileField'])->label(false) ?>
                                                         <?= $form->field($uploadmodel, 'toModelId')->hiddenInput(['value'=>$item->id])->label(false) ?>
                                                     </div>
                                                     <div class="col-sm-4">

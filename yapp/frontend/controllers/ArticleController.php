@@ -68,30 +68,40 @@ class ArticleController extends Controller
         ]);
     }
 
-    public function actionArticle()
+    public function actionArticle($hrurl=null)
     {
         Url::remember();
         Visit::setUtmVisit();
 
-        $hrurl = Yii::$app->request->get('pagename');
 
+
+        if ($hrurl == null) {
+            $hrurl = Yii::$app->request->get('pagename');
+        }
 
         $this->article = Article::find()
             ->where(['site'=>Yii::$app->params['site']])
-            ->andwhere(['hrurl'=>'perevozki-dlya-juridicheskih-lits'])
+            ->andwhere(['hrurl'=>$hrurl])
+            ->andwhere(['status'=>Article::STATUS_PUBLISHED])
             ->one();
-        $sections = $this->article->sections;
-        if ($this->article->layout == null) {
+
+        if (!$this->article) {
+            throw new \yii\web\HttpException(404,'Страница не найдена');
+        }
+
+        if ($this->article->layout == null ) {
             $this->layout = 'article';
         } else {
             $this->layout = $this->article->layout;
         }
+
         $this->view->params['meta']=$this->article;
         $this->view->params['currentItem']=14;
 
-        return $this->render('part_views/article/'.$this->article->view,[
+
+        return $this->render('article_view',[
             'article' => $this->article,
-            'sections' => $sections,
+            'model' => $this->article,
 
         ]);
     }
@@ -110,6 +120,7 @@ class ArticleController extends Controller
         $this->article = Article::find()
             ->where(['site'=>Yii::$app->params['site']])
             ->andwhere(['hrurl'=>$hrurl])
+            ->andwhere(['status'=>Article::STATUS_PAGE])
             ->one();
 
 
@@ -130,6 +141,8 @@ class ArticleController extends Controller
         ]);
 
     }
+
+
 
 
 

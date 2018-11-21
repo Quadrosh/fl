@@ -98,27 +98,28 @@ $preorder = new \common\models\Preorders();
                                 <p <?= $section->conclusion_class?'class="'.$section->conclusion_class.'"':null ?>><?= nl2br($section->conclusion)  ?></p>
                             <?php endif; ?>
 
-                            <?php if ($section->call2action_description) : ?>
-                                <p class="text-center mt50" ><?= nl2br($section->call2action_description)  ?></p>
-                            <?php endif; ?>
-                            <?php if ($section->call2action_name) : ?>
-                                <?php if ($section->call2action_link == 'callMe') : ?>
-                                    <div class="col-sm-12 ">
-                                        <?= $this->render('/article/part_views/article/_phone-form', [
-                                            'section' => $section,
-                                            'article' => $article,
-                                            'utm' => isset($utm)?$utm:null,
-                                        ]) ?>
-
-                                    </div>
+                            <div <?= $section->call2action_class?'class="'.$section->call2action_class.'"':null ?>>
+                                <?php if ($section->call2action_description) : ?>
+                                    <p class="text-center mt50" ><?= nl2br($section->call2action_description)  ?></p>
                                 <?php endif; ?>
-                                <?php if ($section->call2action_link != 'callMe') : ?>
-                                    <?=
-                                    Html::a( $section->call2action_name, [$section->call2action_link],['class'=>$section->call2action_class]);
-                                    ?>
-                                <?php endif; ?>
-                            <?php endif; ?>
+                                <?php if ($section->call2action_name) : ?>
+                                    <?php if ($section->call2action_link == 'callMe') : ?>
+                                        <div class="col-sm-12 ">
+                                            <?= $this->render('/article/part_views/article/_phone-form', [
+                                                'section' => $section,
+                                                'article' => $article,
+                                                'utm' => isset($utm)?$utm:null,
+                                            ]) ?>
 
+                                        </div>
+                                    <?php endif; ?>
+                                    <?php if ($section->call2action_link != 'callMe') : ?>
+                                        <?=
+                                        Html::a( $section->call2action_name, [$section->call2action_link],['class'=>$section->call2action_class]);
+                                        ?>
+                                    <?php endif; ?>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
 
@@ -138,7 +139,7 @@ $preorder = new \common\models\Preorders();
          class="dark">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h2 class="head">Форма заявки</h2>
+            <h2 class="head"><?= $article->call2action_description?$article->call2action_description:'Форма заявки' ?></h2>
         </div>
 
         <div class="col-md-8 col-md-offset-2">
@@ -167,14 +168,11 @@ $preorder = new \common\models\Preorders();
                 ->hiddenInput(['value'=>$article->hrurl,'id' => 'quickorder_form_top-from_page'])->label(false) ?>
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-sm-offset-3">
                     <?= $form->field($preorder, 'operation_id')
                         ->textInput(['required' => true,'id' => 'mainOrderForm-operation_id']) ?>
                 </div>
-                <div class="col-sm-6">
-                    <?= $form->field($preorder, 'platform')
-                        ->textInput(['required' => true,'id' => 'mainOrderForm-platform']) ?>
-                </div>
+
             </div>
 
             <div class="row">
@@ -200,7 +198,7 @@ $preorder = new \common\models\Preorders();
             </div>
 
             <div class="col-sm-12 text-center mt50">
-                <?= Html::submitButton('Получить гарантию', ['class' => 'btn btn-danger']) ?>
+                <?= Html::submitButton($article->call2action_name?$article->call2action_name:'Получить гарантию', ['class' => 'btn btn-danger']) ?>
             </div>
             <?php ActiveForm::end(); ?>
         </div>

@@ -105,15 +105,17 @@ frontend\assets\ArticleAsset::register($this);
             ],
             [
                 'label' => 'Тендерный займ',
-                'url' => ['/tender_zaim'],
+                'url' => Yii::$app->request->url == '/tender_zaim'?false:['/tender_zaim'],
+                'active' => Yii::$app->request->url == '/tender_zaim'?true:false,
             ],
             [
                 'label' => 'Банковская гарантия',
-                'url' => ['/bank_garant'],
+                'url' => Yii::$app->request->url == '/bank_garant'?false:['/bank_garant'],
+                'active' => Yii::$app->request->url == '/bank_garant'?true:false,
             ],
             [
                 'label' => 'Контакты',
-                'url' => ['/contacts'],
+                'url' => Yii::$app->request->url == '/contacts'?false:['/contacts'],
                 'active' => Yii::$app->request->url == '/contacts'?true:false,
             ],
             [

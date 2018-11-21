@@ -75,7 +75,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=> 'html',
                 'label'=> 'Категории в каталоге',
             ],
-            'hrurl:url',
+            [
+                'attribute'=>'hrurl',
+                'value' => function($data)
+                {
+
+                    $startUrl = $data->status == 'page'? '/':'/article/';
+
+                    if (Yii::$app->request->getHostName() == 'cp.finlider.local') {
+                        $lpSite = $data['site'];
+                        $localSite = str_replace('.ru','.local',$lpSite);
+                        return '<a  href="http://'.$localSite.$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
+                    } else {
+                        return '<a  href="http://'.$data['site'].$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
+                    }
+
+
+                },
+                'format'=> 'html',
+            ],
             'title',
             // 'description:ntext',
             // 'keywords:ntext',

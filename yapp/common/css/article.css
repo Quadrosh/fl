@@ -18,11 +18,17 @@ body {
 .mt50{
     margin-top: 50px;
 }
+.mt70{
+    margin-top: 70px;
+}
 .mt80{
     margin-top: 80px;
 }
 .mt100{
     margin-top: 100px;
+}
+.mb0 {
+    margin-bottom: 0;
 }
 .mb10 {
     margin-bottom: 10px;
@@ -36,14 +42,17 @@ body {
 .pt0{
     padding-top: 0;
 }
+.pl10{
+    padding-left: 10px;
+}
 @media only screen and (max-width : 767px) {
     .mbxs50 {
         margin-bottom: 50px;
     }
 }
-.w100{
-    max-width: 100%;
-}
+/*.w100{*/
+    /*max-width: 100%;*/
+/*}*/
 
 .w50perSm{
     width:50%;
@@ -90,6 +99,26 @@ body {
 .w50{
     width:50px;
 }
+
+.max-w100per{
+    max-width: 100%;
+}
+.min-h100 {
+    min-height:100px;
+}
+.min-h400 {
+    min-height:400px;
+}
+.min-h500 {
+    min-height:500px;
+}
+.min-h600 {
+    min-height:600px;
+}
+
+.relative {
+    position:  relative !important;
+}
 .article_front_1 h1{
     font-size: 42px;
     color: #5f6973;
@@ -113,7 +142,9 @@ body {
 .table-column {
     display: table-column;
 }
-
+.vertical-middle{
+    vertical-align: middle;
+}
 /* projects */
 .carouselControl {
     position: absolute;
@@ -284,6 +315,12 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+.dark {
+    color: white;
+    /*background-color: #3f4158;*/
+    background-color: #31405f;
+}
+
 .grey {
     /*background-color: #f5f5f5;*/
     /*color: #333;*/
@@ -409,4 +446,44 @@ section {
 }
 .dark .head {
     color: white;
+}
+
+.a-page-topline_futorder .headLine {
+    position: relative;
+    background-color: #31405f;
+    color: #ffffff;
+    min-height: 74px;
+    /*padding: 19px 0;*/
+}
+.a-page-topline_futorder .headLine h1 {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 34px;
+    color: #ffffff;
+}
+
+.a-page-topline_futorder .headLine .icon svg {
+    position: absolute;
+    width: 85px;
+    height: 70px;
+    top: -34px;
+    left: -90px;
+}
+.a-page-topline_futorder .headLine .icon {
+    position: relative;
+}
+.article_no_footer .navbar {
+    margin-bottom: 0;
+}
+.as-img_back {
+    background-size: cover;
+    background-position: center;
+}
+.as-img_back .lead{
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+    color: #31405f;
 }

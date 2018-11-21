@@ -16,9 +16,9 @@ use \common\models\Article;
     <div class="row">
         <div class="col-sm-4">
             <?= $form->field($model, 'status')->dropDownList([
-                'published' => Article::STATUS_PUBLISHED,
-                'draft' => Article::STATUS_DRAFT,
-                'page' => Article::STATUS_PAGE,
+                Article::STATUS_PUBLISHED => Article::STATUS_PUBLISHED,
+                Article::STATUS_DRAFT => Article::STATUS_DRAFT,
+                Article::STATUS_PAGE => Article::STATUS_PAGE,
             ],['prompt' => 'Выбери статус']) ?>
         </div>
     </div>
@@ -116,6 +116,7 @@ use \common\models\Article;
 
         <div class="col-sm-6">
             <?= $form->field($model, 'view')->dropDownList([
+                '_a-article' => 'article',
                 '_a-page_preorder_form' => 'page_preorder_form',
                 '_a-page-topline_futorder' => 'page-topline_futorder',
             ],['prompt' => 'Выбери вьюху']) ?>

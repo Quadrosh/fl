@@ -17,7 +17,7 @@ if ($structure) {
         if ($param[0]=='bank') {
             $bank=$param[1];
         }
-        if ($param[0]=='calc_code') {
+        if ($param[0]=='calc_code' || $param[0]=='calc') {
             $calc_code=$param[1];
         }
     }
@@ -39,10 +39,18 @@ if (!$calc_code) {
     <?php endif; ?>
 
 
-    <?= \common\widgets\MainBgCalculatorWidget::widget([
-        'bank' => $bank,
-        'calc_code' => $calc_code,
-    ]) ?>
+    <?php
+    if ($calc_code == 'main_tz') {
+        echo \common\widgets\MainTzCalculatorWidget::widget([
+            'bank' => $bank,
+            'calc_code' => $calc_code,
+        ]);
+    } else {
+        echo \common\widgets\MainBgCalculatorWidget::widget([
+            'bank' => $bank,
+            'calc_code' => $calc_code,
+        ]);
+    }  ?>
 
 
 

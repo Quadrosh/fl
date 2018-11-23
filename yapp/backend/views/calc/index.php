@@ -26,6 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'bank_id',
             'fl_code',
             'name',
+            'interest_rate',
+
 //            'description:ntext',
             'status',
             //'created_at',

@@ -487,3 +487,68 @@ section {
     margin-top: 80px;
     color: #31405f;
 }
+
+
+
+
+
+/*     gsap slider    */
+
+.tz-calculator .value {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight:bold;
+    font-size:26px;
+    color:#566566;
+}
+
+ #slider_container{
+    background-color: #c2d2d4;
+    height:10px;
+    top:0;
+    overflow: visible;
+    padding:0;
+    position:relative;
+    /*margin-left: 25px;*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#slider_container{
+    width: 100%;
+}
+.tz-calculator .pin {
+    /*background-color: #008c7b;*/
+    text-align: center;
+    font-family: Asap, Avenir, Arial, sans-serif;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0px;
+    z-index:2;
+
+    border: 2px solid #f5f5f5;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius:50%;
+    background: #4DA29F;
+    /*background: #72EFE9;*/
+    box-shadow: 0 0 3px gray;
+}
+
+.tz-calculator .pin:hover {
+    background: #55939c;
+    /*background: #295654;*/
+    /*background: #4DA29F;*/
+}
+
+.tz-calculator .slider_range {
+    background-color:#6a7d81;
+    height:10px;
+    position:relative;
+
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}

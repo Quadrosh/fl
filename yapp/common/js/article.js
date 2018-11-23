@@ -9,6 +9,121 @@ $(document).ready(function() {
     //});
 
 
+
+
+
+    //    gsap  range  slider   https://codepen.io/breheny/pen/zxMWxd
+
+
+
+    function int_000(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+    }
+    //  my slider
+    if ($("#tz_calc_box")) {
+        tzCalc();
+    }
+
+    function tzCalc(){
+        var dataObj =  document.getElementById('tz_calc_box');
+        var dataRate = dataObj.getAttribute('data-rate');
+
+        var start = 0;
+        var minVal = 10000;
+        var maxVal = 30000000;
+        //var interest_rate = 3.8;
+        var interest_rate = dataRate;
+
+        var startVal = 80;
+
+        var display = $("#current_val");
+        var commission = $("#commission_val");
+
+        var contain = $("#slider_container");
+        var containX = contain.offset().left;
+        var containWidth = contain.width();
+
+        var pinWidth = $(".pin").outerWidth();
+        var pinOffset = pinWidth / 2;
+
+        Draggable.create(".pin", {
+            type: "x",
+            bounds: { left: -pinOffset, width: containWidth + pinWidth },
+            cursor: "pointer",
+            onDrag : updateRange
+        });
+
+        Draggable.create(contain, {
+            bounds: contain,
+            cursor: "pointer",
+            onPress: setKnob
+        });
+
+        var pin = Draggable.get("#slider_pin");
+
+        //$("#changeWidth").click(changeWidth);
+
+        init(startVal);
+///////////
+
+        function init(start) {
+            TweenLite.set(pin.target, { x: getPosition(start) });
+            pin.update();
+            updateRange();
+        }
+
+        function getValue(position) {
+            var ratio = position / containWidth;
+            return ((maxVal - minVal) * ratio) + minVal;
+        }
+
+        function getPosition(value) {
+            var ratio = (value - minVal) / (maxVal - minVal);
+            return (ratio * containWidth) - pinOffset;
+        }
+
+        function setKnob(event) {
+            if (event.target === pin.target) {
+                return
+            };
+            mouseX = this.pointerX - containX;
+
+            // Select the closest knob
+            var handle = pin;
+
+            TweenLite.set(handle.target, {
+                x: mouseX - pinOffset,
+                onComplete: function() {
+                    handle.startDrag(event);
+                }});
+
+            updateRange();
+        }
+
+        function getRange(handl) {
+            var range = handl.x + pinOffset;
+            range = range < 1
+                ? 0 : range > containWidth
+                ? containWidth : range;
+            return range;
+        }
+
+        function updateRange (){
+            var range = getRange(pin);
+            summ_val = Math.round(getValue(range));
+            commission_val = Math.round(summ_val / 100 * interest_rate);
+            TweenLite.set('.slider_range', { x: start, width: range });
+            display.html(int_000(summ_val));
+            commission.html(int_000(commission_val));
+        };
+    }
+
+
+
+
+
+
+
     $('.asb-slick_banner_1_carousel').slick({
         infinite: true,
         dots: true,

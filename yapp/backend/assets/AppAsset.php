@@ -17,6 +17,10 @@ class AppAsset extends AssetBundle
 
     ];
     public $js = [
+
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/utils/Draggable.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js',
         'libs/slick/slick.min.js',
         'js/common/article.js',
         'js/backend.js',

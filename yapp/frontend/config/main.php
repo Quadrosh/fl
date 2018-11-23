@@ -52,6 +52,7 @@ return [
 //                'bank_garant' => 'landing/page',
 //                'contacts' => 'site/contacts',
                 'lp/<landingpage:[0-9a-z\-\_]+>' => 'landing/page',
+                'article/calculator' => 'article/calculator',
                 'article/<hrurl:[0-9a-z\-\_]+>' => 'article/article',
                 '<pagename:[0-9a-z\-\_]+>' => 'site/page',
             ],

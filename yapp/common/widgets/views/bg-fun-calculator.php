@@ -64,7 +64,7 @@ $calcForm = new \common\models\CalculatorForm();
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="value text-center">
-                            Cумма контракта<br> <span id="current_val"></span> руб.
+                            Cумма гарантии<br> <span id="current_val"></span> руб.
                         </div>
                         <div id="slider_container">
                             <div class="pin" id="slider_pin"></div>
@@ -73,7 +73,7 @@ $calcForm = new \common\models\CalculatorForm();
                     </div>
                     <div class="col-sm-6">
                         <div class="value text-center">
-                            Срок контракта<br> <span id="time_val"></span> мес.
+                            Срок<br> <span id="time_val"></span> мес.
                         </div>
                         <div id="time_slider_container">
                             <div class="pin" id="time_slider_pin"></div>

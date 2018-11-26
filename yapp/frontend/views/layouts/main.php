@@ -173,6 +173,7 @@ AppAsset::register($this);
                     <div class="footer_info">
                         <p class="head">Центральный офис</p>
                         <p>г. Москва ул. Бойцовая д.27. оф. 213</p>
+                        <?= Html::a('База знаний','/article',['class' => 'bottomLink']) ?>
                     </div>
                 </div>
 

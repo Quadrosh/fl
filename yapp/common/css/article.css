@@ -112,6 +112,15 @@ body {
 .min-h100 {
     min-height:100px;
 }
+.min-h100per{
+    min-height:100%;
+}
+.min-h100per-180{
+    min-height:calc(100vh - 180px);
+}
+.h100per{
+    height:100%;
+}
 .min-h400 {
     min-height:400px;
 }

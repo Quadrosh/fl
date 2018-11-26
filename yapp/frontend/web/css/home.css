@@ -1108,6 +1108,11 @@ footer .right{
     }
 }
 
+footer .bottomLink{
+    text-transform: uppercase;
+    color: #4b6594;
+}
+
 .alert {
     z-index: 100;
     margin-top: 150px;

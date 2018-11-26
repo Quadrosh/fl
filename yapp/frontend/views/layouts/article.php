@@ -43,7 +43,7 @@ frontend\assets\ArticleAsset::register($this);
 <body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page">
 <?php $this->beginBody() ?>
 
-<div class="wrap">
+<div class="wrap min-h100per">
     <?php
     NavBar::begin([
         'brandLabel' => '<svg version="1.1"
@@ -147,12 +147,13 @@ frontend\assets\ArticleAsset::register($this);
     NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container min-h100per-180">
 
         <div class="row  text-center">
 
             <?= \common\widgets\Alert::widget() ?>
         </div>
+
 
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
@@ -176,6 +177,7 @@ frontend\assets\ArticleAsset::register($this);
                     <div class="footer_info">
                         <p class="head">Центральный офис</p>
                         <p>г. Москва ул. Бойцовая д.27. оф. 213</p>
+                         <?= Html::a('База знаний','/article',['class' => 'bottomLink']) ?>
                     </div>
                 </div>
 

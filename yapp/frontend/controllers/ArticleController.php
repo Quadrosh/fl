@@ -8,6 +8,7 @@ use common\models\Calc;
 use common\models\LandingListitem;
 use common\models\LandingPage;
 use common\models\LandingSection;
+use common\models\Menu;
 use common\models\Preorders;
 use common\models\Visit;
 use Yii;
@@ -51,8 +52,9 @@ class ArticleController extends Controller
         $this->view->params['currentItem']=13;
         $this->article = Article::find()
             ->where(['site'=>Yii::$app->params['site']])
-            ->andwhere(['hrurl'=>'index'])
+            ->andwhere(['hrurl'=>'article'])
             ->one();
+
         $sections = $this->article->sections;
         if ($this->article->layout == null) {
             $this->layout = 'article';
@@ -61,11 +63,19 @@ class ArticleController extends Controller
         }
         $this->view->params['meta']=$this->article;
 
-        return $this->render('part_views/article/'.$this->article->view,[
+        $category = Menu::find()->where(['url'=>'article'])->one();
+        return $this->render('article_index',[
+            'page' => $this->article,
             'article' => $this->article,
-            'sections' => $sections,
             'utm' => $utm,
+            'category'=>$category,
         ]);
+
+//        return $this->render('part_views/article/'.$this->article->view,[
+//            'article' => $this->article,
+//            'sections' => $sections,
+//            'utm' => $utm,
+//        ]);
     }
 
     public function actionArticle($hrurl=null)
@@ -142,6 +152,63 @@ class ArticleController extends Controller
 
     }
 
+
+
+
+    public function getUtm()
+    {
+        $utm = [];
+        $session = Yii::$app->session;
+
+        if (Yii::$app->request->get('utm_source')) {
+            // UTM из GET
+            $utm['source'] = Yii::$app->request->get('utm_source');
+            $utm['medium'] = Yii::$app->request->get('utm_medium');
+            $utm['campaign'] = Yii::$app->request->get('utm_campaign');
+            $utm['term'] = Yii::$app->request->get('utm_term');
+            $utm['content'] = Yii::$app->request->get('utm_content');
+
+            // сохранение в сессию
+            if (Yii::$app->request->get('utm_source')!= null) {
+                $session['utm_source'] = $utm['source'];
+                $session['utm_medium'] = $utm['medium'];
+                $session['utm_campaign'] = $utm['campaign'];
+                $session['utm_term'] = $utm['term'];
+                $session['utm_content'] = $utm['content'];
+            }
+        } else {
+            if ($session['utm_source']) {
+                $utm['source'] = $session['utm_source'];
+                $utm['medium'] = $session['utm_medium'];
+                $utm['campaign'] = $session['utm_campaign'];
+                $utm['term'] = $session['utm_term'];
+                $utm['content'] = $session['utm_content'];
+            } else { // если там что то есть
+                $utm['source'] = Yii::$app->request->get('utm_source');
+                $utm['medium'] = Yii::$app->request->get('utm_medium');
+                $utm['campaign'] = Yii::$app->request->get('utm_campaign');
+                $utm['term'] = Yii::$app->request->get('utm_term');
+                $utm['content'] = Yii::$app->request->get('utm_content');
+            }
+        }
+
+        //сохр визита в статистику
+        $visit = new Visit();
+        $visit['ip'] = Yii::$app->request->userIP;
+        $visit['site'] = Yii::$app->params['site'];
+        $visit['lp_hrurl'] = '';
+        $visit['url'] = 'http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+        $visit['utm_source']=$utm['source'];
+        $visit['utm_medium']=$utm['medium'];
+        $visit['utm_campaign']=$utm['campaign'];
+        $visit['utm_term']=$utm['term'];
+        $visit['utm_content']=$utm['content'];
+        $visit['qnt']=1;
+        $visit->save();
+
+        return $utm;
+
+    }
 
 
 

@@ -508,6 +508,12 @@ section {
     font-size:26px;
     color:#566566;
 }
+@media only screen and (max-width : 479px) {
+    .tz-calculator .value,
+    .bg-calculator .value {
+        font-size:18px;
+    }
+}
 
  #slider_container{
     background-color: #c2d2d4;

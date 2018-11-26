@@ -589,3 +589,13 @@ section {
     margin-right: 10px;
     font-weight: 400;
 }
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0px;
+}
+.breadcrumb a{
+    color: #787878;
+}
+.breadcrumb > .active {
+    color: #9F9F9F;
+}

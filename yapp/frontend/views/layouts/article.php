@@ -92,7 +92,7 @@ frontend\assets\ArticleAsset::register($this);
 </svg><span class="navbar_motto onBright">Тендерное финансирование</span>',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
-            'class' => 'navbar navbar-fixed-top',
+            'class' => 'navbar mb0 navbar-fixed-top relative',
         ],
     ]);
     echo Nav::widget([
@@ -149,11 +149,14 @@ frontend\assets\ArticleAsset::register($this);
 
     <div class="container">
 
-        <div class="row mt100 text-center">
+        <div class="row  text-center">
 
             <?= \common\widgets\Alert::widget() ?>
         </div>
 
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
 
 
         <?= $content ?>

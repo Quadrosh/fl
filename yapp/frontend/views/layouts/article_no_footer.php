@@ -154,6 +154,9 @@ frontend\assets\ArticleAsset::register($this);
             <?= \common\widgets\Alert::widget() ?>
         </div>
 
+        <?= Breadcrumbs::widget([
+            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+        ]) ?>
 
 
         <?= $content ?>

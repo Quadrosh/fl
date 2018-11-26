@@ -39,6 +39,12 @@ body {
 .mr20 {
     margin-right: 20px;
 }
+.mr30 {
+    margin-right: 30px;
+}
+.mr50 {
+    margin-right: 50px;
+}
 .pt0{
     padding-top: 0;
 }
@@ -494,7 +500,8 @@ section {
 
 /*     gsap slider    */
 
-.tz-calculator .value {
+.tz-calculator .value,
+.bg-calculator .value {
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight:bold;
@@ -514,11 +521,25 @@ section {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+#time_slider_container{
+    background-color: #c2d2d4;
+    height:10px;
+    top:0;
+    overflow: visible;
+    padding:0;
+    position:relative;
+    /*margin-left: 25px;*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
 
-#slider_container{
+#slider_container,
+#time_slider_container{
     width: 100%;
 }
-.tz-calculator .pin {
+.tz-calculator .pin,
+.bg-calculator .pin {
     /*background-color: #008c7b;*/
     text-align: center;
     font-family: Asap, Avenir, Arial, sans-serif;
@@ -543,7 +564,9 @@ section {
     /*background: #4DA29F;*/
 }
 
-.tz-calculator .slider_range {
+.tz-calculator .slider_range,
+.bg-calculator .slider_range,
+.bg-calculator .time_slider_range{
     background-color:#6a7d81;
     height:10px;
     position:relative;
@@ -551,4 +574,12 @@ section {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+}
+
+.fz_list label {
+    margin-right: 10px;
+}
+.no_fz_list label {
+    margin-right: 10px;
+    font-weight: 400;
 }

@@ -156,5 +156,23 @@ class ArticleController extends Controller
     }
 
 
+    public function actionCalc()
+    {
+        $code = Yii::$app->request->post()['code'];
+        $calc=Calc::find()->where(['fl_code'=>$code])->one();
+        $factors = $calc->factors;
+        $data = [];
+        $i=0;
+        foreach ($factors as $factor) {
+            $data[$i]['name']=$factor->name;
+            $data[$i]['fl_code']=$factor->fl_code;
+            $data[$i]['value']=$factor->value;
+            $data[$i]['group']=$factor->group;
+            $i++;
+        }
+
+        return json_encode($data);
+    }
+
 
 }

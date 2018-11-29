@@ -13,6 +13,7 @@ class MainBgCalculatorWidget extends Widget
 {
     public $bank;
     public $calc_code;
+    public $data;
 
 
     public function init()
@@ -28,11 +29,13 @@ class MainBgCalculatorWidget extends Widget
             return $this->render('bg-fun-calculator', [
                 'bank' => $this->bank,
                 'calc_code' => $this->calc_code,
+                'data' => $this->data,
             ]);
         } else {
             return $this->render('main-bg-calculator', [
                 'bank' => $this->bank,
                 'calc_code' => $this->calc_code,
+                'data' => $this->data,
             ]);
         }
 

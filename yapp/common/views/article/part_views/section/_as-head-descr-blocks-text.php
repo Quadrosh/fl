@@ -27,7 +27,7 @@ use yii\helpers\Html;
                         <?php endif; ?>
                         <?php if (!$block->view) : ?>
                             <?php if ($block->header) : ?>
-                                <h4 class="<?= $block->header_class ?>"><?= $block->header ?></h4>
+                                <h3 class="<?= $block->header_class ?>"><?= $block->header ?></h3>
                             <?php endif; ?>
                             <?php if ($block->description) : ?>
                                 <p class="text-center"><?= $block->description ?></p>
@@ -35,7 +35,7 @@ use yii\helpers\Html;
                             <?php if ($block->items) : ?>
                                 <?php foreach ($block->items as $item) : ?>
                                     <?php if ($item->header) : ?>
-                                        <p class="<?= $item->header_class ?>"><?= $item->header ?></p>
+                                        <h4 class="<?= $item->header_class ?>"><?= $item->header ?></h4>
                                     <?php endif; ?>
                                     <?php if ($item->description) : ?>
                                         <p class="text-center"><?= $item->description ?></p>

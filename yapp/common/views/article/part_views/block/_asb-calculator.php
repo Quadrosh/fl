@@ -11,6 +11,10 @@ use yii\helpers\Html;
 $structure = $model->structure;
 $bank = '';
 $calc_code = '';
+$sumMessage ='';
+$timeMessage ='';
+$resultMessage ='';
+$infoMessage ='';
 if ($structure) {
     foreach (explode('&', $structure) as $chunk) {
         $param = explode("=", $chunk);
@@ -19,6 +23,18 @@ if ($structure) {
         }
         if ($param[0]=='calc_code' || $param[0]=='calc') {
             $calc_code=$param[1];
+        }
+        if ($param[0]=='sum_message' || $param[0]=='sumMessage' ) {
+            $sumMessage=$param[1];
+        }
+        if ($param[0]=='time_message' || $param[0]=='timeMessage' ) {
+            $timeMessage=$param[1];
+        }
+        if ($param[0]=='result_message' || $param[0]=='resultMessage' ) {
+            $resultMessage=$param[1];
+        }
+        if ($param[0]=='info_message' || $param[0]=='infoMessage' ) {
+            $infoMessage=$param[1];
         }
     }
 }
@@ -49,6 +65,13 @@ if (!$calc_code) {
         echo \common\widgets\MainBgCalculatorWidget::widget([
             'bank' => $bank,
             'calc_code' => $calc_code,
+            'data'=> [
+                'sumMessage' => $sumMessage,
+                'timeMessage' => $timeMessage,
+                'resultMessage' => $resultMessage,
+                'infoMessage' => $infoMessage,
+            ]
+
         ]);
     }  ?>
 

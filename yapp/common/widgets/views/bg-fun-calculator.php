@@ -13,21 +13,18 @@ $calc =  \common\models\Calc::find()->where(['fl_code'=>$calc_code])->one();
 
 $calcForm = new \common\models\CalculatorForm();
 
-//$calcForm->factors = $calc->factors;
+$sumMessage = $data['sumMessage']?$data['sumMessage']:'Сумма гарантии';
+$timeMessage = $data['timeMessage']?$data['timeMessage']:'Срок';
+$resultMessage = $data['resultMessage']?$data['resultMessage']:'Комиссия банка';
+$infoMessage = $data['infoMessage']?$data['infoMessage']: \common\models\Calc::INFO_MESSAGE;
 
-//$this->title = $name;
 
 ?>
 <div class="bg-calculator">
 
-
-
-
     <div  class="box light-grey ">
 
         <div class="row">
-<!--            <h1> %--><?//= $calc->interest_rate ?><!--</h1>-->
-
 
             <?php
             $factors = $calc->factors;
@@ -64,7 +61,7 @@ $calcForm = new \common\models\CalculatorForm();
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="value text-center">
-                            Cумма гарантии<br> <span id="current_val"></span> руб.
+                            <?= $sumMessage ?><br> <span id="current_val"></span> руб.
                         </div>
                         <div id="slider_container">
                             <div class="pin" id="slider_pin"></div>
@@ -73,7 +70,7 @@ $calcForm = new \common\models\CalculatorForm();
                     </div>
                     <div class="col-sm-6">
                         <div class="value text-center">
-                            Срок<br> <span id="time_val"></span> мес.
+                            <?= $timeMessage ?><br> <span id="time_val"></span> мес.
                         </div>
                         <div id="time_slider_container">
                             <div class="pin" id="time_slider_pin"></div>
@@ -94,7 +91,7 @@ $calcForm = new \common\models\CalculatorForm();
 
 
                 <div class="value text-center">
-                    комиссия банка <span id="commission_val"></span> руб.
+                    <?= $resultMessage ?> <span id="commission_val"></span> руб.
                 </div>
 
             </div>
@@ -108,7 +105,7 @@ $calcForm = new \common\models\CalculatorForm();
     </div>
 
     <sup>
-        <?= \common\models\Calc::INFO_MESSAGE ?>
+        <?= $infoMessage ?>
     </sup>
 
 

@@ -161,3 +161,12 @@ a.desc:after {
     /*border:1px red solid;*/
     background-color: lightyellow;
 }
+.admin_section_head{
+    border-top: 1px solid lightgray;
+    border-left:1px solid lightgray;
+    padding-top: 5px;
+}
+.admin_section_ul {
+    border-left:1px solid lightgray;
+    margin-left: -15px;
+}

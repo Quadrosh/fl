@@ -112,33 +112,6 @@ $(document).ready(function() {
             var dataCode = dataObj?dataObj.getAttribute('data-code'):null;
 
             var factorsValue = 1;
-            //
-            //var fz=[];
-            //var noFz=[];
-            //
-            //
-            //$.ajax({
-            //    url    : '/article/calc',
-            //    type   : 'post',
-            //    data   : {code:dataCode},
-            //    dataType: "json",
-            //    success: function (response)
-            //    {
-            //        $.each(response, function (item, value) {
-            //            if (value.group =='fz') {
-            //                fz.push(value);
-            //            } else {
-            //                noFz.push(value);
-            //            }
-            //        });
-            //    },
-            //    error  : function (error)
-            //    {
-            //        console.log('ajax send error');
-            //        console.log(error);
-            //    }
-            //});
-
 
             var start = 0;
             var minVal = 10000;

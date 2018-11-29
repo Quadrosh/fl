@@ -83,7 +83,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=> 'html',
                 'label'=> 'Категории в каталоге',
             ],
-            'hrurl:url',
+            [
+                'attribute'=>'hrurl',
+                'value' => function($data)
+                {
+
+                    $startUrl = $data->status == 'page'? '/':'/article/';
+
+                    if (Yii::$app->request->getHostName() == 'cp.finlider.local') {
+                        $lpSite = $data['site'];
+                        $localSite = str_replace('.ru','.local',$lpSite);
+                        return '<a  href="http://'.$localSite.$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
+                    } else {
+                        return '<a  href="http://'.$data['site'].$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
+                    }
+
+
+                },
+                'format'=> 'html',
+            ],
             'title',
             'description:ntext',
             'keywords:ntext',
@@ -179,7 +197,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <li>Управление - секции <?php if ($model->view) {echo ' | article view => '.$model->view;} ?> </li>
     </ol>
     <?php $sectionNum=1; foreach ($model->sections as $section) : ?>
-        <div class="row">
+        <div class="row admin_section_head">
             <div class="col-sm-4">
                 Секция: <?= $sectionNum ?>. <?= $section->sort?'<sup class="glyphicon glyphicon-sort-by-attributes"></sup>'.$section->sort:'' ?> <span class="text-danger"><?= $section->code_name ?></span> <?= \yii\helpers\Html::a( '<span class="glyphicon glyphicon-pencil"></span>', '/article-section/update?id='.$section->id,
                     [
@@ -225,7 +243,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
 
-        <ul>
+        <ul class="admin_section_ul">
             <li>ID - <?= $section->id ?><?= $section->sort?', Sort - '.$section->sort:'' ?></li>
             <?= $section->header?'<li> Header - '.$section->header.'</li>':'' ?>
             <?= $section->header_class?'<li> Header - '.$section->header_class.'</li>':'' ?>
@@ -497,15 +515,9 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php $sectionNum++; endforeach; ?>
 <?php endif; ?>
-
-
-
-
-
     </section>
 
-
-
+    <?= Html::a('Добавить секцию','/article-section/create?article_id='.$model->id, ['class' => 'mt50 btn btn-success']) ?>
 </div>
 
     <section class="mt50">

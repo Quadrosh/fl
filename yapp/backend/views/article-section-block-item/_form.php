@@ -122,6 +122,8 @@ use yii\widgets\ActiveForm;
                 '_asbi-v_svg_head_text' => '| svg_head_text',
                 '_asbi-h_img_icon_in_head' => '-- img_icon_in_head',
                 '_asbi-h_img_col-text_col' => '-- img_col-text_col',
+                '_asbi-h_tbl2_img_head--text__w1-structure' => '-- tbl2_img_head--text__w1-structure',
+                '_asbi-h_bs2-img_head--text' => '-- bs2-img_head--text',
             ],['prompt' => 'Выбери']) ?>
         </div>
         <div class="col-sm-3">

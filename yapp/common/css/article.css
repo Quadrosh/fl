@@ -171,7 +171,7 @@ body {
     position: relative;
 }
 .asb-slick_banner_1 .carouselControl {
-    top:148px;
+    top:50%;
     margin-top: -40px;
 }
 @media only screen and (max-width : 991px) {
@@ -179,6 +179,13 @@ body {
         top:118px;
     }
 }
+
+.asb-slick_1 .carouselControl {
+    top:50%;
+    margin-top: -40px;
+}
+
+
 
 .carouselControl svg{
     width: 80px;
@@ -192,18 +199,45 @@ body {
 .asb-slick_banner_1_slickNext{
     right:10px;
 }
+.outside.slickPrev{
+    left:-60px;
+}
+.outside.slickNext{
+    right:-60px;
+}
+@media only screen and (max-width : 991px) {
+    .outside.slickPrev{
+        left:10px;
+    }
+    .outside.slickNext{
+        right:10px;
+    }
+}
 
-.bright .carouselControl svg{
-    /*stroke:#0F63A4;*/
-    /*stroke:#30353b;*/
-    /*stroke: #ffffff;*/
+.carouselControl svg{
     fill: #ffffff;
 }
-.bright .carouselControl svg:hover{
-    /*stroke:#838e9a;*/
+.carouselControl svg:hover{
     fill:#838e9a;
 }
 
+.bright .carouselControl svg{
+    fill: #ffffff;
+}
+.bright .carouselControl svg:hover{
+    fill:#838e9a;
+}
+.grey .carouselControl svg{
+    /*fill:#0F63A4;*/
+    fill:#838e9a;
+    /*fill:#30353b;*/
+    /*fill: #838e9a;*/
+}
+.grey .carouselControl svg:hover{
+    /*fill:white;*/
+    fill:#0F63A4;
+    /*fill:#838e9a;*/
+}
 .dark .carouselControl svg {
     /*stroke:#fff;*/
     stroke:#838e9a;

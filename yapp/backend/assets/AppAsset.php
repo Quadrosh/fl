@@ -12,6 +12,7 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+        'libs/slick/slick.css',
         'css/site.css',
         'css/common/article.css',
 

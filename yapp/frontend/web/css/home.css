@@ -1143,3 +1143,16 @@ footer .bottomLink{
     /*text-transform: uppercase;*/
     color: #B1B2B4;
 }
+
+
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+
+@media (min-width: 979px) {
+    ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+    }
+}

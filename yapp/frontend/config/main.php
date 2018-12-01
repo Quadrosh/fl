@@ -57,6 +57,7 @@ return [
                 'article' => 'article/index',
                 'article/<hrurl:[0-9a-z\-\_]+>' => 'article/article',
                 '<pagename:[0-9a-z\-\_]+>' => 'site/page',
+                '<pagename:[0-9a-z\-\_]+/[0-9a-z\-\_]+>' => 'site/page',
             ],
         ],
 

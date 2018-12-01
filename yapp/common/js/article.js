@@ -284,6 +284,36 @@ $(document).ready(function() {
         //appendArrows:'.popularItems',
     });
 
+    if (document.getElementsByClassName('slickMulti')) {
+        var arr = document.getElementsByClassName('slickMulti');
+
+        for (var i = 0; i < arr.length; i++) {
+            var id = arr[i].getAttribute('data-id');
+            var showItems = arr[i].getAttribute('data-showItems')? arr[i].getAttribute('data-showItems'):1;
+            slick(id,showItems);
+        }
+
+        function slick(id,show) {
+            $('.slick_multi_'+id).slick({
+                infinite: true,
+                slidesToShow: show,
+                slidesToScroll: 1,
+                dots: false,
+                easing:'easeInOutSine',
+                prevArrow:'.slickPrev'+id,
+                nextArrow:'.slickNext'+id,
+                responsive: [
+                    {
+                        breakpoint: 769,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        }
+    }
+
 });
 
 $(document).on("beforeSubmit", "#mainBgCalculator", function () {
@@ -314,12 +344,12 @@ $(document).on("beforeSubmit", "#mainBgCalculator", function () {
 
 
 
-function processResponse(data){
-
-    for (var i = 0; i < data.length; i++){
-        var obj = data[i];
-
-        console.log(obj);
-
-    }
-}
+//function processResponse(data){
+//
+//    for (var i = 0; i < data.length; i++){
+//        var obj = data[i];
+//
+//        console.log(obj);
+//
+//    }
+//}

@@ -124,6 +124,7 @@ use yii\widgets\ActiveForm;
                 '_asb-bs_horiz_4' => 'bs_horiz_4',
                 '_asb-bs_horiz_3' => 'bs_horiz_3',
                 '_asb-bs_horiz_2' => 'bs_horiz_2',
+                '_asb-slick_1' => 'slick_1',
                 '_asb-slick_banner_1' => 'slick_banner_1',
                 '_asb-ul-li' => 'ul-li',
                 '_asb-ol-li' => 'ol-li',

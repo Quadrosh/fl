@@ -264,7 +264,7 @@ class Article extends \yii\db\ActiveRecord
 
 
         $json = Json::encode($arr);
-        $jsonfile= Yii::getAlias('@webroot/tmp/export_article-'.$this->hrurl.'.json');
+        $jsonfile= Yii::getAlias('@webroot/tmp/export_article-'.str_replace('/','_',$this->hrurl).'.json');
         $fp = fopen($jsonfile, 'w+');
         fwrite($fp, $json);
         fclose($fp);
@@ -361,8 +361,6 @@ class Article extends \yii\db\ActiveRecord
                 Yii::$app->session->setFlash('error', 'Ошибка сохранения временного файла');
                 return false;
             }
-
-
             var_dump($oModel); die;
 
         }

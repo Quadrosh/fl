@@ -82,7 +82,7 @@ use yii\helpers\Html;
             <?php endif; ?>
             <?php if ($model->call2action_name) : ?>
                 <?php if ($model->call2action_link == 'callMe' || $model->call2action_link == 'call_me') : ?>
-                    <div class="col-sm-12 ">
+                    <div class="col-md-10 col-md-offset-1  col-lg-8 col-lg-offset-2 ">
                         <?= $this->render('/article/part_views/article/_phone-form_wide', [
                             'section' => $model,
                             'article' => $article,

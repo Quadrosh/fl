@@ -265,7 +265,7 @@ $preorder = new common\models\Preorders();
              class="<?= $sections['call2action']['stylekey'] ?> <?= $sections['call2action']['section_type'] ?>">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 text-left">
-                <p class="head"><?= nl2br($sections['call2action']['text']) ?></p>
+                <p class="head text-center mb50"><?= nl2br($sections['call2action']['text']) ?></p>
             </div>
         </div>
     </section>

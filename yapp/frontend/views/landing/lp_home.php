@@ -103,10 +103,10 @@ $preorder = new common\models\Preorders();
     </section>
 
 <!--    1 undertop -->
-    <section id="servicesSection"
+    <section id="undertopSection"
              class="<?= $sections['undertop']['stylekey'] ?> <?= $sections['undertop']['section_type'] ?>">
         <div class="row">
-            <div class="col-sm-12  text-center">
+            <div class="col-sm-12  text-center mb50">
                 <h1 class="head"><?= $sections['undertop']['head'] ?></h1>
             </div>
             <div class="col-sm-8 col-sm-offset-2 text-left">

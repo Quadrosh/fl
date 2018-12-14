@@ -93,6 +93,12 @@ echo Nav::widget([
                     'active' => Yii::$app->request->url == '/bank_garant/srochnoe-poluchenie-bankovskoi-garantii'?true:false,
 
                 ],
+                [
+                    'label' => 'Банковская гарантия 44-ФЗ',
+                    'url' => Yii::$app->request->url == '/bank_garant/kak-oformit-bankovskuyu-garantiyu-po-44-fz'?false:['/bank_garant/kak-oformit-bankovskuyu-garantiyu-po-44-fz'],
+                    'active' => Yii::$app->request->url == '/bank_garant/kak-oformit-bankovskuyu-garantiyu-po-44-fz'?true:false,
+
+                ],
 
             ],
         ],

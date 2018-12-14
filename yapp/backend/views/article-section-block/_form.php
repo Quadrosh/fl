@@ -125,6 +125,7 @@ use yii\widgets\ActiveForm;
                 '_asb-bs_horiz_3' => 'bs_horiz_3',
                 '_asb-bs_horiz_2' => 'bs_horiz_2',
                 '_asb-slick_1' => 'slick_1',
+                '_asb-slick_leadbox' => 'slick_leadbox',
                 '_asb-slick_banner_1' => 'slick_banner_1',
                 '_asb-ul-li' => 'ul-li',
                 '_asb-ol-li' => 'ol-li',
@@ -136,6 +137,7 @@ use yii\widgets\ActiveForm;
             <?= $form->field($model, 'color_key')->dropDownList([
                 'bright' => 'bright',
                 'dark' => 'dark',
+                'dark-green' => 'dark-green',
                 'grey' => 'grey',
             ],['prompt' => 'Выбери']) ?>
         </div>

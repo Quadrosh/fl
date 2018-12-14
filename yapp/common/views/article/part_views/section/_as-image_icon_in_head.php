@@ -38,45 +38,49 @@ use yii\helpers\Html;
             <?php if ($model->blocks) : ?>
                 <div class="mt30 mb30">
                     <?php foreach ($model->blocks as $block) : ?>
-                        <?php if ($block->view) : ?>
-                            <?= $this->render('/article/part_views/block/'.$block->view, [
-                                'model' => $block,
-                                'article' => $article,
-                                'utm' => isset($utm)?$utm:null,
-                            ]) ?>
-                        <?php endif; ?>
-                        <?php if (!$block->view) : ?>
-                            <?php if ($block->header) : ?>
-                                <h3 <?= $block->header_class?'class="'.$block->header_class.'"':null ?>><?= $block->header ?></h3>
-                            <?php endif; ?>
-                            <?php if ($block->description) : ?>
-                                <p <?= $block->description_class?'class="'.$block->description_class.'"':null ?>><?= $block->description ?></p>
-                            <?php endif; ?>
-                            <?php if ($block->raw_text) : ?>
-                                <p <?= $block->raw_text_class?'class="'.$block->raw_text_class.'"':null ?>><?= $block->raw_text ?></p>
-                            <?php endif; ?>
-                            <?php if ($block->items) : ?>
-                                <?php foreach ($block->items as $item) : ?>
-                                    <?php if ($item->view) : ?>
-                                        <?= $this->render('/article/part_views/block_item/'.$item->view, [
-                                            'model' => $item,
-                                        ]) ?>
-                                    <?php endif; ?>
-                                    <?php if (!$item->view) : ?>
-                                        <?php if ($item->header) : ?>
-                                            <h4 <?= $item->header_class?'class="'.$item->header_class.'"':null ?>><?= $item->header ?></h4>
-                                        <?php endif; ?>
-                                        <?php if ($item->description) : ?>
-                                            <p <?= $item->description_class?'class="'.$item->description_class.'"':null ?>><?= $item->description ?></p>
-                                        <?php endif; ?>
-                                        <?php if ($item->text) : ?>
-                                            <p <?= $item->text_class?'class="'.$item->text_class.'"':null ?>><?= $item->text ?></p>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
+                        <div class=" <?= $block->color_key ?> <?= $block->custom_class ?>">
 
-                                <?php endforeach; ?>
+                            <?php if ($block->view) : ?>
+                                <?= $this->render('/article/part_views/block/'.$block->view, [
+                                    'model' => $block,
+                                    'article' => $article,
+                                    'utm' => isset($utm)?$utm:null,
+                                ]) ?>
                             <?php endif; ?>
-                        <?php endif; ?>
+                            <?php if (!$block->view) : ?>
+                                <?php if ($block->header) : ?>
+                                    <h3 <?= $block->header_class?'class="'.$block->header_class.'"':null ?>><?= $block->header ?></h3>
+                                <?php endif; ?>
+                                <?php if ($block->description) : ?>
+                                    <p <?= $block->description_class?'class="'.$block->description_class.'"':null ?>><?= $block->description ?></p>
+                                <?php endif; ?>
+                                <?php if ($block->raw_text) : ?>
+                                    <p <?= $block->raw_text_class?'class="'.$block->raw_text_class.'"':null ?>><?= $block->raw_text ?></p>
+                                <?php endif; ?>
+                                <?php if ($block->items) : ?>
+                                    <?php foreach ($block->items as $item) : ?>
+                                        <?php if ($item->view) : ?>
+                                            <?= $this->render('/article/part_views/block_item/'.$item->view, [
+                                                'model' => $item,
+                                            ]) ?>
+                                        <?php endif; ?>
+                                        <?php if (!$item->view) : ?>
+                                            <?php if ($item->header) : ?>
+                                                <h4 <?= $item->header_class?'class="'.$item->header_class.'"':null ?>><?= $item->header ?></h4>
+                                            <?php endif; ?>
+                                            <?php if ($item->description) : ?>
+                                                <p <?= $item->description_class?'class="'.$item->description_class.'"':null ?>><?= $item->description ?></p>
+                                            <?php endif; ?>
+                                            <?php if ($item->text) : ?>
+                                                <p <?= $item->text_class?'class="'.$item->text_class.'"':null ?>><?= $item->text ?></p>
+                                            <?php endif; ?>
+                                        <?php endif; ?>
+
+                                    <?php endforeach; ?>
+                                <?php endif; ?>
+                            <?php endif; ?>
+                        </div>
+
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>

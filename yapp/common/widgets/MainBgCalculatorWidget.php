@@ -14,6 +14,8 @@ class MainBgCalculatorWidget extends Widget
     public $bank;
     public $calc_code;
     public $data;
+    public $view;
+    public $only;
 
 
     public function init()
@@ -26,11 +28,20 @@ class MainBgCalculatorWidget extends Widget
 
 
         if ($this->calc_code == 'bg_fun') {
-            return $this->render('bg-fun-calculator', [
-                'bank' => $this->bank,
-                'calc_code' => $this->calc_code,
-                'data' => $this->data,
-            ]);
+            if ($this->view == 'rotor') {
+                return $this->render('bg-fun-rotor-calculator', [
+                    'bank' => $this->bank,
+                    'calc_code' => $this->calc_code,
+                    'data' => $this->data,
+                    'only' => $this->only,
+                ]);
+            } else {
+                return $this->render('bg-fun-calculator', [
+                    'bank' => $this->bank,
+                    'calc_code' => $this->calc_code,
+                    'data' => $this->data,
+                ]);
+            }
         } else {
             return $this->render('main-bg-calculator', [
                 'bank' => $this->bank,

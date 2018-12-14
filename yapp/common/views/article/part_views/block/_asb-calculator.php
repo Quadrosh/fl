@@ -15,6 +15,8 @@ $sumMessage ='';
 $timeMessage ='';
 $resultMessage ='';
 $infoMessage ='';
+$view ='';
+$only ='';
 if ($structure) {
     foreach (explode('&', $structure) as $chunk) {
         $param = explode("=", $chunk);
@@ -35,6 +37,12 @@ if ($structure) {
         }
         if ($param[0]=='info_message' || $param[0]=='infoMessage' ) {
             $infoMessage=$param[1];
+        }
+        if ($param[0]=='view' ) {
+            $view=$param[1];
+        }
+        if ($param[0]=='only' ) {
+            $only=$param[1];
         }
     }
 }
@@ -65,6 +73,8 @@ if (!$calc_code) {
         echo \common\widgets\MainBgCalculatorWidget::widget([
             'bank' => $bank,
             'calc_code' => $calc_code,
+            'view' => $view,
+            'only' => $only,
             'data'=> [
                 'sumMessage' => $sumMessage,
                 'timeMessage' => $timeMessage,

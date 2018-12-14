@@ -54,7 +54,7 @@ $infoMessage = $data['infoMessage']?$data['infoMessage']: \common\models\Calc::I
 
             <div id="bg_fun_calc_box" class="col-sm-12"
                  data-rate="<?= $calc->interest_rate ?>"
-                 data-code=<?= $calc->fl_code  ?>
+                 data-code="<?= $calc->fl_code  ?>"
             >
 
 

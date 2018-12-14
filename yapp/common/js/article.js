@@ -257,6 +257,144 @@ $(document).ready(function() {
 
 
 
+    //  bg rotor calc
+    if (document.getElementById('bg_rotor_calc_box')) {
+        function bgRotorCalc(){
+            var dataObj =  document.getElementById('bg_rotor_calc_box');
+
+            var dataRate = dataObj?dataObj.getAttribute('data-rate'):null;
+            var dataCode = dataObj?dataObj.getAttribute('data-code'):null;
+            var dataOnly = dataObj?dataObj.getAttribute('data-only'):null;
+            var dataOnlyRate = dataObj?dataObj.getAttribute('data-only-rate'):null;
+
+
+            var factorsValue = 1;
+
+            var minDeg = 40;
+            var maxDeg = 320;
+            var degRange = maxDeg-minDeg;
+
+
+            var sumStart = 10000;
+            var sumMinVal = 10000;
+            var sumMaxVal = 30000000;
+
+            var timeStart = 1;
+            var timeMinVal = 1;
+            var timeMaxVal = 36;
+            var interest_rate = dataRate;
+
+
+            var display = $("#current_val");
+            var timeDisplay = $("#time_val");
+            var commission = $("#commission_val");
+
+
+            Draggable.create(".rotor_knob", {
+                type: "rotation",
+                cursor: "pointer",
+                bounds:{minRotation:minDeg, maxRotation:maxDeg},
+                onDrag : updateRange
+            });
+
+
+            var sumPin = Draggable.get("#summ_rotor_pin");
+            var timePin = Draggable.get("#time_rotor_pin");
+
+
+            init(sumStart,timeStart);
+            if (!dataOnly) {
+                initFz();
+            }
+
+            initNoFz();
+/////////////
+//
+            function init(sumStart,timeStart) {
+                TweenLite.set(sumPin.target, { rotation: minDeg+getSumPosition(sumStart) });
+                TweenLite.set(timePin.target, { rotation: minDeg+getTimePosition(timeStart) });
+                sumPin.update();
+                timePin.update();
+                updateRange();
+            }
+
+            function getSumValue(position) {
+                var ratio = (position - minDeg) / degRange;
+                return ((sumMaxVal - sumMinVal) * ratio) + sumMinVal;
+            }
+            function getTimeValue(position) {
+                var ratio = (position - minDeg) / degRange;
+                return ((timeMaxVal - timeMinVal) * ratio) + timeMinVal;
+            }
+//
+            function getSumPosition(value) {
+                var ratio = (value - sumMinVal) / (sumMaxVal - sumMinVal);
+                return ratio * degRange;
+            }
+            function getTimePosition(value) {
+                var ratio = (value - timeMinVal) / (timeMaxVal - timeMinVal);
+                return ratio * degRange;
+            }
+
+
+            function updateRange (){
+                summ_val = Math.round(getSumValue(sumPin.rotation));
+                time_val = Math.round(getTimeValue(timePin.rotation));
+                var fz = checkFz();
+                commission_val = Math.round(summ_val / 100 * interest_rate*time_val*fz*factorsValue);
+                display.html(int_000(summ_val));
+                timeDisplay.html(time_val);
+                commission.html(int_000(commission_val));
+
+            };
+//
+            function initFz() {
+                var radioButtons = document.getElementsByName('fz');
+                for (var i=0; i<radioButtons.length; i++) {
+                    radioButtons[i].addEventListener('change', function(){
+                        updateRange ();
+                    });
+
+                }
+            }
+            function checkFz() {
+                if (!dataOnly) {
+                    var radioButtons = document.getElementsByName('fz');
+                    for (var i=0; i<radioButtons.length; i++) {
+                        if (radioButtons[i].checked) {
+                            return radioButtons[i].value;
+                        }
+                    }
+                } else {
+                    return dataOnlyRate;
+                }
+
+            }
+            function initNoFz() {
+                var checkBoxes = document.getElementsByName('noFz[]');
+                for (var i=0; i<checkBoxes.length; i++) {
+                    checkBoxes[i].addEventListener('change', function(){
+                        if (this.checked) {
+                            factorsValue = factorsValue * this.value;
+                        } else {
+                            factorsValue = factorsValue / this.value;
+                        }
+                        updateRange ();
+                    });
+
+                }
+            }
+
+        }
+        bgRotorCalc();
+    }
+
+    //  !bg rotor calc
+
+
+
+
+
 
 
     $('.asb-slick_banner_1_carousel').slick({

@@ -90,7 +90,9 @@ use yii\widgets\ActiveForm;
                 'w50perSm' => 'w50perSm',
                 'w30perCenter' => 'w30perCenter',
                 'w20per' => 'w20per',
+                'w20perCenter' => 'w20perCenter',
                 'w100' => 'w100',
+                'w100Center' => 'w100Center',
                 'w80' => 'w80',
                 'w50' => 'w50',
             ],['prompt' => 'Выбери']) ?>
@@ -120,6 +122,7 @@ use yii\widgets\ActiveForm;
                 '_asbi-img_link_description' => '| img_link_description',
                 '_asbi-header_on_img' => '| header_on_img',
                 '_asbi-v_svg_head_text' => '| svg_head_text',
+                '_asbi-v_img_head_text' => '| img_head_text',
                 '_asbi-h_img_icon_in_head' => '-- img_icon_in_head',
                 '_asbi-h_img_col-text_col' => '-- img_col-text_col',
                 '_asbi-h_tbl2_img_head--text__w1-structure' => '-- tbl2_img_head--text__w1-structure',

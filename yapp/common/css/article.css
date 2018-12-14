@@ -33,6 +33,9 @@ body {
 .mb10 {
     margin-bottom: 10px;
 }
+.mr2 {
+    margin-right: 2px;
+}
 .mr10 {
     margin-right: 10px;
 }
@@ -45,8 +48,14 @@ body {
 .mr50 {
     margin-right: 50px;
 }
+.ml2{
+    margin-left: 2px;
+}
 .pt0{
     padding-top: 0;
+}
+.p10{
+    padding: 10px;
 }
 .pl10{
     padding-left: 10px;
@@ -84,6 +93,13 @@ body {
 .w20per{
     width:20%;
 }
+.w20perCenter{
+    width:20%;
+    display: block;
+    position: relative;
+    margin-left: 40%;
+    margin-bottom: 5px;
+}
 .w15per{
     width:15%;
 }
@@ -98,6 +114,13 @@ body {
 }
 .w100{
     width:100px;
+}
+.w100Center{
+    width:100px;
+    position: relative;
+    display: block;
+    left: 50%;
+    margin-left: -50px;
 }
 .w80{
     width:80px;
@@ -131,8 +154,21 @@ body {
     min-height:600px;
 }
 
+.no-list-style ul li {
+    list-style-type: none;
+}
+
+.list-style-sq ul li {
+    list-style-type: square;
+}
+.list-style-cir ul li {
+    list-style-type: circle;
+}
 .relative {
     position:  relative !important;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 .article_front_1 h1{
     font-size: 42px;
@@ -214,18 +250,31 @@ body {
     }
 }
 
+@media only screen and (max-width : 768px) {
+    .outside.slickPrev{
+        left:0;
+    }
+    .outside.slickNext{
+        right:0;
+    }
+}
+
 .carouselControl svg{
-    fill: #ffffff;
+    /*fill: #ffffff;*/
+    fill: rgba(255,255,255,0.7)
 }
 .carouselControl svg:hover{
-    fill:#838e9a;
+    /*fill:#838e9a;*/
+    fill:#31405f;
+    /*fill:#0F2146;*/
 }
 
 .bright .carouselControl svg{
     fill: #ffffff;
 }
 .bright .carouselControl svg:hover{
-    fill:#838e9a;
+    /*fill:#838e9a;*/
+    fill:#31405f;
 }
 .grey .carouselControl svg{
     /*fill:#0F63A4;*/
@@ -380,6 +429,11 @@ h1,h2,h3,h4,h5,h6 {
 .light-grey {
     background-color: #f5f5f5;
     border: 1px #ececec solid;
+}
+.dark-green {
+    background-color: #285654;
+    color: white;
+
 }
 .box {
     padding: 10px;
@@ -624,6 +678,10 @@ section {
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+.rotor_knob {
+    width: 120px;
+}
+
 
 .fz_list label {
     margin-right: 10px;
@@ -641,4 +699,93 @@ section {
 }
 .breadcrumb > .active {
     color: #9F9F9F;
+}
+
+
+.asb-slick_leadbox .slick-slide {
+    display: inline-block;
+    line-height:80px;
+}
+.asb-slick_leadbox .slick-slide p {
+    display: inline-block;
+    vertical-align: middle;
+    line-height:1em;
+    margin-bottom: 0;
+    font-size:24px;
+}
+
+.asb-slick_leadbox  .slickNext {
+    right: 10px;
+    bottom: 5px;
+}
+.dark .asb-slick_leadbox  .slickNext {
+    color: white;
+    border: 1px white solid;
+}
+.dark .asb-slick_leadbox  .slickNext:hover {
+    color: black;
+    background-color: #fbb118;
+    border: 1px solid #fbb118;
+}
+.dark-green .asb-slick_leadbox  .slickNext {
+    color: white;
+    border: 1px white solid;
+}
+.dark-green .asb-slick_leadbox  .slickNext:hover {
+    color: black;
+    background-color: #fbb118;
+    border: 1px solid #fbb118;
+}
+.asb-slick_leadbox  .slickNext {
+    border: 1px grey solid;
+    padding: 5px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: grey;
+}
+.asb-slick_leadbox  .slickNext:hover {
+    color: black;
+    background-color: #fbb118;
+    border: 1px solid #fbb118;
+}
+
+.border {
+    border:1px solid grey;
+}
+
+.bg-calc-rotor .name,
+.bg-calc-rotor .no_fz_list {
+    /*color: #d9d9d9;*/
+    /*text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);*/
+
+    color: rgba(0,0,0,.8);
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2);
+}
+.bg-calc-rotor .name{
+    font-size: 18px;
+}
+.bg-calc-rotor .value {
+    font-size: 20px;
+    color: #e0dfdc;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.bg-calc-rotor .value .display {
+    /*background: #0e8dbc;*/
+    /*padding: 5px 5px 7px;*/
+    /*border-radius: 5px;*/
+}
+.bg-calc-rotor .result-value {
+    font-size: 24px;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0,0,0,0.9);
+}
+/*.bg-calc-rotor .result-value .display{*/
+
+    /*padding: 5px 5px 7px;*/
+    /*border-radius: 5px;*/
+/*}*/
+.bg-calc-rotor .dark {
+    background: #556677;
 }

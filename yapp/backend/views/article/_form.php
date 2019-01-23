@@ -119,6 +119,7 @@ use \common\models\Article;
                 '_a-article' => 'article',
                 '_a-page_preorder_form' => 'page_preorder_form',
                 '_a-page-topline_futorder' => 'page-topline_futorder',
+                '_a-page_futorder' => 'page_futorder',
             ],['prompt' => 'Выбери вьюху']) ?>
         </div>
         <div class="col-sm-6">

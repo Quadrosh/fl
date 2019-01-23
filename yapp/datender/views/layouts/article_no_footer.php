@@ -31,7 +31,7 @@ frontend\assets\ArticleAsset::register($this);
 
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="ФинЛидер" />
+    <meta property="og:site_name" content="ДА тендер" />
     <meta property="og:title" content="<?= Yii::$app->view->params['meta']['title'] ?>" />
     <meta property="og:description" content="<?= Yii::$app->view->params['meta']['description'] ?>" />
     <meta property="og:url" content="<?= \yii\helpers\Url::current(['lg'=>null], true) ?>" />
@@ -40,7 +40,7 @@ frontend\assets\ArticleAsset::register($this);
     <?php $this->head() ?>
     <?php include_once("stat_google.php") ?>
 </head>
-<body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page article_no_footer">
+<body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page article_no_footer  datender">
 <?php $this->beginBody() ?>
 
 <div class="wrap">

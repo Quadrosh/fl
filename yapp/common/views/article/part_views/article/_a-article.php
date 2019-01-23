@@ -10,7 +10,7 @@ $preorder = new \common\models\Preorders();
 
 
 ?>
-<div class="a-page_preorder_form">
+<div class="a-article">
     <?= Alert::widget() ?>
     <h1 class="text-center"><?= Html::encode($article->h1) ?></h1>
 
@@ -49,6 +49,12 @@ $preorder = new \common\models\Preorders();
                     <div class="row">
                         <div class="  col-md-10 col-md-offset-1  col-lg-8 col-lg-offset-2">
 
+                            <?php if ($section->section_image) {
+                                echo Html::img('/img/'.$section->section_image,[
+                                    'alt'=>$section->section_image_alt,
+                                    'class'=>$section->image_class,
+                                ]);
+                            } ?>
                             <?php if ($section->header) : ?>
                                 <h2 <?= $section->header_class?'class="'.$section->header_class.'"':null ?>><?= nl2br($section->header) ?></h2>
                             <?php endif; ?>
@@ -60,7 +66,7 @@ $preorder = new \common\models\Preorders();
                             <?php endif; ?>
                             <?php if ($section->blocks) : ?>
                                 <?php foreach ($section->blocks as $block) : ?>
-                                    <div class="a-page_preorder_form-block_default <?= $block->color_key ?> <?= $block->custom_class ?>">
+                                    <div class="a-article-block_default <?= $block->color_key ?> <?= $block->custom_class ?>">
                                         <?php if ($block->view) : ?>
                                             <?= $this->render('/article/part_views/block/'.$block->view, [
                                                 'model' => $block,

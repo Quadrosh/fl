@@ -550,8 +550,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php if ($article->sections) : ?>
         <?php foreach ($article->sections as $section) : ?>
             <?php if ($section->view) : ?>
-                <?= $this->render('/article/part_views/block/'.$section->view, [
-                    'model' => $block,
+                <?= $this->render('/article/part_views/section/'.$section->view, [
+                    'model' => $section,
+                    'article' => $model,
                 ]) ?>
             <?php endif; ?>
 
@@ -568,6 +569,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             <?php if ($block->view) : ?>
                                 <?= $this->render('/article/part_views/block/'.$block->view, [
                                     'model' => $block,
+                                    'article' => $model,
                                 ]) ?>
                             <?php endif; ?>
                             <?php if (!$block->view) : ?>

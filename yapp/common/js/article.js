@@ -21,7 +21,7 @@ $(document).ready(function() {
     }
 
 
-    //  my slider
+    //  slider TZ
     if (document.getElementById('tz_calc_box')) {
         function tzCalc(){
             var dataObj =  document.getElementById('tz_calc_box');
@@ -103,7 +103,7 @@ $(document).ready(function() {
 
 
 
-
+    //  BG horizontal calc Finlider
     if (document.getElementById('bg_fun_calc_box')) {
         function bgFunCalc(){
             var dataObj =  document.getElementById('bg_fun_calc_box');
@@ -246,14 +246,12 @@ $(document).ready(function() {
                         }
                         updateRange ();
                     });
-
                 }
             }
-
         }
         bgFunCalc();
     }
-
+    //  ! BG horizontal calc Finlider
 
 
 
@@ -261,20 +259,14 @@ $(document).ready(function() {
     if (document.getElementById('bg_rotor_calc_box')) {
         function bgRotorCalc(){
             var dataObj =  document.getElementById('bg_rotor_calc_box');
-
             var dataRate = dataObj?dataObj.getAttribute('data-rate'):null;
             var dataCode = dataObj?dataObj.getAttribute('data-code'):null;
             var dataOnly = dataObj?dataObj.getAttribute('data-only'):null;
             var dataOnlyRate = dataObj?dataObj.getAttribute('data-only-rate'):null;
-
-
             var factorsValue = 1;
-
             var minDeg = 40;
             var maxDeg = 320;
             var degRange = maxDeg-minDeg;
-
-
             var sumStart = 10000;
             var sumMinVal = 10000;
             var sumMaxVal = 30000000;
@@ -283,12 +275,9 @@ $(document).ready(function() {
             var timeMinVal = 1;
             var timeMaxVal = 36;
             var interest_rate = dataRate;
-
-
             var display = $("#current_val");
             var timeDisplay = $("#time_val");
             var commission = $("#commission_val");
-
 
             Draggable.create(".rotor_knob", {
                 type: "rotation",
@@ -297,16 +286,13 @@ $(document).ready(function() {
                 onDrag : updateRange
             });
 
-
             var sumPin = Draggable.get("#summ_rotor_pin");
             var timePin = Draggable.get("#time_rotor_pin");
-
 
             init(sumStart,timeStart);
             if (!dataOnly) {
                 initFz();
             }
-
             initNoFz();
 /////////////
 //
@@ -317,7 +303,6 @@ $(document).ready(function() {
                 timePin.update();
                 updateRange();
             }
-
             function getSumValue(position) {
                 var ratio = (position - minDeg) / degRange;
                 return ((sumMaxVal - sumMinVal) * ratio) + sumMinVal;
@@ -326,7 +311,6 @@ $(document).ready(function() {
                 var ratio = (position - minDeg) / degRange;
                 return ((timeMaxVal - timeMinVal) * ratio) + timeMinVal;
             }
-//
             function getSumPosition(value) {
                 var ratio = (value - sumMinVal) / (sumMaxVal - sumMinVal);
                 return ratio * degRange;
@@ -335,8 +319,6 @@ $(document).ready(function() {
                 var ratio = (value - timeMinVal) / (timeMaxVal - timeMinVal);
                 return ratio * degRange;
             }
-
-
             function updateRange (){
                 summ_val = Math.round(getSumValue(sumPin.rotation));
                 time_val = Math.round(getTimeValue(timePin.rotation));
@@ -347,7 +329,6 @@ $(document).ready(function() {
                 commission.html(int_000(commission_val));
 
             };
-//
             function initFz() {
                 var radioButtons = document.getElementsByName('fz');
                 for (var i=0; i<radioButtons.length; i++) {
@@ -388,12 +369,149 @@ $(document).ready(function() {
         }
         bgRotorCalc();
     }
-
     //  !bg rotor calc
 
 
+    //  BG calc vertical
+    if (document.getElementById('bg_fun_calc_box_vertical')) {
+        function bgFunVerticalCalc(){
+            var dataObj =  document.getElementById('bg_fun_calc_box_vertical');
+            var dataRate = dataObj?dataObj.getAttribute('data-rate'):null;
+            var factorsValue = 1;
 
+            var start = 0;
+            var minVal = 10000;
+            var maxVal = 30000000;
 
+            var timeStart = 1;
+            var timeMinVal = 1;
+            var timeMaxVal = 36;
+            var interest_rate = dataRate;
+
+            var startVal = 20000;
+
+            var display = $("#current_val");
+            var timeDisplay = $("#time_val");
+            var commission = $("#commission_val");
+
+            var contain = $("#slider_container");
+            var timeContain = $("#time_slider_container");
+            var containHeight = contain.height();
+            var timeContainHeight = timeContain.height();
+
+            var pinHeight = $(".pin").height();
+            var pinOffset = pinHeight / 2;
+
+            Draggable.create(".pin", {
+                type: "y",
+                bounds: { minY: -pinOffset, maxY: containHeight - pinOffset },
+                cursor: "pointer",
+                onDrag : updateRange
+            });
+
+            Draggable.create(contain, {
+                bounds: contain,
+                cursor: "pointer"
+            });
+
+            Draggable.create(timeContain, {
+                bounds: timeContain,
+                cursor: "pointer"
+            });
+
+            var sumPin = Draggable.get("#slider_pin");
+            var timePin = Draggable.get("#time_slider_pin");
+
+            init(startVal,timeStart);
+            initFz();
+            initNoFz();
+///////////
+            function init(sumStart,timeStart) {
+                TweenLite.set(sumPin.target, { y: getPosition(sumStart)});
+                TweenLite.set(timePin.target, { y: getTimePosition(timeStart)});
+                sumPin.update();
+                timePin.update();
+                updateRange();
+            }
+
+            function getValue(position) {
+                var ratio = 1 - position / containHeight;
+                return ((maxVal - minVal) * ratio) + minVal;
+            }
+            function getTimeValue(position) {
+                var ratio = 1 - position / timeContainHeight;
+                return ((timeMaxVal - timeMinVal) * ratio) + timeMinVal;
+            }
+
+            function getPosition(value) {
+                var ratio = (value - minVal) / (maxVal - minVal);
+                return containHeight-(ratio * containHeight) - pinOffset;
+            }
+            function getTimePosition(value) {
+                var ratio = (value - timeMinVal) / (timeMaxVal - timeMinVal);
+                return timeContainHeight-(ratio * timeContainHeight) - pinOffset;
+            }
+
+            function getRange(handl) {
+                var range = handl.y + pinOffset;
+                if (range < 1) range = 0;
+                if (range > containHeight) range = containHeight;
+                return range;
+            }
+            function getTimeRange(handl) {
+                var range = handl.y + pinOffset;
+                if (range < 1) range = 0;
+                if (range > timeContainHeight) range = timeContainHeight;
+                return range;
+            }
+
+            function updateRange (){
+                var sumRange = getRange(sumPin);
+                var timeRange = getTimeRange(timePin);
+                summ_val = Math.round(getValue(sumRange));
+                time_val = Math.round(getTimeValue(timeRange));
+                var fz = checkFz();
+                commission_val = Math.round(summ_val / 100 * interest_rate*time_val*fz*factorsValue);
+                TweenLite.set('.slider_range', { y: start, height: sumRange });
+                TweenLite.set('.time_slider_range', { y: start, height: timeRange });
+                display.html(int_000(summ_val));
+                timeDisplay.html(time_val);
+                commission.html(int_000(commission_val));
+            };
+
+            function initFz() {
+                var radioButtons = document.getElementsByName('fz');
+                for (var i=0; i<radioButtons.length; i++) {
+                    radioButtons[i].addEventListener('change', function(){
+                        updateRange ();
+                    });
+                }
+            }
+            function checkFz() {
+                var radioButtons = document.getElementsByName('fz');
+                for (var i=0; i<radioButtons.length; i++) {
+                    if (radioButtons[i].checked) {
+                        return radioButtons[i].value;
+                    }
+                }
+            }
+            function initNoFz() {
+                var checkBoxes = document.getElementsByName('noFz[]');
+                for (var i=0; i<checkBoxes.length; i++) {
+                    checkBoxes[i].addEventListener('change', function(){
+                        if (this.checked) {
+                            factorsValue = factorsValue * this.value;
+                        } else {
+                            factorsValue = factorsValue / this.value;
+                        }
+                        updateRange ();
+                    });
+                }
+            }
+        }
+        bgFunVerticalCalc();
+    }
+    //  BG calc vertical
 
 
 
@@ -428,12 +546,14 @@ $(document).ready(function() {
         for (var i = 0; i < arr.length; i++) {
             var id = arr[i].getAttribute('data-id');
             var showItems = arr[i].getAttribute('data-showItems')? arr[i].getAttribute('data-showItems'):1;
-            slick(id,showItems);
+            var autoplay = arr[i].getAttribute('data-autoplay')? arr[i].getAttribute('data-autoplay'):false;
+            slick(id,showItems,autoplay);
         }
 
-        function slick(id,show) {
+        function slick(id,show,autoplay) {
             $('.slick_multi_'+id).slick({
                 infinite: true,
+                autoplay: autoplay,
                 slidesToShow: show,
                 slidesToScroll: 1,
                 dots: false,

@@ -59,6 +59,10 @@ class PagesController extends BackController
             $model->cat_ids = json_encode($model->categories);
             if ($model->save()) {
                 return $this->redirect(Url::previous());
+            } else {
+                return $this->render('create', [
+                    'model' => $model,
+                ]);
             }
         } else {
             return $this->render('create', [

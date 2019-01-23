@@ -127,6 +127,7 @@ use yii\widgets\ActiveForm;
                 '_asb-slick_1' => 'slick_1',
                 '_asb-slick_leadbox' => 'slick_leadbox',
                 '_asb-slick_banner_1' => 'slick_banner_1',
+                '_asb-slick_carousel' => 'slick_carousel',
                 '_asb-ul-li' => 'ul-li',
                 '_asb-ol-li' => 'ol-li',
                 '_asb-calculator' => 'calculator',

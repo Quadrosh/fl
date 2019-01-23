@@ -14,11 +14,11 @@ use yii\helpers\Html;
 <div class="asb-ul-li">
 
     <?php if ($model->header) : ?>
-        <h4 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h4>
+        <h3 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h3>
     <?php endif; ?>
 
     <?php if ($model->description) : ?>
-        <p <?= $model->description_class?'class="'.$model->description_class.'"':null ?>><?= $model->description ?></p>
+        <p <?= $model->description_class?'class="'.$model->description_class.'"':null ?>><?= nl2br($model->description) ?></p>
     <?php endif; ?>
 
     <?php if ($model->raw_text) : ?>

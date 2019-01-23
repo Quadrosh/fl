@@ -8,7 +8,7 @@ use yii\helpers\Html;
 <section class="as-full_width <?= $model->color_key ?> <?= $model->custom_class ?>">
 
     <div class="row">
-        <div class="  col-sm-12">
+        <div class="  col-sm-12  ">
 
             <div class="table">
                 <?php if ($model->section_image) : ?>

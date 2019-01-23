@@ -95,7 +95,7 @@ use yii\helpers\Html;
             <?php endif; ?>
             <?php if ($model->call2action_name) : ?>
                 <?php if ($model->call2action_link == 'callMe' || $model->call2action_link == 'call_me') : ?>
-                    <div class="col-sm-12 ">
+                    <div class="col-sm-12 <?= $model->call2action_class ?>">
                         <?= $this->render('/article/part_views/article/_phone-form', [
                             'section' => $model,
                             'article' => $article,

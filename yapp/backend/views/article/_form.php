@@ -24,7 +24,7 @@ use \common\models\Article;
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <?= $form->field($model, 'site')->dropDownList(Yii::$app->params['siteList'])?>
+            <?= $form->field($model, 'site')->dropDownList(\yii\helpers\ArrayHelper::map(\common\models\Sites::find()->all(), 'name','name'),['prompt'=>'Выберите сайт'])?>
         </div>
         <div class="col-sm-6">
             <?= $form->field($model, 'categories')
@@ -124,6 +124,7 @@ use \common\models\Article;
         <div class="col-sm-6">
             <?= $form->field($model, 'layout')->dropDownList([
                 'article' => 'article',
+                'article_datender' => 'article_datender',
                 'article_no_footer' => 'article_no_footer',
             ],['prompt' => 'Выбери layout']) ?>
         </div>

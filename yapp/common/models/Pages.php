@@ -51,7 +51,7 @@ class Pages extends \yii\db\ActiveRecord
     {
         return [
             [['title', 'description','hrurl' ], 'required'],
-            [['hrurl'],'unique'],
+//            [['hrurl'],'unique'],
             [['cat_ids','description', 'seo_logo','keywords', 'pagedescription', 'text'], 'string'],
             [[
                 'site',

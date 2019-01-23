@@ -35,7 +35,15 @@ class MainBgCalculatorWidget extends Widget
                     'data' => $this->data,
                     'only' => $this->only,
                 ]);
-            } else {
+            }
+            else if ($this->view == 'vertical') {
+                return $this->render('bg-fun-vertical-calculator', [
+                    'bank' => $this->bank,
+                    'calc_code' => $this->calc_code,
+                    'data' => $this->data,
+                ]);
+            }
+            else {
                 return $this->render('bg-fun-calculator', [
                     'bank' => $this->bank,
                     'calc_code' => $this->calc_code,

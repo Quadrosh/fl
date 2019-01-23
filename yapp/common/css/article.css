@@ -1,8 +1,29 @@
+/*
+datender color scheme
+red logo #FB0034  = rgba(251,0,52,1)
+green  #00EDA5 = rgba(0,237,165,1)
+orange #FF5900 = rgba(255,89,0,1)
+yellow footer rgba(247,237,66,0.8) = #f8f067;
+yellow #f7ed42 =
+
+light green from yellow footer #CCEC62
+adobe yellow #FDF119 = rgba(253,241,25,1)
+adobe blue #0091C8 = rgba(0,145,200,1)
+adobe dark blue #007EAE = rgba(0,126,174,1)
+adobe dark red #AE0024 = rgba(174,0,36,1)
+
+
+
+*/
+
+
 html,
 body {
     height: 100%;
 }
-
+.absolute{
+    position: absolute;
+}
 .mt10{
     margin-top: 10px;
 }
@@ -52,13 +73,31 @@ body {
     margin-left: 2px;
 }
 .pt0{
-    padding-top: 0;
+    padding-top: 0 ;
+}
+.pl0 {
+    padding-left: 0 !important;
+}
+.pl30 {
+    padding-left: 30px;
+}
+.pr0{
+    padding-right: 0 !important;
+}
+.pr30{
+    padding-right: 30px;
 }
 .p10{
     padding: 10px;
 }
 .pl10{
     padding-left: 10px;
+}
+.pt100{
+    padding-top: 100px;
+}
+.pb0{
+    padding-bottom: 0;
 }
 @media only screen and (max-width : 767px) {
     .mbxs50 {
@@ -152,6 +191,9 @@ body {
 }
 .min-h600 {
     min-height:600px;
+}
+.min-h700 {
+    min-height:700px;
 }
 
 .no-list-style ul li {
@@ -263,11 +305,21 @@ body {
     /*fill: #ffffff;*/
     fill: rgba(255,255,255,0.7)
 }
+
 .carouselControl svg:hover{
     /*fill:#838e9a;*/
     fill:#31405f;
     /*fill:#0F2146;*/
 }
+.datender .carouselControl.onSlide svg{
+    fill: #ffffff;
+}
+.datender .carouselControl.onSlide svg:hover{
+    fill: #FF5900;
+}
+
+
+
 
 .bright .carouselControl svg{
     fill: #ffffff;
@@ -345,6 +397,45 @@ body {
     opacity: .75;
     background: white;
     color: black;
+}
+/* slick_carousel */
+.asb-slick_carousel .carousel_item .item_styled{
+    min-height: 400px;
+    overflow-x: hidden;
+    position: relative;
+}
+.asb-slick_carousel .carousel_item img {
+   height: 400px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left: -400px;
+    max-width: none;
+
+}
+.carouselControl.onSlide{
+    left:70%;
+    bottom:4px;
+    background-color: rgba(0,0,0,0.2);
+    width: 40px;
+    overflow-x: hidden;
+}
+.carouselControl.onSlide svg{
+    position: relative;
+    margin-left:-20px;
+}
+.onSlide.slickPrev{
+    margin-left: -21px;
+}
+.onSlide.slickNext{
+    margin-left: 21px;
+}
+
+.datender .asb-slick_carousel h4 {
+    font-size: 28px;
+}
+.datender .asb-slick_carousel p {
+    font-size: 18px;
 }
 .blue_circle {
     background-color: #0090d7;
@@ -435,6 +526,143 @@ h1,h2,h3,h4,h5,h6 {
     color: white;
 
 }
+
+
+/*datender color scheme*/
+/*red logo #FB0034  = rgba(251,0,52,1)*/
+/*green  #00EDA5 = rgba(0,237,165,1)*/
+/*orange #FF5900 = rgba(255,89,0,1)*/
+/*yellow footer rgba(247,237,66,0.8) = #f8f067;*/
+/*yellow #f7ed42 =*/
+
+/*light green from yellow footer #CCEC62*/
+/*adobe yellow #FDF119 = rgba(253,241,25,1)*/
+/*adobe blue #0091C8 = rgba(0,145,200,1)*/
+/*adobe dark blue #007EAE = rgba(0,126,174,1)*/
+/*adobe dark red #AE0024 = rgba(174,0,36,1)*/
+
+
+
+/* datender colors */
+.datender .btn-danger, .datender .btn-danger:hover{
+    background-color: #FF5900;
+    border-color: #FF5900;
+    color: #fff;
+}
+
+.datender .dt_blue_bgr{
+    background-color: #0091C8;
+    color: #fff;
+}
+
+.datender .dt_blue_bgr h4{
+    color: #fff;
+    /*color: #FDF119;*/
+}
+
+.datender .dt_blue_bgr .btn-danger{
+    background-color: #f7ed42;
+    border-color: #f7ed42;
+    color: #000;
+}
+.datender .dt_blue_gradient_bgr{
+    background-image: linear-gradient(to bottom,#0091C8 0,#004761 100%);
+    background-repeat: repeat-x;
+    color: #fff;
+}
+.datender .dt_blue_gradient_bgr h4{
+    color: #fff;
+    /*color: #f7ed42;*/
+}
+.datender .dt_blue_gradient_bgr .btn-danger{
+    background-color: #f7ed42;
+    border-color: #f7ed42;
+    color: #000;
+}
+.datender .dt_yellow_gradient_bgr{
+    background-image: linear-gradient(to top,#FDF119 0,rgba(247,237,66,0.2) 100%);
+    background-repeat: repeat-x;
+    color: #0091C8;
+}
+.datender .dt_yellow_gradient_bgr h4{
+    color: #0091C8;
+}
+.datender .dt_yellow_gradient_bgr .btn-danger{
+    background-color: #FF5900;
+    border-color: #FF5900;
+    color: #fff;
+}
+.datender .dt_green_gradient_bgr{
+    background-image: linear-gradient(to top,#00EDA5 0,rgba(0,237,165,0.2) 100%);
+    background-repeat: repeat-x;
+    /*color: #0BD6D2;*/
+    /*color: #0CBEF7;*/
+    color: #10A075;
+}
+.datender .dt_green_gradient_bgr .btn-danger{
+    background-color: #FF5900;
+    border-color: #FF5900;
+    color: #fff;
+}
+
+.datender .white_bgr{
+    background-color: #fff;
+    color: #58595B;
+}
+
+.datender .white_bgr h4{
+    color: #5f6973;
+}
+.datender .white_bgr h4, .datender .white_bgr p {
+    text-shadow: -1px -1px 1px #ffffff, 1px 1px 1px #ffffff,
+    -1px -1px 3px #ffffff, 1px 1px 3px #ffffff,
+    -1px -1px 5px #ffffff, 1px 1px 5px #ffffff
+;
+}
+
+
+.datender .white_bgr .btn-danger{
+    background-color: #FF5900;
+    border-color: #FF5900;
+    color: #fff;
+}
+
+
+/*
+datender colors
+red logo #FB0034  = rgba(251,0,52,1)
+green  #00EDA5 = rgba(0,237,165,1)
+orange #FF5900 = rgba(255,89,0,1)
+yellow footer rgba(247,237,66,0.8) = #f8f067;
+yellow #f7ed42 =
+
+light green from yellow footer #CCEC62
+adobe yellow #FDF119 = rgba(253,241,25,1)
+adobe blue #0091C8 = rgba(0,145,200,1)
+adobe dark blue #007EAE = rgba(0,126,174,1)
+adobe dark red #AE0024 = rgba(174,0,36,1)
+
+*/
+
+.xs_dark_filter{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+@media only screen and (max-width : 767px) {
+    .xs_filter{
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .datender .dt_blue_gradient_bgr .xs_filter,
+    .datender .dt_blue_bgr .xs_filter {
+        background-color: rgba(0,0,0,0.3);
+    }
+}
+
 .box {
     padding: 10px;
     margin-top: 20px;
@@ -598,7 +826,8 @@ section {
 /*     gsap slider    */
 
 .tz-calculator .value,
-.bg-calculator .value {
+.bg-calculator .value,
+.bg-fun-vertical-calc .value{
     margin-top: 20px;
     margin-bottom: 20px;
     font-weight:bold;
@@ -607,7 +836,8 @@ section {
 }
 @media only screen and (max-width : 479px) {
     .tz-calculator .value,
-    .bg-calculator .value {
+    .bg-calculator .value,
+    .bg-fun-vertical-calc .value{
         font-size:18px;
     }
 }
@@ -641,8 +871,15 @@ section {
 #time_slider_container{
     width: 100%;
 }
+.bg-fun-vertical-calc #slider_container,
+.bg-fun-vertical-calc #time_slider_container{
+    width: 10px;
+    height: 200px;
+}
+
 .tz-calculator .pin,
-.bg-calculator .pin {
+.bg-calculator .pin,
+.bg-fun-vertical-calc .pin{
     /*background-color: #008c7b;*/
     text-align: center;
     font-family: Asap, Avenir, Arial, sans-serif;
@@ -657,16 +894,36 @@ section {
     -webkit-border-radius: 50%;
     border-radius:50%;
     background: #4DA29F;
-    /*background: #72EFE9;*/
     box-shadow: 0 0 3px gray;
 }
 
 .tz-calculator .pin:hover {
     background: #55939c;
-    /*background: #295654;*/
-    /*background: #4DA29F;*/
 }
-
+.golden  .pin{
+    background:
+            radial-gradient(ellipse farthest-corner at right bottom,
+            #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+            radial-gradient(ellipse farthest-corner at left top,
+            #FFFFFF 0%, #FFFFAC 8%, #D1B464 30%, #5d4a1f 72.5%, #8A774C 100%);
+}
+.golden  .pin:hover{
+    background:
+            radial-gradient(ellipse farthest-corner at right bottom,
+            #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+            radial-gradient(ellipse farthest-corner at left top,
+            #FFFFFF 0%, #FFFFAC 8%, #D1B464 30%, #5d4a1f 72.5%, #8A774C 100%);
+}
+.golden #current_val,
+.golden #time_val,
+.golden #commission_val{
+    color: #d7a769;
+    background: -webkit-linear-gradient(transparent, transparent),
+    -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+    background: -o-linear-gradient(transparent, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .tz-calculator .slider_range,
 .bg-calculator .slider_range,
 .bg-calculator .time_slider_range{
@@ -677,6 +934,28 @@ section {
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 10px;
+}
+.bg-fun-vertical-calc .slider_range,
+.bg-fun-vertical-calc .time_slider_range{
+    background-color:#c2d2d4 ;
+    width:10px;
+    position:relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.bg-fun-vertical-calc #slider_container,
+.bg-fun-vertical-calc #time_slider_container{
+    background-color: #6a7d81;
+    left: 50%;
+    margin-left: -5px;
+}
+.bg-fun-vertical-calc .pin{
+    margin-left: -10px;
+}
+.bg-fun-vertical-calc .no_fz_list label{
+    margin-top: 30px;
+    margin-right: 0;
 }
 .rotor_knob {
     width: 120px;
@@ -788,4 +1067,25 @@ section {
 /*}*/
 .bg-calc-rotor .dark {
     background: #556677;
+}
+.ul_square ul{
+    list-style: square;
+}
+.ul_circle ul{
+    list-style: circle;
+}
+.ul_fa ul{
+    list-style: none;
+    padding: 0;
+}
+.ul_fa li {
+    padding-left: 40px;
+}
+.ul_fa li:before {
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    position: absolute;
+    margin-left: -20px; /* same as padding-left set on li */
+    width: 20px; /* same as padding-left set on li */
 }

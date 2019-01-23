@@ -49,6 +49,12 @@ $preorder = new \common\models\Preorders();
                     <div class="row">
                         <div class="  col-md-10 col-md-offset-1  col-lg-8 col-lg-offset-2">
 
+                            <?php if ($section->section_image) {
+                                echo Html::img('/img/'.$section->section_image,[
+                                    'alt'=>$section->section_image_alt,
+                                    'class'=>$section->image_class,
+                                ]);
+                            } ?>
                             <?php if ($section->header) : ?>
                                 <h2 <?= $section->header_class?'class="'.$section->header_class.'"':null ?>><?= nl2br($section->header) ?></h2>
                             <?php endif; ?>

@@ -260,6 +260,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'data-method'=>'post'
                     ])
                 .'</li>':'' ?>
+            <?= $section->section_image_alt?'<li> Image Alt - '.$section->section_image_alt.'</li>':'' ?>
             <?= $section->background_image?'<li> Background Image - '
                 .Html::img('/img/'. $section->background_image, ['class'=>'gridThumb'])
                 .'<sup>'.$section->background_image.'</sup>'
@@ -386,6 +387,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             }
                             ?>
                             <?= $block->image?$blockImageLi:'' ?>
+                            <?= $block->image_alt?'<li> Image Alt - '.$block->image_alt.'</li>':'' ?>
                             <?= $block->background_image?'<li> Background Image - '
                                 .Html::img('/img/'. $block->background_image, ['class'=>'gridThumb'])
                                 .'<sup>'.$block->background_image.'</sup>'

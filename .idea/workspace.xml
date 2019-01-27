@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/web/android-chrome-192x192.png" afterPath="$PROJECT_DIR$/yapp/datender/web/android-chrome-192x192.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/web/android-chrome-512x512.png" afterPath="$PROJECT_DIR$/yapp/datender/web/android-chrome-512x512.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/web/apple-touch-icon.png" afterPath="$PROJECT_DIR$/yapp/datender/web/apple-touch-icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/web/favicon-16x16.png" afterPath="$PROJECT_DIR$/yapp/datender/web/favicon-16x16.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/web/favicon-32x32.png" afterPath="$PROJECT_DIR$/yapp/datender/web/favicon-32x32.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/web/favicon.ico" afterPath="$PROJECT_DIR$/yapp/datender/web/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="finlider.iws" />
@@ -184,8 +178,8 @@
       <file leaf-file-name="article_datender.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.5042493">
-              <caret line="174" column="45" selection-start-line="174" selection-start-column="45" selection-end-line="174" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.674221">
+              <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -1002,8 +996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5042493">
-          <caret line="174" column="45" selection-start-line="174" selection-start-column="45" selection-end-line="174" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.674221">
+          <caret line="37" column="102" selection-start-line="37" selection-start-column="102" selection-end-line="37" selection-end-column="102" />
           <folding />
         </state>
       </provider>

@@ -18,6 +18,7 @@ frontend\assets\ArticleAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <?php include_once("stat_google.php") ?>
     <meta name="yandex-verification" content="d8ca4852bf457fb9" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +40,7 @@ frontend\assets\ArticleAsset::register($this);
     <meta property="og:image" content="<?= \yii\helpers\Url::base(true) ?>/img/logo.png" />
 
     <?php $this->head() ?>
-    <?php include_once("stat_google.php") ?>
+
 </head>
 <body class="<?= Yii::$app->view->params['meta']['hrurl'] ?>-page datender">
 <?php $this->beginBody() ?>

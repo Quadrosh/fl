@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/views/layouts/main.php" afterPath="$PROJECT_DIR$/yapp/datender/views/layouts/main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php" afterPath="$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/datender/views/layouts/stat_yandex.php" afterPath="$PROJECT_DIR$/yapp/datender/views/layouts/stat_yandex.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,17 +89,19 @@
         <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/stat_yandex.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2407932">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -108,7 +111,17 @@
         <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.3002833">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,7 +181,7 @@
         <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="193" selection-end-column="26" />
+              <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -209,16 +222,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pages.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/yapp/common/models/Pages.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -294,12 +297,12 @@
         <option value="$PROJECT_DIR$/yapp/datender/web/css/common/article.css" />
         <option value="$PROJECT_DIR$/yapp/datender/views/layouts/article_no_footer.php" />
         <option value="$PROJECT_DIR$/yapp/common/css/article.css" />
-        <option value="$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php" />
         <option value="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_futorder.php" />
         <option value="$PROJECT_DIR$/yapp/backend/views/article/view.php" />
-        <option value="$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php" />
-        <option value="$PROJECT_DIR$/yapp/datender/views/layouts/stat_yandex.php" />
         <option value="$PROJECT_DIR$/yapp/datender/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php" />
+        <option value="$PROJECT_DIR$/yapp/datender/views/layouts/stat_yandex.php" />
+        <option value="$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php" />
       </list>
     </option>
   </component>
@@ -584,13 +587,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yapp/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/models/ArticleSectionBlock.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -887,14 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="193" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-article.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -951,10 +939,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php">
+    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article_datender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="66" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -962,15 +958,25 @@
     <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/stat_yandex.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#noscript#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/stat_google.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/main.php">
+    <entry file="file://$PROJECT_DIR$/yapp/datender/views/layouts/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2407932">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state vertical-scroll-proportion="-1.3002833">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

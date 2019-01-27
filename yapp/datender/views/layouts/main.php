@@ -17,7 +17,7 @@ AppAsset::register($this);
 <html lang="<?= Yii::$app->language ?>">
 <head>
 
-    <meta name="yandex-verification" content="d8ca4852bf457fb9" />
+
 
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

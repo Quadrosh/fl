@@ -18,6 +18,7 @@ frontend\assets\ArticleAsset::register($this);
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
 <head>
+    <meta name="yandex-verification" content="d8ca4852bf457fb9" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>

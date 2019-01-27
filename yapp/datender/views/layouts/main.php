@@ -170,7 +170,8 @@ AppAsset::register($this);
                     <div class="footer_info">
                         <p class="head">Связаться с нами</p>
                         <p>Тел. <?= Yii::$app->params['mainPhone'] ?><br>
-                            Email <?= Yii::$app->params['infoEmail'] ?><a href="mailto:<?= Yii::$app->params['infoEmail'] ?>"></p>
+                            Email <a href="mailto:<?= Yii::$app->params['infoEmail'] ?>"><?= Yii::$app->params['infoEmail'] ?></a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center">

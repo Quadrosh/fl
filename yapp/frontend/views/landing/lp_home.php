@@ -200,7 +200,7 @@ $preorder = new common\models\Preorders();
                 </div>
                 <div class="col-sm-12 text-center ">
                     <?php $form = ActiveForm::begin([
-                        'action' => ['/site/preorder'],
+                        'action' => ['/site/order'],
                         'id' => 'whyWe_call2action',
                         'method' => 'post',
                         'layout' => 'horizontal',

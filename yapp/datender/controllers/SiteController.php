@@ -4,6 +4,7 @@ namespace datender\controllers;
 use common\models\Pages;
 use common\models\Preorders;
 use common\models\Visit;
+use datender\models\ContactForm;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\helpers\Url;
@@ -12,10 +13,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+
 
 /**
  * Site controller

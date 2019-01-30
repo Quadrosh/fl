@@ -34,7 +34,7 @@ use yii\behaviors\TimestampBehavior;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
-    const SPAM_COUNT = 20;
+    const SPAM_COUNT = 10;
     const SERVICE_TYPE_BG = 'bank_garant';
     const SERVICE_TYPE_TZ = 'tender_zaim';
 
@@ -170,21 +170,31 @@ class Preorders extends \yii\db\ActiveRecord
             }
         }
 
+        $fromPage = $this->from_page?" <br/> Со страницы: ".$this->from_page:null;
+        $serviceType = $this->service_type? " <br/> Услуга: ".$this->service_type:null;
+        $operationId = $this->operation_id? " <br/> Номер операции: ".$this->operation_id:null;
+        $platform = $this->platform? " <br/> Площадка: ".$this->platform:null;
+        $inn = $this->inn? " <br/> ИНН: ".$this->inn:null;
+        $name = $this->name? " <br/> ФИО: ".$this->name:null;
+        $phone = $this->phone?" <br/> Телефон: ".$this->phone:null;
+        $email = $this->email? "<br/> Email: ".$this->email:null;
+        $comment = $this->comment?" <br/> Коментарий: <br/>". nl2br($this->text):null;
+
         return Yii::$app->mailer->compose()
             ->setTo($this->emailForSend)
             ->setFrom('sender@'.Yii::$app->params['site'])
             ->setSubject($subject)
             ->setHtmlBody(
                 "Данные запроса <br>".
-                " <br/> Со страницы: ".$this->from_page .
-                " <br/> Услуга: ".$this->service_type .
-                " <br/> Номер операции: ".$this->operation_id .
-                " <br/> Площадка: ".$this->platform .
-                " <br/> ИНН: ".$this->inn .
-                " <br/> ФИО: ".$this->name .
-                " <br/> Телефон: ".$this->phone .
-                " <br/> Email: ".$this->email .
-                " <br/> Коментарий: <br/>". nl2br($this->text)
+                $fromPage.
+                $serviceType .
+                $operationId .
+                $platform .
+                $inn .
+                $name .
+                $phone .
+                $email.
+                $comment
             )
             ->send();
     }

@@ -34,9 +34,10 @@ use yii\behaviors\TimestampBehavior;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
-    const SPAM_COUNT = 10;
+    const SPAM_COUNT = 20;
     const SERVICE_TYPE_BG = 'bank_garant';
     const SERVICE_TYPE_TZ = 'tender_zaim';
+    const SERVICE_TYPE_MIXED = 'mixed';
 
     /**
      * @inheritdoc
@@ -155,19 +156,17 @@ class Preorders extends \yii\db\ActiveRecord
      */
     public function sendEmail($subject)
     {
+        $this->emailForSend =  Yii::$app->params['prodOrderEmail'];
+        if ($this->service_type == self::SERVICE_TYPE_TZ) {
+            $this->emailForSend =  Yii::$app->params['tzOrderEmail'];
+        }
+        if ($this->service_type == self::SERVICE_TYPE_BG) {
+            $this->emailForSend =  Yii::$app->params['bgOrderEmail'];
+        }
 
 
-        if ( YII_DEBUG == true ) {
+        if (  strtolower(YII_ENV) == 'dev' ) {
             $this->emailForSend =  Yii::$app->params['devOrderEmail'];
-        } else {
-            $this->emailForSend =  Yii::$app->params['prodOrderEmail'];
-
-            if ($this->service_type == self::SERVICE_TYPE_TZ) {
-                $this->emailForSend =  Yii::$app->params['tzOrderEmail'];
-            }
-            if ($this->service_type == self::SERVICE_TYPE_BG) {
-                $this->emailForSend =  Yii::$app->params['bgOrderEmail'];
-            }
         }
 
         $fromPage = $this->from_page?" <br/> Со страницы: ".$this->from_page:null;
@@ -179,6 +178,7 @@ class Preorders extends \yii\db\ActiveRecord
         $phone = $this->phone?" <br/> Телефон: ".$this->phone:null;
         $email = $this->email? "<br/> Email: ".$this->email:null;
         $comment = $this->comment?" <br/> Коментарий: <br/>". nl2br($this->text):null;
+
 
         return Yii::$app->mailer->compose()
             ->setTo($this->emailForSend)
@@ -195,8 +195,8 @@ class Preorders extends \yii\db\ActiveRecord
                 $phone .
                 $email.
                 $comment
-            )
-            ->send();
+            )->send();
+
     }
 
 
@@ -228,8 +228,7 @@ class Preorders extends \yii\db\ActiveRecord
                 return false;
             }
         } else {
-
-            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@finlider.ru или оформите заявку по телефону');
+            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@'.Yii::$app->params['site'].' или оформите заявку по телефону');
             return false;
         }
 

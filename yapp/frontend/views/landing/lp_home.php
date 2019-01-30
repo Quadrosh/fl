@@ -207,11 +207,8 @@ $preorder = new common\models\Preorders();
                         'fieldConfig' => [
                             'template' => "{beginWrapper}\n{input}\n{error}\n{endWrapper}",
                             'horizontalCssClasses' => [
-//                    'label' => 'col-sm-4',
                                 'offset' => 'col-sm-offset-3 col-lg-offset-4',
                                 'wrapper' => 'col-sm-6 col-lg-4',
-//                    'error' => '',
-//                    'hint' => 'телефон',
                             ],
                         ],
                     ]); ?>
@@ -220,7 +217,7 @@ $preorder = new common\models\Preorders();
                     <?= Html::errorSummary($feedback, ['class' => 'errors']) ?>
                     <?= $form->field($feedback, 'name')
                         ->hiddenInput([
-                            'value'=>'Секция - Как мы работаем - Рассчитать стоимость',
+                            'value'=>'-',
                             'id' => 'whyWe_call2action-name'
                         ])
                         ->label(false) ?>
@@ -243,6 +240,10 @@ $preorder = new common\models\Preorders();
                     <?= $form->field($feedback, 'utm_content')
                         ->hiddenInput(['value'=>$utm['content'], 'id' => 'whyWe_call2action-utm_content'])
                         ->label(false) ?>
+                    <?= $form->field($feedback, 'service_type')
+                        ->hiddenInput(['value'=>'','id' => 'whyWe_call2action-service_type'])->label(false) ?>
+                    <?= $form->field($feedback, 'site')
+                        ->hiddenInput(['value'=>'finlider.ru','id' => 'whyWe_call2action-site'])->label(false) ?>
 
                     <?= $form->field($feedback, 'phone', [
                         'inputOptions' => ['placeholder' => 'ТЕЛЕФОН'],

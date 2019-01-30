@@ -216,7 +216,7 @@ $preorder = new common\models\Preorders();
                         ],
                     ]); ?>
 
-                    <?php $feedback = $preorder ?>
+                    <?php $feedback = new \common\models\Preorders(); ?>
                     <?= Html::errorSummary($feedback, ['class' => 'errors']) ?>
                     <?= $form->field($feedback, 'name')
                         ->hiddenInput([
@@ -225,7 +225,7 @@ $preorder = new common\models\Preorders();
                         ])
                         ->label(false) ?>
                     <?= $form->field($feedback, 'from_page')
-                        ->hiddenInput(['value'=>$page ['hrurl'],'id' => 'whyWe_call2action-from_page'])
+                        ->hiddenInput(['value'=>'home','id' => 'whyWe_call2action-from_page'])
                         ->label(false) ?>
 
                     <?= $form->field($feedback, 'utm_source')

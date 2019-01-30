@@ -42,6 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
             'id',
             'site',
+            'service_type',
 
             [
                 'attribute'=>'cat_ids',

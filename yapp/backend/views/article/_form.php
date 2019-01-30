@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use \common\models\Article;
+use  \common\models\Preorders;
 
 /* @var $this yii\web\View */
 /* @var $model common\models\Article */
@@ -20,6 +21,12 @@ use \common\models\Article;
                 Article::STATUS_DRAFT => Article::STATUS_DRAFT,
                 Article::STATUS_PAGE => Article::STATUS_PAGE,
             ],['prompt' => 'Выбери статус']) ?>
+        </div>
+        <div class="col-sm-4">
+            <?= $form->field($model, 'service_type')->dropDownList([
+                Preorders::SERVICE_TYPE_BG =>  Preorders::SERVICE_TYPE_BG,
+                Preorders::SERVICE_TYPE_TZ =>  Preorders::SERVICE_TYPE_TZ,
+            ],['prompt' => 'Выбери вид услуги']) ?>
         </div>
     </div>
     <div class="row">

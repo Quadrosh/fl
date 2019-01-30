@@ -147,6 +147,9 @@ $preorder = new \common\models\Preorders();
             <?php $form = ActiveForm::begin([
                 'action' =>['site/order'],
                 'id' => 'bg_mainOrderForm',
+                'options' => [
+                    'class' => 'mainOrderForm_'.$article->service_type
+                ],
                 'method' => 'post',]); ?>
 
             <?= $form->field($preorder, 'utm_source')->hiddenInput([
@@ -202,12 +205,6 @@ $preorder = new \common\models\Preorders();
             </div>
             <?php ActiveForm::end(); ?>
         </div>
-
-
-
-
-
-
 
 
     </div>

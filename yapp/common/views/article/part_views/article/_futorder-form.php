@@ -19,6 +19,9 @@ $preorder = new \common\models\Preorders();
             <?php $form = ActiveForm::begin([
                 'action' =>['site/order'],
                 'id' => 'bg_mainOrderForm',
+                'options' => [
+                    'class' => 'mainOrderForm_'.$article->service_type
+                ],
                 'method' => 'post',]); ?>
 
             <?= $form->field($preorder, 'utm_source')->hiddenInput([
@@ -33,7 +36,7 @@ $preorder = new \common\models\Preorders();
                 'value'=>\common\models\Visit::getUtm('utm_content'), 'id' => 'mainOrderForm-utm_content'])->label(false) ?>
 
             <?= $form->field($preorder, 'service_type')
-                ->hiddenInput(['value'=>\common\models\Preorders::SERVICE_TYPE_BG,'id' => 'quickorder_form_top-service_type'])->label(false) ?>
+                ->hiddenInput(['value'=>$article->service_type,'id' => 'quickorder_form_top-service_type'])->label(false) ?>
             <?= $form->field($preorder, 'site')
                 ->hiddenInput(['value'=>'finlider.ru','id' => 'quickorder_form_top-site'])->label(false) ?>
             <?= $form->field($preorder, 'from_page')

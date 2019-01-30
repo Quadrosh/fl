@@ -30,6 +30,7 @@ class ArticleAsset extends AssetBundle
         'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js',
         'libs/slick/slick.min.js',
         'js/common/article.js',
+        'js/targets_datender.js',
 
     ];
     public $depends = [

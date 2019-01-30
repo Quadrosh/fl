@@ -2,13 +2,6 @@
 
 $(document).ready(function() {
 
-    //
-    //$("#services-call2action").on("afterValidate", function () {
-    //    yaCounter30134129.reachGoal("callMe");
-    //    ga("send","event","feedback","call","callMe");
-    //});
-
-
 
 
 
@@ -599,15 +592,3 @@ $(document).on("beforeSubmit", "#mainBgCalculator", function () {
 });
 
 
-
-
-
-//function processResponse(data){
-//
-//    for (var i = 0; i < data.length; i++){
-//        var obj = data[i];
-//
-//        console.log(obj);
-//
-//    }
-//}

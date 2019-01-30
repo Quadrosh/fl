@@ -39,6 +39,7 @@ use yii\web\UploadedFile;
  * @property integer $updated_at
  * @property string $site
  * @property string $raw_text
+ * @property string $service_type
  */
 class Article extends \yii\db\ActiveRecord
 {
@@ -73,7 +74,7 @@ class Article extends \yii\db\ActiveRecord
             [['list_name'], 'required'],
             [['cat_ids', 'description', 'keywords', 'exerpt', 'exerpt_big', 'raw_text', 'background_image', 'thumbnail_image'], 'string'],
             [['created_at', 'updated_at'], 'integer'],
-            [['list_name', 'hrurl', 'title', 'h1', 'topimage', 'topimage_alt', 'call2action_name', 'call2action_link', 'call2action_class', 'call2action_comment', 'imagelink', 'imagelink_alt', 'author', 'status', 'view', 'layout', 'site'], 'string', 'max' => 255],
+            [['list_name', 'hrurl', 'title', 'h1', 'topimage', 'topimage_alt', 'call2action_name', 'call2action_link', 'call2action_class', 'call2action_comment', 'imagelink', 'imagelink_alt', 'author', 'status', 'view', 'layout', 'site', 'service_type'], 'string', 'max' => 255],
             [['call2action_description'], 'string', 'max' => 510],
             [['categories'], 'safe'],
         ];

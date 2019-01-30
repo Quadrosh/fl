@@ -24,6 +24,7 @@ class AppAsset extends AssetBundle
         'libs/slick/slick.min.js',
         'libs/magnific/magnificpopup.min.js',
         'js/home.js',
+        'js/targets_finlider.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

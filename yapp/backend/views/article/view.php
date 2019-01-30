@@ -52,6 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'site',
             'id',
+            'service_type',
             'list_name',
             [
                 'attribute'=>'cat_ids',

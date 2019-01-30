@@ -10,7 +10,7 @@ use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use yii\bootstrap\ActiveForm;
 
-frontend\assets\ArticleAsset::register($this);
+datender\assets\ArticleAsset::register($this);
 
 
 ?>

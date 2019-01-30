@@ -23,7 +23,8 @@ class AppAsset extends AssetBundle
         'libs/gsap/TweenMax.min.js',
         'libs/slick/slick.min.js',
         'libs/magnific/magnificpopup.min.js',
-        'js/home.js',
+        'js/datender.js',
+        'js/targets_datender.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

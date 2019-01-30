@@ -24,6 +24,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'site',
+            'service_type',
             'hrurl',
             'title',
             'description:ntext',

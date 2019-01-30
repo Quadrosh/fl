@@ -21,6 +21,7 @@ use Yii;
  * @property string $promoname
  * @property string $cat_ids
  * @property string $status
+ * @property string $service_type
  * @property string $created_at
  * @property string $updated_at
  */
@@ -65,7 +66,8 @@ class Pages extends \yii\db\ActiveRecord
                 'promoname',
                 'layout',
                 'view',
-                'status'
+                'status',
+                'service_type'
             ], 'string', 'max' => 255],
             [['created_at', 'updated_at'], 'integer'],
             [['categories'], 'safe'],

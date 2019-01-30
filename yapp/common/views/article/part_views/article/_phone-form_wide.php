@@ -10,6 +10,9 @@ $preorder = new \common\models\Preorders();
     <?php $form = yii\bootstrap\ActiveForm::begin([
         'id' => 'quickorder-form-section'.$section->id,
         'method' => 'post',
+        'options' => [
+            'class' =>  'phoneForm_'.$article->service_type
+        ],
         'action' => ['/site/order'],
         'layout' => 'horizontal',
         'fieldConfig' => [
@@ -32,7 +35,7 @@ $preorder = new \common\models\Preorders();
     ])->textInput(['maxlength' => true, 'id' => 'quickorder-form-section'.$section->id.'-phone'])->label(false) ?>
 
     <?= $form->field($preorder, 'service_type',['template' => '{input}', 'options' => ['tag' => false]])
-        ->hiddenInput(['value'=>\common\models\Preorders::SERVICE_TYPE_BG,
+        ->hiddenInput(['value'=>$article->service_type,
             'id' => 'quickorder-form-section'.$section->id.'-name'])->label(false) ?>
 
     <?= $form->field($preorder, 'name',['template' => '{input}', 'options' => ['tag' => false]])

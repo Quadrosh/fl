@@ -34,7 +34,7 @@ use yii\behaviors\TimestampBehavior;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
-    const SPAM_COUNT = 20;
+    const SPAM_COUNT = 10;
     const SERVICE_TYPE_BG = 'bank_garant';
     const SERVICE_TYPE_TZ = 'tender_zaim';
     const SERVICE_TYPE_MIXED = 'mixed';
@@ -163,8 +163,6 @@ class Preorders extends \yii\db\ActiveRecord
         if ($this->service_type == self::SERVICE_TYPE_BG) {
             $this->emailForSend =  Yii::$app->params['bgOrderEmail'];
         }
-
-
         if (  strtolower(YII_ENV) == 'dev' ) {
             $this->emailForSend =  Yii::$app->params['devOrderEmail'];
         }

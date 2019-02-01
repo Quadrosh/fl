@@ -59,6 +59,7 @@ return [
                 '<pagename:[0-9a-z\-\_]+>' => 'site/page',
                 'site/order' => 'site/order',
                 '<pagename:[0-9a-z\-\_]+/[0-9a-z\-\_]+>' => 'site/page',
+                'sitemap.xml' => 'site/sitemap',
 
             ],
         ],

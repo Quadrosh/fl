@@ -3,6 +3,7 @@ namespace datender\controllers;
 
 use common\models\Pages;
 use common\models\Preorders;
+use common\models\Sitemap;
 use common\models\Visit;
 use datender\models\ContactForm;
 use Yii;
@@ -265,6 +266,21 @@ class SiteController extends Controller
         return $utm;
 
     }
+
+
+
+    public function actionSitemap()
+    {
+        Yii::$app->response->format = \yii\web\Response::FORMAT_RAW;
+        Yii::$app->response->headers->add('Content-Type', 'text/xml');
+        $sitemap = new Sitemap();
+        return $this->renderPartial('sitemap', [
+            'data' => $sitemap->getUrl(),
+            'homeLastMod' => $sitemap->homeLastMod,
+        ]);
+    }
+
+
 
     public function actionOrder()
     {

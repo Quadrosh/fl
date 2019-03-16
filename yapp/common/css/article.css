@@ -171,6 +171,9 @@ body {
 .max-w100per{
     max-width: 100%;
 }
+.min-h50 {
+    min-height:50px;
+}
 .min-h100 {
     min-height:100px;
 }

@@ -79,6 +79,8 @@ use yii\widgets\ActiveForm;
                     'text-right' => 'text-right',
                 ],['prompt' => 'Выбери']) ?>
         </div>
+    </div>
+    <div class="row">
 
         <div class="col-sm-6">
             <?= $form->field($model, 'image')->textarea(['rows' => 1]) ?>
@@ -100,6 +102,8 @@ use yii\widgets\ActiveForm;
         <div class="col-sm-4">
             <?= $form->field($model, 'image_alt')->textInput(['maxlength' => true]) ?>
         </div>
+    </div>
+    <div class="row">
 
         <div class="col-sm-4">
             <?= $form->field($model, 'link_name')->textInput(['maxlength' => true]) ?>

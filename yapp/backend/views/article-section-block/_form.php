@@ -84,7 +84,8 @@ use yii\widgets\ActiveForm;
                     'text_small' => 'text_small',
                 ],['prompt' => 'Выбери']) ?>
         </div>
-
+    </div>
+    <div class="row">
 
         <div class="col-sm-2">
             <?= $form->field($model, 'image')->textarea(['rows' => 1]) ?>
@@ -101,7 +102,8 @@ use yii\widgets\ActiveForm;
         <div class="col-sm-2">
             <?= $form->field($model, 'thumbnail_image')->textarea(['rows' => 1]) ?>
         </div>
-
+    </div>
+    <div class="row">
         <div class="col-sm-4">
             <?= $form->field($model, 'call2action_name')->textInput(['maxlength' => true]) ?>
         </div>

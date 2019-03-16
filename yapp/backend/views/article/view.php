@@ -353,7 +353,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     '/article-section-block/raw-text-to-items?id='.$block->id,
                                     [
                                         'title' => Yii::t('yii', 'raw text to items (each line to item)'),
-                                        'data-confirm' =>'Точно конвертировать текст в items?',
+                                        'data-confirm' =>'Построчно конвертировать raw_text в items?',
                                         'data-method'=>'post'
                                     ]).' '.
                                 Html::a( '<span class="glyphicon glyphicon-th-list"></span>',
@@ -363,7 +363,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     ],
                                     [
                                         'title' => Yii::t('yii', 'raw text to items mode 2 (1-st line - head, next lines - text, delimeter - empty string)'),
-                                        'data-confirm' =>'Точно конвертировать текст в items режим 2? (1 строка заголовок, 1 строка тело, разделитель пустая строка.) ?',
+                                        'data-confirm' =>'Конвертировать raw_text в items режим 2 заг+текст? (1-я строка заголовок, 2-я строка текст, разделитель одна пустая строка.) ?',
                                         'data-method'=>'post'
                                     ]).
                                 ' - '.\common\models\Article::excerpt($block->raw_text,100).'</li>':'' ?>

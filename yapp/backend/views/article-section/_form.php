@@ -39,6 +39,8 @@ use yii\widgets\ActiveForm;
                     'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
+    </div>
+    <div class="row">
         <div class="col-sm-8">
             <?= $form->field($model, 'description')->textarea(['rows' => 1]) ?>
         </div>
@@ -51,7 +53,8 @@ use yii\widgets\ActiveForm;
                     'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
-
+    </div>
+    <div class="row">
         <div class="col-sm-8">
             <?= $form->field($model, 'raw_text')->textarea(['rows' => 1]) ?>
         </div>
@@ -70,7 +73,8 @@ use yii\widgets\ActiveForm;
                     'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
-
+    </div>
+    <div class="row">
         <div class="col-sm-8">
             <?= $form->field($model, 'conclusion')->textarea(['rows' => 1]) ?>
         </div>
@@ -83,7 +87,8 @@ use yii\widgets\ActiveForm;
                     'lead' => 'lead',
                 ],['prompt' => 'Выбери']) ?>
         </div>
-
+    </div>
+    <div class="row">
         <div class="col-sm-2">
             <?= $form->field($model, 'section_image')->textarea(['rows' => 1]) ?>
         </div>
@@ -116,7 +121,8 @@ use yii\widgets\ActiveForm;
         <div class="col-sm-2">
             <?= $form->field($model, 'thumbnail_image')->textarea(['rows' => 1]) ?>
         </div>
-
+    </div>
+    <div class="row">
 
         <div class="col-sm-4">
             <?= $form->field($model, 'call2action_name')->textInput(['maxlength' => true]) ?>

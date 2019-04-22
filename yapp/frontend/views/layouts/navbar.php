@@ -106,6 +106,13 @@ echo Nav::widget([
 
                 ],
 
+                [
+                    'label' => 'Банковская гарантия в банке Восточный',
+                    'url' => Yii::$app->request->url == '/bank_garant/bankovskaya-garantiya-v-banke-vostochnyi'?false:['/bank_garant/bankovskaya-garantiya-v-banke-vostochnyi'],
+                    'active' => Yii::$app->request->url == '/bank_garant/bankovskaya-garantiya-v-banke-vostochnyi'?true:false,
+
+                ],
+
             ],
         ],
         [

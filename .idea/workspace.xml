@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c36a5f4-211c-4e4c-a31c-e14423fe361e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_bs2-img_head_4--text_8.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/console/migrations/m190321_081531_add_topimage_title_column_to_article_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/console/migrations/m190321_082919_add_section_image_title_column_to_article_section_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/console/migrations/m190321_083739_add_image_title_column_to_article_section_block_table.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yapp/console/migrations/m190321_084241_add_image_title_column_to_article_section_block_item_table.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article-section-block-item/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article-section-block-item/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article-section-block/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article-section-block/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article-section/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article-section/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article/_form.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article/_form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/backend/views/article/view.php" afterPath="$PROJECT_DIR$/yapp/backend/views/article/view.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/css/article.css" afterPath="$PROJECT_DIR$/yapp/common/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/Article.php" afterPath="$PROJECT_DIR$/yapp/common/models/Article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/ArticleSection.php" afterPath="$PROJECT_DIR$/yapp/common/models/ArticleSection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlock.php" afterPath="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlock.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlockItem.php" afterPath="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlockItem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-article.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-article.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_futorder.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/article/_a-page_futorder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-10_icons_in_footer.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-10_icons_in_footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_2.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_3.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_4.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-bs_horiz_4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-ol-li.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-ol-li.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_1.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_banner_1.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_banner_1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_carousel.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_carousel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_leadbox.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-slick_leadbox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-ul-li.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block/_asb-ul-li.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_bs2-img_head--text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_bs2-img_head--text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_img_col-text_col.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_img_col-text_col.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_img_icon_in_head.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_img_icon_in_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_tbl2_img_head--text__w1-structure.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_tbl2_img_head--text__w1-structure.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-header_on_img.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-header_on_img.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-img_link_description.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-img_link_description.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-slick_banner_1.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-slick_banner_1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-v_img_head_text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-v_img_head_text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-v_svg_head_text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-v_svg_head_text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-full_width.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-full_width.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-h1_head-fw.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-h1_head-fw.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-h1_head.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-h1_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_float_in_text.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_float_in_text.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_icon_in_head.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-image_icon_in_head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-img_back.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-img_back.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-img_head_text-fw.php" afterPath="$PROJECT_DIR$/yapp/common/views/article/part_views/section/_as-img_head_text-fw.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yapp/frontend/views/layouts/navbar.php" afterPath="$PROJECT_DIR$/yapp/frontend/views/layouts/navbar.php" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,12 +72,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_asbi-h_bs2-img_head_4--text_8.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_asbi-h_bs2-img_head_4--text_8.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_bs2-img_head_4--text_8.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7798165">
+            <state vertical-scroll-proportion="0.0">
               <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19495413">
+              <caret line="109" column="69" selection-start-line="109" selection-start-column="69" selection-end-line="109" selection-end-column="69" />
+              <folding>
+                <marker date="1555968880306" expanded="true" signature="391:3609" placeholder="..." />
+                <marker date="1555968880306" expanded="false" signature="642:677" placeholder="..." />
+                <marker date="1555968880306" expanded="true" signature="732:771" placeholder="..." />
+                <marker date="1555968880306" expanded="true" signature="775:1188" placeholder="..." />
+                <marker date="1555968880306" expanded="true" signature="6576:7839" placeholder="..." />
+                <marker date="1555968880306" expanded="false" signature="6919:6955" placeholder="..." />
+                <marker date="1555968880306" expanded="true" signature="7058:7157" placeholder="..." />
+                <marker date="1555968880306" expanded="true" signature="7193:7808" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,7 +137,6 @@
         <option value="$PROJECT_DIR$/yapp/datender/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/frontend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/Sitemap.php" />
-        <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/navbar.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/Article.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/ArticleSection.php" />
         <option value="$PROJECT_DIR$/yapp/common/models/ArticleSectionBlock.php" />
@@ -200,6 +176,7 @@
         <option value="$PROJECT_DIR$/yapp/backend/views/article-section-block-item/_form.php" />
         <option value="$PROJECT_DIR$/yapp/common/css/article.css" />
         <option value="$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_bs2-img_head_4--text_8.php" />
+        <option value="$PROJECT_DIR$/yapp/frontend/views/layouts/navbar.php" />
       </list>
     </option>
   </component>
@@ -291,7 +268,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,11 +286,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="console" />
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="finlider" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,54 +476,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="finlider" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="article-section-block-item" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -658,18 +613,11 @@
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/site/contacts.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yapp/frontend/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1037,9 +985,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/yapp/common/views/article/part_views/block_item/_asbi-h_bs2-img_head_4--text_8.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7798165">
+        <state vertical-scroll-proportion="0.0">
           <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yapp/frontend/views/layouts/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19495413">
+          <caret line="109" column="69" selection-start-line="109" selection-start-column="69" selection-end-line="109" selection-end-column="69" />
+          <folding>
+            <marker date="1555968880306" expanded="true" signature="391:3609" placeholder="..." />
+            <marker date="1555968880306" expanded="false" signature="642:677" placeholder="..." />
+            <marker date="1555968880306" expanded="true" signature="732:771" placeholder="..." />
+            <marker date="1555968880306" expanded="true" signature="775:1188" placeholder="..." />
+            <marker date="1555968880306" expanded="true" signature="6576:7839" placeholder="..." />
+            <marker date="1555968880306" expanded="false" signature="6919:6955" placeholder="..." />
+            <marker date="1555968880306" expanded="true" signature="7058:7157" placeholder="..." />
+            <marker date="1555968880306" expanded="true" signature="7193:7808" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

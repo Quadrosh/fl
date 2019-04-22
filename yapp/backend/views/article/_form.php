@@ -83,18 +83,38 @@ use  \common\models\Preorders;
         <div class="col-sm-12">
             <?= $form->field($model, 'raw_text')->textarea(['rows' => 2]) ?>
         </div>
-        <div class="col-sm-6">
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
             <?= $form->field($model, 'topimage')->textInput(['maxlength' => true]) ?>
         </div>
-        <div class="col-sm-6">
-            <?= $form->field($model, 'topimage_alt')->textInput(['maxlength' => true]) ?>
+        <div class="col-sm-7">
+            <?= $form->field($model, 'topimage_alt')->textarea(['rows' => 1,'maxlength' => true]) ?>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-12">
+            <?= $form->field($model, 'topimage_title')->textarea(['rows' => 1]) ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
             <?= $form->field($model, 'background_image')->textarea(['rows' => 1]) ?>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-10">
+            <?= $form->field($model, 'background_image_title')->textarea(['rows' => 1]) ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
             <?= $form->field($model, 'thumbnail_image')->textarea(['rows' => 1]) ?>
         </div>
+        <div class="col-sm-5">
+            <?= $form->field($model, 'thumbnail_image_alt')->textarea(['rows' => 1,'maxlength' => true]) ?>
+        </div>
+        <div class="col-sm-5">
+            <?= $form->field($model, 'thumbnail_image_title')->textarea(['rows' => 1]) ?>
+        </div>
+    </div>
+    <div class="row">
 
         <div class="col-sm-4">
             <?= $form->field($model, 'call2action_name')->textInput(['maxlength' => true]) ?>

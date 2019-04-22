@@ -53,6 +53,8 @@ $preorder = new \common\models\Preorders();
                                 echo Html::img('/img/'.$section->section_image,[
                                     'alt'=>$section->section_image_alt,
                                     'class'=>$section->image_class,
+                                    'title'=>$section->section_image_title?$section->section_image_title:null,
+
                                 ]);
                             } ?>
                             <?php if ($section->header) : ?>

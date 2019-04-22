@@ -57,7 +57,9 @@ if ($model->structure) {
                                     <?php if ($item->image) : ?>
                                         <?= Html::img('/img/'.$item->image,[
                                             'class'=>' ',
-                                            'alt'=>$item->image_alt])  ?>
+                                            'alt'=>$item->image_alt,
+                                            'title'=>$item->image_title?$item->image_title:null,
+                                        ])  ?>
                                     <?php endif; ?>
                                     <div class="xs_filter"></div>
                                     <div class="col-sm-6  pt100 <?php

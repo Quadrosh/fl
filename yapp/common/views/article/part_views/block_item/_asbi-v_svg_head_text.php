@@ -12,7 +12,7 @@ use yii\helpers\Html;
 <div class="asbi-v_svg_head_text text-center">
 
     <?php if ($model->image) : ?>
-        <div class="svg">
+        <div class="svg" <?= $model->image_title?'title="'.$model->image_title.'"':null ?>>
             <?= $model->image ?>
         </div>
     <?php endif; ?>

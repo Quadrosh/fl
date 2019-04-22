@@ -17,7 +17,11 @@ use yii\helpers\Html;
 
             <?php if ($model->raw_text) : ?>
                 <p><?php if ($model->section_image) {
-                        echo Html::img('/img/'.$model->section_image,['class'=> $model->image_class, 'alt'=>$model->section_image_alt]);
+                        echo Html::img('/img/'.$model->section_image,[
+                            'class'=> $model->image_class,
+                            'alt'=>$model->section_image_alt,
+                            'title'=>$model->section_image_title?$model->section_image_title:null,
+                        ]);
                     } ?><?= nl2br($model->raw_text)  ?></p>
             <?php endif; ?>
 

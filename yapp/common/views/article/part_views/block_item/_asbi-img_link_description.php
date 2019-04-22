@@ -18,7 +18,11 @@ use yii\helpers\Html;
         <p class="text-center"><?= $model->description ?></p>
     <?php endif; ?>
     <?php if ($model->image) : ?>
-        <?= Html::img('/img/'.$model->image,['class'=>'w100'])  ?>
+        <?= Html::img('/img/'.$model->image,[
+            'class'=>'w100',
+            'alt'=>$model->image_alt,
+            'title'=>$model->image_title?$model->image_title:null,
+        ])  ?>
     <?php endif; ?>
     <?php if ($model->link_name) : ?>
         <a href="<?= $model->link_url ?>" class="<?= $model->link_class ?>"><?= $model->link_name ?></a>

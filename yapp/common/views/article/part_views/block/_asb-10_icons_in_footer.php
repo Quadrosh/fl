@@ -74,6 +74,7 @@ use yii\helpers\Html;
                             <?= Html::img('/img/'.$item->image,[
                                 'class'=>'imgCenter '.$item->image_class,
                                 'alt'=>$item->image_alt,
+                                'title'=>$item->image_title?$item->image_title:null,
                             ])  ?>
                         <?php endif; ?>
 

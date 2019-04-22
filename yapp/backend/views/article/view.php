@@ -111,8 +111,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'h1',
             'topimage',
             'topimage_alt',
+            'topimage_title',
             'background_image:ntext',
+            'background_image_title:ntext',
             'thumbnail_image:ntext',
+            'thumbnail_image_alt:ntext',
+            'thumbnail_image_title:ntext',
             'call2action_description',
             'call2action_name',
             'call2action_link',
@@ -262,6 +266,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ])
                 .'</li>':'' ?>
             <?= $section->section_image_alt?'<li class="text-success"> Image Alt - '.$section->section_image_alt.'</li>':'' ?>
+            <?= $section->section_image_title?'<li class="text-warning"> Image Title - '.$section->section_image_title.'</li>':'' ?>
             <?= $section->background_image?'<li> Background Image - '
                 .Html::img('/img/'. $section->background_image, ['class'=>'gridThumb'])
                 .'<sup>'.$section->background_image.'</sup>'
@@ -273,6 +278,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         'data-method'=>'post'
                     ])
                 .'</li>':'' ?>
+            <?= $section->background_image_title?'<li class="text-warning">Background Image Title - '.$section->background_image_title.'</li>':'' ?>
             <?= $section->thumbnail_image?'<li> Thumbnail Image - '
                 .Html::img('/img/'. $section->thumbnail_image, ['class'=>'gridThumb'])
                 .'<sup>'.$section->thumbnail_image.'</sup>'
@@ -284,6 +290,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         'data-method'=>'post'
                     ])
                 .'</li>':'' ?>
+            <?= $section->thumbnail_image_alt?'<li class="text-success">Thumbnail Image Alt - '.$section->thumbnail_image_alt.'</li>':'' ?>
+            <?= $section->thumbnail_image_title?'<li class="text-warning">Thumbnail Image Title - '.$section->thumbnail_image_title.'</li>':'' ?>
             <?= $section->call2action_name?'<li> Call2Action Name - '.$section->call2action_name.'</li>':'' ?>
             <?= $section->call2action_link?'<li> Call2Action Link - '.$section->call2action_link.'</li>':'' ?>
             <?= $section->call2action_class?'<li> Call2Action Class - '.$section->call2action_class.'</li>':'' ?>
@@ -389,6 +397,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             ?>
                             <?= $block->image?$blockImageLi:'' ?>
                             <?= $block->image_alt?'<li class="text-success"> Image Alt - '.$block->image_alt.'</li>':'' ?>
+                            <?= $block->image_title?'<li class="text-warning"> Image Title - '.$block->image_title.'</li>':'' ?>
                             <?= $block->background_image?'<li> Background Image - '
                                 .Html::img('/img/'. $block->background_image, ['class'=>'gridThumb'])
                                 .'<sup>'.$block->background_image.'</sup>'
@@ -400,6 +409,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         'data-method'=>'post'
                                     ])
                                 .'</li>':'' ?>
+                            <?= $block->background_image_title?'<li class="text-warning"> Background Image Title - '.$block->background_image_title.'</li>':'' ?>
                             <?= $block->thumbnail_image?'<li> Thumbnail Image - '
                                 .Html::img('/img/'. $block->thumbnail_image, ['class'=>'gridThumb'])
                                 .'<sup>'.$block->thumbnail_image.'</sup>'
@@ -411,6 +421,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                         'data-method'=>'post'
                                     ])
                                 .'</li>':'' ?>
+                            <?= $block->thumbnail_image_alt?'<li class="text-success"> Thumbnail Image Alt - '.$block->thumbnail_image_alt.'</li>':'' ?>
+                            <?= $block->thumbnail_image_title?'<li class="text-warning"> Thumbnail Image Title - '.$block->thumbnail_image_title.'</li>':'' ?>
                             <?= $block->call2action_name?'<li> Call2Action Name - '.$block->call2action_name.'</li>':'' ?>
                             <?= $block->call2action_link?'<li> Call2Action Link - '.$block->call2action_link.'</li>':'' ?>
                             <?= $block->call2action_class?'<li> Call2Action Class - '.$block->call2action_class.'</li>':'' ?>
@@ -489,6 +501,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         }
                                         ?>
                                         <?= $item->image?$itemImageLi:'' ?>
+                                        <?= $item->image_title?'<li class="text-warning"> Image Title - '.$item->image_title.'</li>':'' ?>
                                         <?= $item->image_alt?'<li class="text-success"> Image Alt - '.$item->image_alt.'</li>':'' ?>
                                         <?= $item->link_name?'<li> Link Name - '.$item->link_name.'</li>':'' ?>
                                         <?= $item->link_url?'<li> Link Url - '.$item->link_url.'</li>':'' ?>

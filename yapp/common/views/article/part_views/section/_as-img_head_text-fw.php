@@ -9,7 +9,10 @@ use yii\helpers\Html;
     <div class="row">
         <div class="  col-sm-12 pl0 pr0">
             <?php if ($model->section_image) {
-                echo Html::img('/img/'.$model->section_image,[ 'alt'=>$model->section_image_alt]);
+                echo Html::img('/img/'.$model->section_image,[
+                    'alt'=>$model->section_image_alt,
+                    'title'=>$model->section_image_title?$model->section_image_title:null,
+                ]);
             } ?>
             <?php if ($model->header) : ?>
                 <h2 class="<?= $model->header_class ?>"><?= $model->header ?></h2>

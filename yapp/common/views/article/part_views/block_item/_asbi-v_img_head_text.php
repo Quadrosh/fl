@@ -12,7 +12,11 @@ use yii\helpers\Html;
 <div class="asbi-h-img_head_text text-center">
 
     <?php if ($model->image) {
-        echo Html::img('/img/'.$model->image,[ 'alt'=>$model->image_alt, 'class'=>$model->image_class]);
+        echo Html::img('/img/'.$model->image,[
+            'alt'=>$model->image_alt,
+            'class'=>$model->image_class,
+            'title'=>$model->image_title?$model->image_title:null,
+        ]);
     } ?>
     <?php if ($model->header) : ?>
         <h4 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h4>

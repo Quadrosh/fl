@@ -15,7 +15,10 @@ use yii\helpers\Html;
         <?php if ($model->image) : ?>
             <div class="table-cell <?= $model->image_class ?>">
                 <?php if ($model->image) {
-                    echo Html::img('/img/'.$model->image,[ 'alt'=>$model->image_alt]);
+                    echo Html::img('/img/'.$model->image,[
+                        'alt'=>$model->image_alt,
+                        'title'=>$model->image_title?$model->image_title:null,
+                    ]);
                 } ?>
             </div>
         <?php endif; ?>

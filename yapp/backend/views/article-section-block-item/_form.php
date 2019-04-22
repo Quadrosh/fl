@@ -82,7 +82,7 @@ use yii\widgets\ActiveForm;
     </div>
     <div class="row">
 
-        <div class="col-sm-6">
+        <div class="col-sm-3">
             <?= $form->field($model, 'image')->textarea(['rows' => 1]) ?>
         </div>
         <div class="col-sm-2">
@@ -99,8 +99,11 @@ use yii\widgets\ActiveForm;
                 'w50' => 'w50',
             ],['prompt' => 'Выбери']) ?>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-7">
             <?= $form->field($model, 'image_alt')->textInput(['maxlength' => true]) ?>
+        </div>
+        <div class="col-sm-12">
+            <?= $form->field($model, 'image_title')->textarea(['rows' => 1]) ?>
         </div>
     </div>
     <div class="row">
@@ -131,6 +134,7 @@ use yii\widgets\ActiveForm;
                 '_asbi-h_img_col-text_col' => '-- img_col-text_col',
                 '_asbi-h_tbl2_img_head--text__w1-structure' => '-- tbl2_img_head--text__w1-structure',
                 '_asbi-h_bs2-img_head--text' => '-- bs2-img_head--text',
+                '_asbi-h_bs2-img_head_4--text_8' => '-- bs2-img_head_4--text_8',
             ],['prompt' => 'Выбери']) ?>
         </div>
         <div class="col-sm-3">

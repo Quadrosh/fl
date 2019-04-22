@@ -14,7 +14,11 @@ use yii\helpers\Html;
     <div class="table mb0">
         <div class="table-cell vertical-middle <?= $model->structure ?>">
             <?php if ($model->image) {
-                echo Html::img('/img/'.$model->image,[ 'alt'=>$model->image_alt, 'class'=>$model->image_class]);
+                echo Html::img('/img/'.$model->image,[
+                    'alt'=>$model->image_alt,
+                    'class'=>$model->image_class,
+                    'title'=>$model->image_title?$model->image_title:null,
+                ]);
             } ?>
         <?php if ($model->header) : ?>
             <h5 <?= $model->header_class?'class="'.$model->header_class.'"':null ?>><?= $model->header ?></h5>

@@ -9,11 +9,11 @@ use yii\helpers\Html;
 
 
 ?>
-<div class="asbi-h_bs2-img_head--text">
+<div class="asbi-h_bs2-img_head--text <?= $model->custom_class ?>">
 
 
-    <div class="row">
-        <div class="col-sm-6">
+    <div class="row ">
+        <div class="col-sm-4 ">
             <?php if ($model->image) {
                 echo Html::img('/img/'.$model->image,[
                     'alt'=>$model->image_alt,
@@ -30,11 +30,9 @@ use yii\helpers\Html;
         <?php endif; ?>
 
         </div>
-        <div class="col-sm-6">
-
-
+        <div class="col-sm-8 pt10">
             <?php if ($model->text) : ?>
-                <p <?= $model->text_class?'class="'.$model->text_class.'"':null ?>><?= $model->text ?></p>
+                <p <?= $model->text_class?'class="'.$model->text_class.'"':null ?>><?= nl2br($model->text)  ?></p>
             <?php endif; ?>
 
             <?php if ($model->link_name) : ?>

@@ -43,7 +43,11 @@ use yii\helpers\Html;
                                 <p class="text-center"><?= $item->description ?></p>
                             <?php endif; ?>
                             <?php if ($item->image) : ?>
-                                <?= Html::img('/img/'.$item->image,['class'=>'max-w100per'])  ?>
+                                <?= Html::img('/img/'.$item->image,[
+                                    'class'=>'max-w100per',
+                                    'alt'=>$item->image_alt,
+                                    'title'=>$item->image_title?$item->image_title:null,
+                                ])  ?>
                             <?php endif; ?>
                             <?php if ($item->link_name) : ?>
                                 <a href="<?= $item->link_url ?>" class="<?= $item->link_class ?>"><?= $item->link_name ?></a>

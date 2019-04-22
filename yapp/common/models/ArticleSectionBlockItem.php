@@ -35,6 +35,7 @@ use Yii;
  * @property integer $text_class
  * @property integer $comment_class
  * @property integer $image_class
+ * @property integer $image_title
  */
 class ArticleSectionBlockItem extends \yii\db\ActiveRecord
 {
@@ -62,7 +63,7 @@ class ArticleSectionBlockItem extends \yii\db\ActiveRecord
         return [
             [['article_section_block_id'], 'required'],
             [['article_section_block_id', 'sort', 'accent', 'created_at', 'updated_at'], 'integer'],
-            [['description', 'text', 'comment', 'image'], 'string'],
+            [['description', 'text', 'comment', 'image','image_title'], 'string'],
             [['header', 'header_class', 'link_description'], 'string', 'max' => 510],
             [['image_alt', 'link_name', 'link_url', 'link_class', 'link_comment', 'view', 'color_key', 'structure', 'custom_class', 'type', 'code_name','description_class','text_class','comment_class','image_class'], 'string', 'max' => 255],
         ];

@@ -7,6 +7,7 @@ use yii\helpers\Html;
 
 <section
     class="as-img_back <?= $model->color_key ?> <?= $model->custom_class ?> min-h500"
+    <?= $model->background_image_title?'title="'.$model->background_image_title.'"':null ?>
     style=" background-image: url(/img/<?= $model->background_image ?>)"
 >
 
@@ -17,7 +18,10 @@ use yii\helpers\Html;
                 <?php if ($model->section_image) : ?>
                     <div class="table-cell <?= $model->image_class ?>">
                         <?php if ($model->section_image) {
-                            echo Html::img('/img/'.$model->section_image,[ 'alt'=>$model->section_image_alt]);
+                            echo Html::img('/img/'.$model->section_image,[
+                                'alt'=>$model->section_image_alt,
+                                'title'=>$model->section_image_title?$model->section_image_title:null,
+                            ]);
                         } ?>
                     </div>
                 <?php endif; ?>

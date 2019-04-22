@@ -1100,3 +1100,32 @@ section {
     margin-left: -20px; /* same as padding-left set on li */
     width: 20px; /* same as padding-left set on li */
 }
+
+
+.text-success {
+    color: #449d44;
+}
+.text-warning{
+    color: #F7941E;
+}
+.text-info{
+    color: #17a2b8;
+}
+.text-danger{
+    color: #dc3545;
+}
+.ul_no_dot ul {
+    padding-left: 0px;
+}
+.ul_no_dot ul li {
+    list-style-type: none;
+}
+.bordered {
+    border:1px solid rgba(0,0,0,0.3);
+}
+.btnone{
+    border-top:none;
+}
+.bbnone{
+    border-bottom:none;
+}

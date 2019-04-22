@@ -86,21 +86,34 @@ use yii\widgets\ActiveForm;
         </div>
     </div>
     <div class="row">
-
-        <div class="col-sm-2">
+        <div class="col-sm-3">
             <?= $form->field($model, 'image')->textarea(['rows' => 1]) ?>
         </div>
         <div class="col-sm-2">
             <?= $form->field($model, 'image_class')->textInput(['maxlength' => true]) ?>
         </div>
-        <div class="col-sm-4">
-            <?= $form->field($model, 'image_alt')->textInput(['maxlength' => true]) ?>
+        <div class="col-sm-7">
+            <?= $form->field($model, 'image_alt')->textarea(['rows' => 1,'maxlength' => true]) ?>
+        </div>
+        <div class="col-sm-12">
+            <?= $form->field($model, 'image_title')->textarea(['rows' => 1]) ?>
         </div>
         <div class="col-sm-2">
             <?= $form->field($model, 'background_image')->textarea(['rows' => 1]) ?>
         </div>
+        <div class="col-sm-10">
+            <?= $form->field($model, 'background_image_title')->textarea(['rows' => 1]) ?>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm-2">
             <?= $form->field($model, 'thumbnail_image')->textarea(['rows' => 1]) ?>
+        </div>
+        <div class="col-sm-5">
+            <?= $form->field($model, 'thumbnail_image_alt')->textarea(['rows' => 1,'maxlength' => true]) ?>
+        </div>
+        <div class="col-sm-5">
+            <?= $form->field($model, 'thumbnail_image_title')->textarea(['rows' => 1]) ?>
         </div>
     </div>
     <div class="row">

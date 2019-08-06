@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/finlider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/finlider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yapp/backend/web/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/yapp/backend/web/favicon.ico" afterDir="false" />
     </list>
     <ignored path="finlider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -220,7 +221,7 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="28" />
     <option name="y" value="51" />
     <option name="width" value="1412" />
@@ -354,12 +355,12 @@
       <workItem from="1561661122054" duration="989000" />
       <workItem from="1562588639240" duration="899000" />
       <workItem from="1563455700857" duration="514000" />
-      <workItem from="1565116173275" duration="464000" />
+      <workItem from="1565116173275" duration="766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4199000" />
+    <option name="totallyTimeSpent" value="4501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="51" width="1412" height="849" extended-state="0" />

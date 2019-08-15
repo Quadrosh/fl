@@ -39,11 +39,48 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
 
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => \yii\grid\ActionColumn::class,
+                'buttons' => [
+                    'delete'=>function($url,$model){
+                        return false;
+                    },
+                    'update'=>function($url,$model){
+                        return false;
+                    },
+                ]
+            ],
             'id',
             'site',
+            [
+                'attribute'=>'updated_at',
+                'value' => function($data)
+                {
+                    return \Yii::$app->formatter->asDatetime($data['updated_at'], 'dd/MM/yyyy');
+                },
+                'format'=> 'html',
+            ],
             'service_type',
+            'title',
+            [
+                'attribute'=>'hrurl',
+                'value' => function($data)
+                {
 
+                    $startUrl = $data->status == 'page'? '/':'/article/';
+
+                    if (Yii::$app->request->getHostName() == 'cp.finlider.local') {
+                        $lpSite = $data['site'];
+                        $localSite = str_replace('.ru','.local',$lpSite);
+                        return '<a  href="http://'.$localSite.$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
+                    } else {
+                        return '<a  href="http://'.$data['site'].$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
+                    }
+
+
+                },
+                'format'=> 'html',
+            ],
             [
                 'attribute'=>'cat_ids',
                 'value' => function($model)
@@ -76,26 +113,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format'=> 'html',
                 'label'=> 'Категории в каталоге',
             ],
-            [
-                'attribute'=>'hrurl',
-                'value' => function($data)
-                {
-
-                    $startUrl = $data->status == 'page'? '/':'/article/';
-
-                    if (Yii::$app->request->getHostName() == 'cp.finlider.local') {
-                        $lpSite = $data['site'];
-                        $localSite = str_replace('.ru','.local',$lpSite);
-                        return '<a  href="http://'.$localSite.$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
-                    } else {
-                        return '<a  href="http://'.$data['site'].$startUrl.$data['hrurl'].'">'.$data['hrurl'].'</a>';
-                    }
 
 
-                },
-                'format'=> 'html',
-            ],
-            'title',
             // 'description:ntext',
             // 'keywords:ntext',
             // 'exerpt:ntext',
@@ -114,6 +133,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'imagelink_alt',
             // 'author',
              'status',
+
             // 'view',
             // 'layout',
             // 'created_at',

@@ -4,6 +4,7 @@ namespace common\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\httpclient\Client;
 
 /**
  * This is the model class for table "preorders".
@@ -151,10 +152,8 @@ class Preorders extends \yii\db\ActiveRecord
 
     /**
      * Sends an email to the specified email address using the information collected by this model.
-     * @param string $email the target email address
-     * @return bool whether the email was sent
      */
-    public function sendEmail($subject)
+    public function sendEmailAndSms($subject)  // SMS ТУТ ЖЕ
     {
         $this->emailForSend =  Yii::$app->params['prodOrderEmail'];
         if ($this->service_type == self::SERVICE_TYPE_TZ) {
@@ -177,25 +176,42 @@ class Preorders extends \yii\db\ActiveRecord
         $email = $this->email? "<br/> Email: ".$this->email:null;
         $comment = $this->comment?" <br/> Коментарий: <br/>". nl2br($this->text):null;
 
+        $emailText =  'Новая заявка с '.$this->site. PHP_EOL.
+            $fromPage.
+            $serviceType .
+            $operationId .
+            $platform .
+            $inn .
+            $name .
+            $phone .
+            $email.
+            $comment;
 
-        return Yii::$app->mailer->compose()
+         $sentEmail = Yii::$app->mailer->compose()
             ->setTo($this->emailForSend)
             ->setFrom('sender@'.Yii::$app->params['site'])
             ->setSubject($subject)
             ->setHtmlBody(
-                "Данные запроса <br>".
-                $fromPage.
-                $serviceType .
-                $operationId .
-                $platform .
-                $inn .
-                $name .
-                $phone .
-                $email.
-                $comment
+                "Данные запроса <br>".$emailText
             )->send();
 
+        $smsText =  'Новая заявка с '.$this->site. PHP_EOL.
+            $fromPage.
+            $serviceType .
+            $operationId .
+            $platform .
+            $inn .
+            $name .
+            $phone .
+            $email.
+            $comment;
+
+        $smsNotify = $this->notifyBySms($smsText);
+
+        return $smsNotify && $sentEmail ? true : false;
+
     }
+
 
 
     public static function placeOrder($post,$userIp = null)
@@ -214,7 +230,7 @@ class Preorders extends \yii\db\ActiveRecord
             $preorder['site'] = Yii::$app->params['site'];
             $preorder['ip'] = Yii::$app->request->userIP;
             if ($preorder->save()) {
-                if ($preorder->sendEmail( Yii::$app->params['site'].': Заявка')) {
+                if ($preorder->sendEmailAndSms( Yii::$app->params['site'].': Заявка')) {
                     Yii::$app->session->setFlash('success', 'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
                     return true;
                 } else {
@@ -229,6 +245,23 @@ class Preorders extends \yii\db\ActiveRecord
             Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@'.Yii::$app->params['site'].' или оформите заявку по телефону');
             return false;
         }
+
+    }
+
+
+    public function notifyBySms($text)
+    {
+        $client = new Client();
+        $response = $client->createRequest()
+            ->setMethod('post')
+            ->setUrl('https://sms.ru/sms/send')
+            ->setData([
+                'api_id' => Yii::$app->params['smsApiId'],
+                'to' =>  Yii::$app->params['smsOrderPhone'],
+                'text'=> $text
+            ])
+            ->send();
+        return $response->isOk ? true : false;
 
     }
 }

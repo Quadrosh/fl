@@ -68,6 +68,15 @@ class Preorders extends \yii\db\ActiveRecord
             [['text', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'], 'string'],
             [['date', 'done'], 'integer'],
             [['ip', 'site', 'service_type', 'platform', 'inn', 'phone', 'email', 'from_page', 'manager', 'quality'], 'string', 'max' => 255],
+//            [['ip'], 'string', 'max' => 255],
+
+            ['ip', function ($attribute, $params)
+            {
+                if(in_array( Yii::$app->request->userIP,Yii::$app->params['blocked_ips'])) {
+                    $this->addError($attribute, 'Пожалуйста, свяжитесь с нами по телефону.');
+                }
+            }],
+
             [['operation_id', 'name',  'comment'], 'string', 'max' => 510],
             ['utm_source', 'filter', 'filter' => function ($value) {
                 if (strlen($value)>=509) {

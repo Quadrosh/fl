@@ -29,7 +29,20 @@ $this->params['breadcrumbs'][] = $this->title;
                 },
                 'format'=> 'html',
             ],
-            'ip',
+            [
+                'attribute'=>'ip',
+                'value' => function($data)
+                {
+                    $res = $data->ip;
+                    if(in_array( $res,Yii::$app->params['blocked_ips'])) {
+                        $res = $res.'<sup class="text-danger">blocked<sup>';
+                    }
+
+                    return $res;
+                },
+                'format'=> 'html',
+            ],
+//            'ip',
 //            'site',
             'service_type',
 //            'operation_id',

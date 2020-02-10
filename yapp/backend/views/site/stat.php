@@ -86,7 +86,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute'=>'utm_term',
                 'format'=> 'html',
-                'contentOptions' => ['style' => 'font-size:.8rem;width:20%;line-height:1.1; white-space: normal;'],
+                'contentOptions' => ['style' => 'font-size:1.0rem;width:20%;line-height:1.1; white-space: normal;'],
                 'value' => function($data) {
                     return $data->utm_term;
                 },

@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-backend',
+    'name'=>'Finlider',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'language' => 'ru-RU',

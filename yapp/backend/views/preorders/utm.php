@@ -23,9 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\ActionColumn'],
             [
                 'attribute'=>'date',
-                'value' => function($data)
-                {
-                    return \Yii::$app->formatter->asDatetime($data['date'], 'HH:mm dd/MM/yy');
+                'value' => function($data) {
+                    return '<small>'. \Yii::$app->formatter->asDatetime($data['date'], 'HH:mm dd/MM/yy').'</small>';
                 },
                 'format'=> 'html',
             ],
@@ -52,12 +51,33 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'phone',
 //            'email:email',
             //'text:ntext',
-            'from_page',
+            [
+                'attribute'=>'from_page',
+                'format'=> 'html',
+                'contentOptions' => ['style' => 'font-size:.8rem;width:20%;line-height:1.1; white-space: normal;'],
+                'value' => function($data) {
+                    return $data->from_page;
+                },
+            ],
             'utm_source',
             'utm_medium',
             'utm_campaign',
-            'utm_term',
-            'utm_content',
+            [
+                'attribute'=>'utm_term',
+                'format'=> 'html',
+                'contentOptions' => ['style' => 'font-size:1.0rem;width:20%;line-height:1.1; white-space: normal;'],
+                'value' => function($data) {
+                    return $data->utm_term;
+                },
+            ],
+            [
+                'attribute'=>'utm_content',
+                'format'=> 'html',
+                'contentOptions' => ['style' => 'font-size:.8rem;width:20%;line-height:1.1; white-space: normal;'],
+                'value' => function($data) {
+                    return $data->utm_content;
+                },
+            ],
             //'manager',
             //'quality',
             //'comment',

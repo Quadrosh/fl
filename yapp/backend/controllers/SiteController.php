@@ -3,6 +3,7 @@ namespace backend\controllers;
 
 use common\models\Preorders;
 use Yii;
+use yii\data\ActiveDataProvider;
 use yii\helpers\Url;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -87,5 +88,42 @@ class SiteController extends Controller
         } else {
             return $this->redirect(Url::previous());
         }
+    }
+
+
+    public function actionStat()
+    {
+        Url::remember();
+        $this->layout = 'stat';
+        $dataProvider = new ActiveDataProvider([
+            'query' => Preorders::find(),
+            'pagination'=> [
+                'pageSize' => 100,
+            ],
+            'sort' =>[
+                'defaultOrder'=> [
+                    'id' => SORT_DESC
+                ]
+            ]
+        ]);
+
+        return $this->render('stat', [
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+
+    public function actionPreorderView($id)
+    {
+        Url::remember();
+        $this->layout = 'stat';
+        $preorder = Preorders::findOne(['id'=>$id]);
+        if (!$preorder) {
+            Yii::$app->session->addFlash('error', 'Нет такого заказа');
+            return $this->redirect(Url::previous());
+        }
+
+        return $this->render('preorder-view', [
+            'model' => $preorder,
+        ]);
     }
 }

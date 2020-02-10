@@ -63,8 +63,15 @@ $this->params['breadcrumbs'][] = $this->title;
 //            'operation_id',
 //            'platform',
 //            'inn',
-//            'name',
-//            'phone',
+            [
+                'attribute'=>'name',
+                'format'=> 'html',
+                'contentOptions' => ['style' => 'font-size:.8rem;width:20%;line-height:1.1; white-space: normal;'],
+                'value' => function($data) {
+                    return $data->name;
+                },
+            ],
+            'phone',
 //            'email:email',
             //'text:ntext',
 //            'from_page',

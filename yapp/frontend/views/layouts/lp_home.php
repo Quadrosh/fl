@@ -37,7 +37,7 @@ frontend\assets\AppAsset::register($this);
     <meta property="og:title" content="<?= Yii::$app->view->params['meta']['title'] ?>" />
     <meta property="og:description" content="<?= Yii::$app->view->params['meta']['description'] ?>" />
     <meta property="og:url" content="<?= Url::current(['lg'=>null], true) ?>" />
-    <meta property="og:image" content="<?= Url::base(true) ?>/img/logo.png" />
+    <meta property="og:image" content="<?= Url::base(true) ?>/img/logo_finlider_square.png" />
 
     <?php $this->head() ?>
     <?php include_once("stat_google.php") ?>

@@ -37,7 +37,7 @@ use yii\httpclient\Client;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
-    const SPAM_COUNT = 20; // 2
+    const SPAM_COUNT = 3; // 2
     const SERVICE_TYPE_BG = 'bank_garant';
     const SERVICE_TYPE_TZ = 'tender_zaim';
     const SERVICE_TYPE_MIXED = 'mixed';

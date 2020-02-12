@@ -143,7 +143,7 @@ class Preorders extends \yii\db\ActiveRecord
             'operation_id' => '№ процедуры',
             'platform' => 'Площадка',
             'inn' => 'ИНН',
-            'name' => 'Ф.И.О.',
+            'name' => 'Как к Вам обращаться',
             'phone' => 'Телефон',
             'email' => 'Email',
             'text' => 'Text',

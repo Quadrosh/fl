@@ -9,8 +9,16 @@ use yii\bootstrap\NavBar;
     $nabarClass = 'navbar-inverse transparent';
 
 
-NavBar::begin([
-    'brandLabel' => '<svg version="1.1"
+
+
+
+?>
+
+<div class="notCollapsed navbar-inverse transparent navbar-fixed-top navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <span class="navbar-brand">
+                <?php echo '<svg version="1.1"
             class="cpLogo"
             aria-labelledby="svg_logo_title"
             xmlns="http://www.w3.org/2000/svg"
@@ -52,19 +60,16 @@ NavBar::begin([
 	v69.4c7.4,13.2,18.8,19.9,34.1,19.9c11.9,0,21.4-4.7,28.4-14.2C1672.3,255.4,1675.8,241.4,1675.8,222.8z"/>
 <path  class="cpLogo_st0" d="M999,132.9c19.9,54.6,39.7,109.1,59.6,163.7h26.5l-74.8-195.5h-22.6l-74.7,195.5h26.6
 	C959.5,242,979.2,187.5,999,132.9z"/>
-</svg><span class="navbar_motto '.$mottoClass.'">Тендерное кредитование</span>',
-    'brandUrl' => Yii::$app->homeUrl,
-    'options' => [
-        'class' => $nabarClass.' navbar-fixed-top ',
-    ],
-]);
-echo Nav::widget([
-    'options' => ['class' => 'navbar-nav navbar-right'],
-    'encodeLabels' => false,
-    'items' => [
+</svg><span class="navbar_motto '.$mottoClass.'">Тендерное кредитование</span>';
 
-        [
-            'label' => '<svg version="1.1"
+                ?>
+            </span>
+        </div>
+
+        <div class="fullSize">
+            <ul class="navbar-nav navbar-right nav">
+                <li class="topPhoneNotCollapsed" ><?=
+                    '<svg version="1.1"
                                  class="phone_icon"
                                  xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -82,12 +87,19 @@ echo Nav::widget([
                                     <path  class="phone_icon_st0" d="M14.2,11.7l-0.3,0.5l-3.6-2.3l0.3-0.5c0.1-0.2,0.3-0.2,0.5-0.1l3,1.9
 		C14.2,11.3,14.3,11.5,14.2,11.7z"/>
                                 </g>
-                        </svg><span class="phone_num">'.Yii::$app->params['mainPhone'].'</span>',
+                        </svg><span class="phone_number">'.Yii::$app->params['mainPhone'].'</span>';
+                    ?> <a class="mail" href="mailto:bg@finlider.ru">bg@finlider.ru</a></li>
+            </ul>
+        </div>
 
-        ],
+
+    </div>
+</div>
 
 
-    ],
-]);
-NavBar::end();
-?>
+
+
+
+
+
+

@@ -1185,6 +1185,13 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     font-weight: 400;
     font-size: 3.5em;
 }
+@media (max-width: 480px) {
+    .as-h1_side_order h1{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 2.5em;
+    }
+}
 .as-h1_side_order .text{
     font-weight: 300;
     font-size: 1.9rem;
@@ -1209,4 +1216,75 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .article_view .a-page_phone_form_in_footer .whyWe h2  {
     font-size: 3rem;
     font-family: Montserrat,sans-serif;
+}
+.topPhoneNotCollapsed{
+    padding-top: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.navbar.notCollapsed .phone_number{
+    font-size: 2rem;
+    padding-left: 1.2em;
+}
+@media (max-width: 480px) {
+    .navbar.notCollapsed .phone_number{
+        font-size: 2.5rem;
+        padding-left: 1.2em;
+    }
+}
+.topPhoneNotCollapsed svg{
+    margin-top: 5px;
+}
+@media (max-width: 480px) {
+    .topPhoneNotCollapsed svg{
+        margin-top: 8px;
+    }
+}
+.topPhoneNotCollapsed .mail{
+    font-family: Montserrat,sans-serif;
+    position: absolute;
+    right: 0;
+    bottom: -1.5em;
+}
+@media (max-width: 480px) {
+    .topPhoneNotCollapsed .mail{
+        position: relative;
+        top: -1em;
+        right: 0;
+    }
+}
+.notCollapsed .navbar-right{
+    text-align: right;
+    margin: 0;
+}
+@media (max-width: 480px) {
+    .notCollapsed .navbar-right{
+        text-align: center;
+    }
+}
+.notCollapsed .fullSize{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+@media (max-width: 480px) {
+    .notCollapsed .fullSize{
+        position: relative;
+        padding-top: 5em;
+    }
+    .notCollapsed.navbar > .container .navbar-brand{
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        width: 200px;
+        margin-top: 5px;
+        padding: 5px 2px;
+        text-align: center;
+    }
+    .notCollapsed.navbar > .container .navbar-brand .navbar_motto{
+        margin-left: 0;
+    }
+
 }

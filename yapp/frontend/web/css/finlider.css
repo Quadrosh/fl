@@ -1225,6 +1225,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .navbar.notCollapsed .phone_number{
     font-size: 2rem;
     padding-left: 1.2em;
+    position: relative;
+    z-index: 2;
 }
 @media (max-width: 480px) {
     .navbar.notCollapsed .phone_number{
@@ -1245,6 +1247,7 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     position: absolute;
     right: 0;
     bottom: -1.5em;
+    z-index: 1;
 }
 @media (max-width: 480px) {
     .topPhoneNotCollapsed .mail{

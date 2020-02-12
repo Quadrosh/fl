@@ -31,7 +31,7 @@ use yii\helpers\Html;
             <?php endif; ?>
 
             <?php if ($model->text) : ?>
-                <p <?= $model->text_class?'class="'.$model->text_class.'"':null ?>><?= $model->text ?></p>
+                <p <?= $model->text_class?'class="'.$model->text_class.'"':null ?>><?= nl2br($model->text) ?></p>
             <?php endif; ?>
 
             <?php if ($model->link_name) : ?>

@@ -10,9 +10,9 @@ $preorder = new \common\models\Preorders();
 
 
 ?>
-<div class="a-page_preorder_form">
+<div class="a-page_phone_form_in_footer">
     <?= Alert::widget() ?>
-    <h1 class="text-center"><?= Html::encode($article->h1) ?></h1>
+    <?= $article->h1?'<h1 class="text-center">'.nl2br($article->h1).'</h1>':null ?>
 
     <?php if ($article->exerpt) : ?>
         <p><?= $article->exerpt ?></p>
@@ -49,14 +49,6 @@ $preorder = new \common\models\Preorders();
                     <div class="row">
                         <div class="  col-md-10 col-md-offset-1  col-lg-8 col-lg-offset-2">
 
-                            <?php if ($section->section_image) {
-                                echo Html::img('/img/'.$section->section_image,[
-                                    'alt'=>$section->section_image_alt,
-                                    'class'=>$section->image_class,
-                                    'title'=>$section->section_image_title?$section->section_image_title:null,
-
-                                ]);
-                            } ?>
                             <?php if ($section->header) : ?>
                                 <h2 <?= $section->header_class?'class="'.$section->header_class.'"':null ?>><?= nl2br($section->header) ?></h2>
                             <?php endif; ?>
@@ -142,6 +134,22 @@ $preorder = new \common\models\Preorders();
 
 </div>
 
-<?= $this->render('_futorder-form', [
-    'article' => $article,
-]) ?>
+<section id="mainOrderSection"
+         class="<?= $article->call2action_class?$article->call2action_class :' dark ' ?> phoneOrderSection">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <p class="description "><?= $article->call2action_description?nl2br($article->call2action_description):null ?></p>
+        </div>
+
+        <div class="col-md-8 col-md-offset-2">
+
+            <?= $this->render('/article/part_views/article/_phone-form', [
+                'section' => $article,
+                'article' => $article,
+            ]) ?>
+
+        </div>
+    </div>
+</section>
+
+

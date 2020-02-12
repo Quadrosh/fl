@@ -179,6 +179,16 @@ section {
     z-index: 10;
     min-height:70px;
 }
+.navbar-inverse.transparent {
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    z-index: 10;
+    min-height:70px;
+}
 .navbar > .container .navbar-brand {
     /*margin-left: -15px;*/
     position: relative;
@@ -518,10 +528,20 @@ section {
     background-color: transparent;
     border-color: white;
 }
+#mainOrderSection.dark .phone-form  .input-group .form-control {
+    background-color: white;
+    border-color: #31405f;
+}
+
+#mainOrderSection.dark .phone-form  .input-group-btn:last-child > .btn {
+    border: 1px solid #fbb118;
+}
+
 .grey .input-group .form-control {
     background-color: white;
     border-color: #CACACA;
 }
+
 .input-group .form-control:first-child,
 .input-group-addon:first-child,
 .input-group-btn:first-child > .btn,
@@ -1153,9 +1173,36 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
 }
 
-
 @media (min-width: 979px) {
     ul.nav li.dropdown:hover > ul.dropdown-menu {
         display: block;
     }
+}
+
+.as-h1_side_order h1{
+    position: relative;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 3.5em;
+}
+.as-h1_side_order .text{
+    font-weight: 300;
+    font-size: 1.9rem;
+}
+.as-h1_side_order .topForm{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+/*.a-page_phone_form_in_footer  .howWeWork .asb-ul-li ul li{*/
+/*    font-size: 2em;*/
+/*}*/
+/*.a-page_phone_form_in_footer  .howWeWork  .no-list-style ul li {*/
+/*    font-size: 2em;*/
+/*}*/
+.article_view .a-page_phone_form_in_footer .whyWe  {
+    font-size: 1.5rem;
+}
+.article_view .a-page_phone_form_in_footer .whyWe h5  {
+    font-size: 2rem;
+    font-family: Montserrat,sans-serif;
 }

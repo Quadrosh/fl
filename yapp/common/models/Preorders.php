@@ -4,6 +4,8 @@ namespace common\models;
 
 use Yii;
 use yii\behaviors\TimestampBehavior;
+use yii\helpers\Json;
+use yii\helpers\Url;
 use yii\httpclient\Client;
 
 /**
@@ -35,7 +37,7 @@ use yii\httpclient\Client;
 class Preorders extends \yii\db\ActiveRecord
 {
     public $emailForSend;
-    const SPAM_COUNT = 2;
+    const SPAM_COUNT = 20; // 2
     const SERVICE_TYPE_BG = 'bank_garant';
     const SERVICE_TYPE_TZ = 'tender_zaim';
     const SERVICE_TYPE_MIXED = 'mixed';
@@ -239,19 +241,34 @@ class Preorders extends \yii\db\ActiveRecord
             $preorder['site'] = Yii::$app->params['site'];
             $preorder['ip'] = Yii::$app->request->userIP;
             if ($preorder->save()) {
-                if ($preorder->sendEmailAndSms( Yii::$app->params['site'].': Заявка')) {
-                    Yii::$app->session->setFlash('success', 'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
-                    return true;
+                if (Url::base('')!='//finlider.local' &&
+                    Url::base('')!='//datender.local' ) {
+
+                    $successful = $preorder->sendEmailAndSms( Yii::$app->params['site'].': Заявка');
+                    if ($successful) {
+                        Yii::$app->session->setFlash('success',
+                            'Ваша заявка отправлена. <br> Мы свяжемся с Вами в ближайшее время.');
+
+                        return true;
+                    } else {
+                        Yii::$app->session->setFlash('error',
+                            'Во время отправки произошла ошибка, попробуйте еще раз.');
+                        return false;
+                    }
+
                 } else {
-                    Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз.');
-                    return false;
+                    Yii::$app->session->setFlash('success',
+                        'локальный хост - заявка сохранена');
                 }
+
             } else {
-                Yii::$app->session->setFlash('error', 'Ошибка сохранения заявки. Оформите заявку по телефону.');
+                Yii::$app->session->setFlash('error',
+                    'Ошибка сохранения заявки. Оформите заявку по телефону.');
                 return false;
             }
         } else {
-            Yii::$app->session->setFlash('error', 'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@'.Yii::$app->params['site'].' или оформите заявку по телефону');
+            Yii::$app->session->setFlash('error',
+                'Во время отправки произошла ошибка, попробуйте еще раз. Или отправьте заявку в свободной форме на zakaz@'.Yii::$app->params['site'].' или оформите заявку по телефону');
             return false;
         }
 
@@ -260,17 +277,16 @@ class Preorders extends \yii\db\ActiveRecord
 
     public function notifyBySms($text)
     {
-        $client = new Client();
-        $response = $client->createRequest()
-            ->setMethod('post')
-            ->setUrl('https://sms.ru/sms/send')
-            ->setData([
-                'api_id' => Yii::$app->params['smsApiId'],
-                'to' =>  Yii::$app->params['smsOrderPhone'],
-                'text'=> $text
-            ])
-            ->send();
-        return $response->isOk ? true : false;
-
+            $client = new Client();
+            $response = $client->createRequest()
+                ->setMethod('post')
+                ->setUrl('https://sms.ru/sms/send')
+                ->setData([
+                    'api_id' => Yii::$app->params['smsApiId'],
+                    'to' =>  Yii::$app->params['smsOrderPhone'],
+                    'text'=> $text
+                ])
+                ->send();
+            return $response->isOk ? true : false;
     }
 }

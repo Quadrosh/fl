@@ -11,7 +11,7 @@ $preorder = new \common\models\Preorders();
          class="<?= $article->call2action_class?$article->call2action_class:'dark' ?>">
     <div class="row">
         <div class="col-sm-12 text-center">
-            <h2 class="head"><?= $article->call2action_description?$article->call2action_description:'Форма заявки' ?></h2>
+            <h2 class="head"><?= $article->call2action_description?$article->call2action_description:null ?></h2>
         </div>
 
         <div class="col-md-8 col-md-offset-2">

@@ -19,9 +19,9 @@ class ArticleAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'libs/slick/slick.css',
-        'css/home.css',
         'css/style.css',
         'css/common/article.css',
+        'css/finlider.css',
 
     ];
     public $js = [

@@ -28,7 +28,7 @@ use yii\widgets\ActiveForm;
 
         </div>
         <div class="col-sm-8">
-            <?= $form->field($model, 'header')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'header')->textarea(['maxlength' => true,'rows' => 1]) ?>
         </div>
         <div class="col-sm-4">
             <?= $form->field($model, 'header_class')
@@ -164,6 +164,7 @@ use yii\widgets\ActiveForm;
                 '_as-img_back' => 'img_back',
                 '_as-h1_head' => 'h1_head',
                 '_as-h1_head-fw' => 'h1_head-fw',
+                '_as-h1_side_order-fw' => 'h1_side_order-fw',
                 '_as-img_head_text-fw' => 'img_head_text-fw',
             ],['prompt' => 'Выбери вьюху']) ?>
         </div>

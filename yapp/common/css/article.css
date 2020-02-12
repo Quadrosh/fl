@@ -487,6 +487,9 @@ h6 {
 h1,h2,h3,h4,h5,h6 {
     color: #5f6973;
 }
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+    color: #ffffff;
+}
 .asb-header_on_img .header {
     position: absolute;
     background-color: rgba(0,0,0,0.5);
@@ -509,7 +512,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .dark {
     color: white;
-    /*background-color: #3f4158;*/
     background-color: #31405f;
 }
 
@@ -822,6 +824,10 @@ section {
     background-size: cover;
     background-position: center;
 }
+.cover {
+    background-size: cover;
+    background-position: center;
+}
 .as-img_back .lead{
     background-color: rgba(255,255,255,0.7);
     text-align: center;
@@ -1008,6 +1014,7 @@ section {
     right: 10px;
     bottom: 5px;
 }
+
 .dark .asb-slick_leadbox  .slickNext {
     color: white;
     border: 1px white solid;
@@ -1129,3 +1136,56 @@ section {
 .bbnone{
     border-bottom:none;
 }
+.as-h1_side_order{
+    min-height: 600px;
+}
+@media only screen and (max-width : 768px) {
+    .as-h1_side_order{
+        min-height: 500px;
+    }
+}
+.as-h1_side_order .text-block{
+    text-align: center;
+    padding-top: 300px;
+}
+@media only screen and (max-width : 768px) {
+    .as-h1_side_order .text-block{
+        padding-top: 100px;
+    }
+}
+.howWeWork p{
+    font-family: Montserrat,sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #58595B;
+    line-height: 1.1;
+
+}
+.howWeWork .more768{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    margin-top: -35px;
+}
+.howWeWork .less768{
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: 10px;
+}
+@media only screen and (max-width : 768px) {
+    .asbi-h_img_col-text_col.nextArrow{
+        padding-bottom: 40px;
+    }
+}
+
+#mainOrderSection.phoneOrderSection .description{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#mainOrderSection.phoneOrderSection{
+    padding-bottom: 50px;
+}
+

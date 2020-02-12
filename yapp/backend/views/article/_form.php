@@ -126,7 +126,7 @@ use  \common\models\Preorders;
             <?= $form->field($model, 'call2action_class')->textInput(['maxlength' => true]) ?>
         </div>
         <div class="col-sm-6">
-            <?= $form->field($model, 'call2action_description')->textInput(['maxlength' => true]) ?>
+            <?= $form->field($model, 'call2action_description')->textarea(['maxlength' => true,'rows' => 1]) ?>
         </div>
         <div class="col-sm-6">
             <?= $form->field($model, 'call2action_comment')->textInput(['maxlength' => true]) ?>
@@ -147,11 +147,13 @@ use  \common\models\Preorders;
                 '_a-page_preorder_form' => 'page_preorder_form',
                 '_a-page-topline_futorder' => 'page-topline_futorder',
                 '_a-page_futorder' => 'page_futorder',
+                '_a-page_phone_form_in_footer' => 'page_phone_form_in_footer',
             ],['prompt' => 'Выбери вьюху']) ?>
         </div>
         <div class="col-sm-6">
             <?= $form->field($model, 'layout')->dropDownList([
                 'article' => 'article',
+                'article_lp' => 'article_lp',
                 'article_datender' => 'article_datender',
                 'article_no_footer' => 'article_no_footer',
             ],['prompt' => 'Выбери layout']) ?>

@@ -134,8 +134,8 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'author',
              'status',
 
-            // 'view',
-            // 'layout',
+             'view',
+             'layout',
             // 'created_at',
             // 'updated_at',
             // 'site',

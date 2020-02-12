@@ -16,7 +16,7 @@ class AppAsset extends AssetBundle
 //        'libs/magnific/magnificpopup.min.css',
         'libs/font-awesome/css/font-awesome.min.css',
         'https://fonts.googleapis.com/css?family=Montserrat:200,300,500,600,700|Roboto:300,400&amp;subset=cyrillic',
-        'css/home.css',
+        'css/finlider.css',
     ];
     public $js = [
         'libs/gsap/TimelineMax.min.js',

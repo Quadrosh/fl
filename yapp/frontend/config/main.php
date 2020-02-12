@@ -48,8 +48,14 @@ return [
             'showScriptName' => false,
             'rules' => [
                 '' => 'landing/page',
+                '<pagename:bg>' => 'article/page',
+
+
+
 //                'tender_zaim' => 'landing/page',
 //                'bank_garant' => 'landing/page',
+
+
 //                'contacts' => 'site/contacts',
                 'lp/<landingpage:[0-9a-z\-\_]+>' => 'landing/page',
                 'article/calculator' => 'article/calculator',

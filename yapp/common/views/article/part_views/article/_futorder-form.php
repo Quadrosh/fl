@@ -18,29 +18,41 @@ $preorder = new \common\models\Preorders();
 
             <?php $form = ActiveForm::begin([
                 'action' =>['site/order'],
-                'id' => 'bg_mainOrderForm',
+                'id' => 'mainOrderForm',
                 'options' => [
                     'class' => 'mainOrderForm_'.$article->service_type
                 ],
                 'method' => 'post',]); ?>
 
             <?= $form->field($preorder, 'utm_source')->hiddenInput([
-                'value'=>\common\models\Visit::getUtm('utm_source'), 'id' => 'mainOrderForm-utm_source'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_source'), 'id' => 'mainOrderForm-utm_source'])
+                ->label(false) ?>
             <?= $form->field($preorder, 'utm_medium')->hiddenInput([
-                'value'=>\common\models\Visit::getUtm('utm_medium'), 'id' => 'mainOrderForm-utm_medium'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_medium'), 'id' => 'mainOrderForm-utm_medium'])
+                ->label(false) ?>
             <?= $form->field($preorder, 'utm_campaign')->hiddenInput([
-                'value'=>\common\models\Visit::getUtm('utm_campaign'), 'id' => 'mainOrderForm-utm_campaign'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_campaign'), 'id' => 'mainOrderForm-utm_campaign'])
+                ->label(false) ?>
             <?= $form->field($preorder, 'utm_term')->hiddenInput([
-                'value'=>\common\models\Visit::getUtm('utm_term'), 'id' => 'mainOrderForm-utm_term'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_term'), 'id' => 'mainOrderForm-utm_term'])
+                ->label(false) ?>
             <?= $form->field($preorder, 'utm_content')->hiddenInput([
-                'value'=>\common\models\Visit::getUtm('utm_content'), 'id' => 'mainOrderForm-utm_content'])->label(false) ?>
+                'value'=>\common\models\Visit::getUtm('utm_content'), 'id' => 'mainOrderForm-utm_content'])
+                ->label(false) ?>
 
             <?= $form->field($preorder, 'service_type')
-                ->hiddenInput(['value'=>$article->service_type,'id' => 'quickorder_form_top-service_type'])->label(false) ?>
+                ->hiddenInput([
+                        'value'=>$article->service_type,
+                        'id' => 'quickorder_form_top-service_type',
+                        'class'=>'form-control service_type_indicator',
+                ])
+                ->label(false) ?>
             <?= $form->field($preorder, 'site')
-                ->hiddenInput(['value'=>'finlider.ru','id' => 'quickorder_form_top-site'])->label(false) ?>
+                ->hiddenInput(['value'=>'finlider.ru','id' => 'quickorder_form_top-site'])
+                ->label(false) ?>
             <?= $form->field($preorder, 'from_page')
-                ->hiddenInput(['value'=>$article->hrurl,'id' => 'quickorder_form_top-from_page'])->label(false) ?>
+                ->hiddenInput(['value'=>$article->hrurl,'id' => 'quickorder_form_top-from_page'])
+                ->label(false) ?>
 
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">

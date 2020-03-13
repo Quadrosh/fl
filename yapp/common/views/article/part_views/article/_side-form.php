@@ -46,7 +46,11 @@ $form = \yii\bootstrap\ActiveForm::begin([
     ->hiddenInput(['value'=>Visit::getUtm('utm_content'), 'id' => 'quickorder_form_top-utm_content'])->label(false) ?>
 
 <?= $form->field($preorder, 'service_type')
-    ->hiddenInput(['value'=>$article->service_type,'id' => 'quickorder_form_top-service_type'])->label(false) ?>
+    ->hiddenInput([
+            'value'=>$article->service_type,
+            'id' => 'quickorder_form_top-service_type',
+            'class'=>'form-control service_type_indicator'
+        ])->label(false) ?>
 <?= $form->field($preorder, 'site')
     ->hiddenInput(['value'=>$article->site,'id' => 'quickorder_form_top-site'])->label(false) ?>
 <?= $form->field($preorder, 'from_page')

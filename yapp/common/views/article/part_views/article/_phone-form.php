@@ -32,33 +32,46 @@ $preorder = new \common\models\Preorders();
         ],
         'inputTemplate' => '<div class="input-group">{input}<span class="input-group-btn">'.
             '<button type="submit" class="btn btn-danger">'.$section->call2action_name.'</button></span></div>',
-    ])->textInput(['maxlength' => true, 'id' => 'quickorder-form-section'.$section->id.'-phone'])->label(false) ?>
+    ])->textInput(['maxlength' => true, 'id' => 'quickorder-form-section'.$section->id.'-phone'])
+        ->label(false) ?>
 
     <?= $form->field($preorder, 'service_type',['template' => '{input}', 'options' => ['tag' => false]])
         ->hiddenInput(['value'=>$article->service_type,
-            'id' => 'quickorder-form-section'.$section->id.'-name'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-name',
+            'class'=>'form-control service_type_indicator',
+        ])
+        ->label(false) ?>
 
     <?= $form->field($preorder, 'name',['template' => '{input}', 'options' => ['tag' => false]])
         ->hiddenInput(['value'=>'-',
-            'id' => 'quickorder-form-section'.$section->id.'-name'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-name'])
+        ->label(false) ?>
     <?= $form->field($preorder, 'utm_source',['template' => '{input}', 'options' => ['tag' => false]])
         ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_source'),
-            'id' => 'quickorder-form-section'.$section->id.'-utm_sourse'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-utm_sourse'])
+        ->label(false) ?>
     <?= $form->field($preorder, 'utm_medium',['template'=>'{input}','options'=>['tag'=>false]])
         ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_medium'),
-            'id' => 'quickorder-form-section'.$section->id.'-utm_medium'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-utm_medium'])
+        ->label(false) ?>
     <?= $form->field($preorder, 'utm_campaign',['template'=>'{input}','options'=>['tag'=>false]])
         ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_campaign'),
-            'id' => 'quickorder-form-section'.$section->id.'-utm_campaign'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-utm_campaign'])
+        ->label(false) ?>
+
     <?= $form->field($preorder, 'utm_term',['template' => '{input}', 'options' => ['tag' => false]])
         ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_term'),
-            'id' => 'quickorder-form-section'.$section->id.'-utm_term'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-utm_term'])
+        ->label(false) ?>
+
     <?= $form->field($preorder, 'utm_content',['template' => '{input}', 'options' => ['tag' => false]])
         ->hiddenInput(['value'=>\common\models\Visit::getUtm('utm_content'),
-            'id' => 'quickorder-form-section'.$section->id.'-utm_content'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-utm_content'])
+        ->label(false) ?>
 
     <?= $form->field($preorder, 'from_page',['template' => '{input}', 'options' => ['tag' => false]])
         ->hiddenInput(['value'=>$article ['hrurl'],
-            'id' => 'quickorder-form-section'.$section->id.'-from_page'])->label(false) ?>
+            'id' => 'quickorder-form-section'.$section->id.'-from_page'])
+        ->label(false) ?>
     <?php yii\bootstrap\ActiveForm::end(); ?>
 </div>

@@ -310,6 +310,7 @@ section {
 @media only screen and (max-width : 840px) {
     .phone_num {
         font-size: 18px;
+        margin-left:45px;
     }
 }
 .navbar-inverse .navbar-nav > .active > a,
@@ -1303,3 +1304,18 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
         padding-left: 0;
     }
 }
+
+.mainTopPhoneBox .svgIcons{
+    position: absolute;
+    left: 2px;
+    /*top: 25px;*/
+    top: 1.8em;
+    display: inline-block;
+}
+@media (max-width: 767px) {
+    .mainTopPhoneBox .svgIcons{
+        top: 0.7em;
+        left: 17px;
+    }
+}
+
